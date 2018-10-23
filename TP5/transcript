@@ -1,0 +1,389 @@
+# //  ModelSim SE 10.0b May  5 2011 Linux 3.2.0-4-amd64
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+#  
+vlib work
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/memory.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity RAM1024X16
+# -- Compiling architecture MODEL of RAM1024X16
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/mbist.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity BIST
+# -- Compiling architecture BEHAV of BIST
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(48): near "port": syntax error
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(59): Statement cannot be labeled.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(59): near "port": syntax error
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(68): Statement cannot be labeled.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(84): VHDL Compiler exiting
+vcom -reportprogress 300 -work work {/tp/xph3sei/xph3sei201/TP_TEST/TP4/memory.vhd mbist.vhd bench_memory_BIST.vhdl}
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# ** Error: (vcom-7) Failed to open design unit file "/tp/xph3sei/xph3sei201/TP_TEST/TP4/memory.vhd mbist.vhd bench_memory_BIST.vhdl" in read mode.
+# No such file or directory. (errno = ENOENT)
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(63): (vcom-1136) Unknown identifier "memory_DOUT_sCSn_s".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(84): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/mbist.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity BIST
+# -- Compiling architecture BEHAV of BIST
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/memory.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity RAM1024X16
+# -- Compiling architecture MODEL of RAM1024X16
+vcom -reportprogress 300 -work work {/tp/xph3sei/xph3sei201/TP_TEST/TP4/memory.vhd mbist.vhd bench_memory_BIST.vhdl}
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# ** Error: (vcom-7) Failed to open design unit file "/tp/xph3sei/xph3sei201/TP_TEST/TP4/memory.vhd mbist.vhd bench_memory_BIST.vhdl" in read mode.
+# No such file or directory. (errno = ENOENT)
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/mbist.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity BIST
+# -- Compiling architecture BEHAV of BIST
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/memory.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity RAM1024X16
+# -- Compiling architecture MODEL of RAM1024X16
+vsim work.bench_memory_bist(arch)
+# vsim work.bench_memory_bist(arch) 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_memory_bist(arch)#1
+add wave -position anchor  \
+sim:/bench_memory_bist/BIST_ADD_OUT_s \
+sim:/bench_memory_bist/memory_DOUT_s \
+sim:/bench_memory_bist/BIST_DOUT_s \
+sim:/bench_memory_bist/WEN_s \
+sim:/bench_memory_bist/CSn_s \
+sim:/bench_memory_bist/TEST_RUN_s \
+sim:/bench_memory_bist/CLK_s
+run
+# ** Failure: END OF SIMULATION
+#    Time: 100 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 82
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_memory_bist(arch)#1
+run
+# ** Failure: END OF SIMULATION
+#    Time: 100 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 82
+run
+# ** Failure: END OF SIMULATION
+#    Time: 200 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 82
+run
+# ** Failure: END OF SIMULATION
+#    Time: 300 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 82
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_memory_bist(arch)#1
+run
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 61540 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 85
+add wave  \
+sim:/bench_memory_bist/bist_S/crt_state
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_memory_bist(arch)#1
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 61540 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 85
+restart
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_memory_bist(arch)#1
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 102500 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 85
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_memory_bist(arch)#1
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 102500 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 85
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 205 us  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 85
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_memory_bist(arch)#1
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 112760 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 86
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_memory_bist(arch)#1
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 112740 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 85
+quit -sim
+vsim -novopt work.bench_memory_bist(arch)
+# vsim -novopt work.bench_memory_bist(arch) 
+# Loading std.standard
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP4/work.bench_memory_bist(arch)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.bench_memory_bist(arch)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP4/work.bist(behav)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bist(behav)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP4/work.ram1024x16(model)
+# Loading work.ram1024x16(model)
+add wave -position anchor  \
+sim:/bench_memory_bist/BIST_ADD_OUT_s \
+sim:/bench_memory_bist/memory_DOUT_s \
+sim:/bench_memory_bist/BIST_DOUT_s \
+sim:/bench_memory_bist/WEN_s \
+sim:/bench_memory_bist/CSn_s \
+sim:/bench_memory_bist/TEST_RUN_s \
+sim:/bench_memory_bist/TEST_FAIL_s \
+sim:/bench_memory_bist/TEST_SO_s \
+sim:/bench_memory_bist/CLK_s
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 112740 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 85
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(63): (vcom-1436) Use of non globally static actual (infix expression) of formal "DIN" requires VHDL 2008.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(86): near "for": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(94): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(89): near "for": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(97): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+restart
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP4/work.bench_memory_bist(arch)
+# Loading work.bench_memory_bist(arch)
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 113760 ns  Iteration: 0  Process: /bench_memory_bist/line__77 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__77 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 95
+add wave -position anchor  \
+sim:/bench_memory_bist/memory_DIN_s
+restart
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 113760 ns  Iteration: 0  Process: /bench_memory_bist/line__77 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__77 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 95
+add wave -position anchor  \
+sim:/bench_memory_bist/bist_S/error_flag
+restart
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 113760 ns  Iteration: 0  Process: /bench_memory_bist/line__77 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__77 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 95
+add wave -position anchor  \
+sim:/bench_memory_bist/bist_S/end_error_flag
+add wave -position anchor  \
+sim:/bench_memory_bist/bist_S/error_vector \
+sim:/bench_memory_bist/bist_S/ref_vector
+restart
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 113760 ns  Iteration: 0  Process: /bench_memory_bist/line__77 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__77 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 95
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+restart
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP4/work.bench_memory_bist(arch)
+# Loading work.bench_memory_bist(arch)
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 113750 ns  Iteration: 0  Process: /bench_memory_bist/line__77 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# Break in Process line__77 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 95
+quit -sim
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/mbist_MARCHC.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity BIST_MARCHC
+# -- Compiling architecture BEHAV of BIST_MARCHC
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST_MARCHC.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST_MARCHC
+# -- Compiling architecture arch of bench_memory_BIST_MARCHC
+vsim -novopt work.bench_memory_bist_marchc(arch)
+# vsim -novopt work.bench_memory_bist_marchc(arch) 
+# Loading std.standard
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP4/work.bench_memory_bist_marchc(arch)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.bench_memory_bist_marchc(arch)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP4/work.bist_marchc(behav)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bist_marchc(behav)
+# Loading work.ram1024x16(model)
+add wave -position anchor  \
+sim:/bench_memory_bist_marchc/BIST_ADD_OUT_s \
+sim:/bench_memory_bist_marchc/memory_DOUT_s \
+sim:/bench_memory_bist_marchc/BIST_DOUT_s \
+sim:/bench_memory_bist_marchc/WEN_s \
+sim:/bench_memory_bist_marchc/CSn_s \
+sim:/bench_memory_bist_marchc/TEST_RUN_s \
+sim:/bench_memory_bist_marchc/TEST_FAIL_s \
+sim:/bench_memory_bist_marchc/TEST_SO_s \
+sim:/bench_memory_bist_marchc/CLK_s \
+sim:/bench_memory_bist_marchc/memory_DIN_s \
+sim:/bench_memory_bist_marchc/TRASH_s
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 123990 ns  Iteration: 0  Process: /bench_memory_bist_marchc/line__77 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST_MARCHC.vhdl
+# Break in Process line__77 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST_MARCHC.vhdl line 95
+restart
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 123990 ns  Iteration: 0  Process: /bench_memory_bist_marchc/line__77 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST_MARCHC.vhdl
+# Break in Process line__77 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST_MARCHC.vhdl line 95
