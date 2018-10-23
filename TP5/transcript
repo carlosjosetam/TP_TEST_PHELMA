@@ -9,48 +9,29 @@
 # //
 #  
 vlib work
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/memory.vhd
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd
 # Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity RAM1024X16
-# -- Compiling architecture MODEL of RAM1024X16
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/mbist.vhd
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity BIST
-# -- Compiling architecture BEHAV of BIST
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+# -- Compiling entity CODEUR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(12): near ")": expecting IDENTIFIER
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/bench_memory_BIST.vhdl
 # Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity bench_memory_BIST
 # -- Compiling architecture arch of bench_memory_BIST
-# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(48): near "port": syntax error
-# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(59): Statement cannot be labeled.
-# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(59): near "port": syntax error
-# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(68): Statement cannot be labeled.
-# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(84): VHDL Compiler exiting
-vcom -reportprogress 300 -work work {/tp/xph3sei/xph3sei201/TP_TEST/TP4/memory.vhd mbist.vhd bench_memory_BIST.vhdl}
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# ** Error: (vcom-7) Failed to open design unit file "/tp/xph3sei/xph3sei201/TP_TEST/TP4/memory.vhd mbist.vhd bench_memory_BIST.vhdl" in read mode.
-# No such file or directory. (errno = ENOENT)
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/bench_memory_BIST_MARCHC.vhdl
 # Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity bench_memory_BIST
-# -- Compiling architecture arch of bench_memory_BIST
-# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(63): (vcom-1136) Unknown identifier "memory_DOUT_sCSn_s".
-# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(84): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/mbist.vhd
+# -- Compiling entity bench_memory_BIST_MARCHC
+# -- Compiling architecture arch of bench_memory_BIST_MARCHC
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/mbist.vhd
 # Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -58,289 +39,7 @@ vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/mbist.vhd
 # -- Loading package std_logic_arith
 # -- Compiling entity BIST
 # -- Compiling architecture BEHAV of BIST
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/memory.vhd
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity RAM1024X16
-# -- Compiling architecture MODEL of RAM1024X16
-vcom -reportprogress 300 -work work {/tp/xph3sei/xph3sei201/TP_TEST/TP4/memory.vhd mbist.vhd bench_memory_BIST.vhdl}
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# ** Error: (vcom-7) Failed to open design unit file "/tp/xph3sei/xph3sei201/TP_TEST/TP4/memory.vhd mbist.vhd bench_memory_BIST.vhdl" in read mode.
-# No such file or directory. (errno = ENOENT)
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bench_memory_BIST
-# -- Compiling architecture arch of bench_memory_BIST
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/mbist.vhd
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity BIST
-# -- Compiling architecture BEHAV of BIST
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/memory.vhd
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity RAM1024X16
-# -- Compiling architecture MODEL of RAM1024X16
-vsim work.bench_memory_bist(arch)
-# vsim work.bench_memory_bist(arch) 
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading work.bench_memory_bist(arch)#1
-add wave -position anchor  \
-sim:/bench_memory_bist/BIST_ADD_OUT_s \
-sim:/bench_memory_bist/memory_DOUT_s \
-sim:/bench_memory_bist/BIST_DOUT_s \
-sim:/bench_memory_bist/WEN_s \
-sim:/bench_memory_bist/CSn_s \
-sim:/bench_memory_bist/TEST_RUN_s \
-sim:/bench_memory_bist/CLK_s
-run
-# ** Failure: END OF SIMULATION
-#    Time: 100 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 82
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bench_memory_BIST
-# -- Compiling architecture arch of bench_memory_BIST
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading work.bench_memory_bist(arch)#1
-run
-# ** Failure: END OF SIMULATION
-#    Time: 100 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 82
-run
-# ** Failure: END OF SIMULATION
-#    Time: 200 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 82
-run
-# ** Failure: END OF SIMULATION
-#    Time: 300 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 82
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bench_memory_BIST
-# -- Compiling architecture arch of bench_memory_BIST
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading work.bench_memory_bist(arch)#1
-run
-run -all
-# ** Failure: END OF SIMULATION
-#    Time: 61540 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 85
-add wave  \
-sim:/bench_memory_bist/bist_S/crt_state
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading work.bench_memory_bist(arch)#1
-run -all
-# ** Failure: END OF SIMULATION
-#    Time: 61540 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 85
-restart
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bench_memory_BIST
-# -- Compiling architecture arch of bench_memory_BIST
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading work.bench_memory_bist(arch)#1
-run -all
-# ** Failure: END OF SIMULATION
-#    Time: 102500 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 85
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading work.bench_memory_bist(arch)#1
-run -all
-# ** Failure: END OF SIMULATION
-#    Time: 102500 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 85
-run -all
-# ** Failure: END OF SIMULATION
-#    Time: 205 us  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 85
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bench_memory_BIST
-# -- Compiling architecture arch of bench_memory_BIST
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading work.bench_memory_bist(arch)#1
-run -all
-# ** Failure: END OF SIMULATION
-#    Time: 112760 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 86
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bench_memory_BIST
-# -- Compiling architecture arch of bench_memory_BIST
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading work.bench_memory_bist(arch)#1
-run -all
-# ** Failure: END OF SIMULATION
-#    Time: 112740 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 85
-quit -sim
-vsim -novopt work.bench_memory_bist(arch)
-# vsim -novopt work.bench_memory_bist(arch) 
-# Loading std.standard
-# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP4/work.bench_memory_bist(arch)
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.bench_memory_bist(arch)
-# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP4/work.bist(behav)
-# Loading ieee.std_logic_arith(body)
-# Loading work.bist(behav)
-# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP4/work.ram1024x16(model)
-# Loading work.ram1024x16(model)
-add wave -position anchor  \
-sim:/bench_memory_bist/BIST_ADD_OUT_s \
-sim:/bench_memory_bist/memory_DOUT_s \
-sim:/bench_memory_bist/BIST_DOUT_s \
-sim:/bench_memory_bist/WEN_s \
-sim:/bench_memory_bist/CSn_s \
-sim:/bench_memory_bist/TEST_RUN_s \
-sim:/bench_memory_bist/TEST_FAIL_s \
-sim:/bench_memory_bist/TEST_SO_s \
-sim:/bench_memory_bist/CLK_s
-run -all
-# ** Failure: END OF SIMULATION
-#    Time: 112740 ns  Iteration: 0  Process: /bench_memory_bist/line__72 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__72 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 85
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bench_memory_BIST
-# -- Compiling architecture arch of bench_memory_BIST
-# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(63): (vcom-1436) Use of non globally static actual (infix expression) of formal "DIN" requires VHDL 2008.
-# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(86): near "for": expecting <= or :=
-# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(94): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bench_memory_BIST
-# -- Compiling architecture arch of bench_memory_BIST
-# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(89): near "for": expecting <= or :=
-# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl(97): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bench_memory_BIST
-# -- Compiling architecture arch of bench_memory_BIST
-restart
-# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP4/work.bench_memory_bist(arch)
-# Loading work.bench_memory_bist(arch)
-run -all
-# ** Failure: END OF SIMULATION
-#    Time: 113760 ns  Iteration: 0  Process: /bench_memory_bist/line__77 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__77 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 95
-add wave -position anchor  \
-sim:/bench_memory_bist/memory_DIN_s
-restart
-run -all
-# ** Failure: END OF SIMULATION
-#    Time: 113760 ns  Iteration: 0  Process: /bench_memory_bist/line__77 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__77 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 95
-add wave -position anchor  \
-sim:/bench_memory_bist/bist_S/error_flag
-restart
-run -all
-# ** Failure: END OF SIMULATION
-#    Time: 113760 ns  Iteration: 0  Process: /bench_memory_bist/line__77 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__77 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 95
-add wave -position anchor  \
-sim:/bench_memory_bist/bist_S/end_error_flag
-add wave -position anchor  \
-sim:/bench_memory_bist/bist_S/error_vector \
-sim:/bench_memory_bist/bist_S/ref_vector
-restart
-run -all
-# ** Failure: END OF SIMULATION
-#    Time: 113760 ns  Iteration: 0  Process: /bench_memory_bist/line__77 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__77 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 95
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bench_memory_BIST
-# -- Compiling architecture arch of bench_memory_BIST
-restart
-# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP4/work.bench_memory_bist(arch)
-# Loading work.bench_memory_bist(arch)
-run -all
-# ** Failure: END OF SIMULATION
-#    Time: 113750 ns  Iteration: 0  Process: /bench_memory_bist/line__77 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl
-# Break in Process line__77 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST.vhdl line 95
-quit -sim
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/mbist_MARCHC.vhd
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/mbist_MARCHC.vhd
 # Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -348,42 +47,1417 @@ vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/mbist_MAR
 # -- Loading package std_logic_arith
 # -- Compiling entity BIST_MARCHC
 # -- Compiling architecture BEHAV of BIST_MARCHC
-vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST_MARCHC.vhdl
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/memory.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity RAM1024X16
+# -- Compiling architecture MODEL of RAM1024X16
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CODEUR
+# -- Compiling architecture A of CODEUR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(21): (vcom-1152) Index value 11 is out of index range 10 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(22): (vcom-1152) Index value 11 is out of index range 10 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(23): (vcom-1152) Index value 11 is out of index range 10 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(24): (vcom-1152) Index value 11 is out of index range 10 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(25): (vcom-1152) Index value 11 is out of index range 10 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(28): (vcom-1272) Length of expected is 16; length of actual is 15.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(28): (vcom-1152) Index value 11 is out of index range 10 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(30): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/bench_memory_BIST_MARCHC.vhdl
 # Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity bench_memory_BIST_MARCHC
 # -- Compiling architecture arch of bench_memory_BIST_MARCHC
-vsim -novopt work.bench_memory_bist_marchc(arch)
-# vsim -novopt work.bench_memory_bist_marchc(arch) 
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/mbist.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity BIST
+# -- Compiling architecture BEHAV of BIST
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/mbist_MARCHC.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity BIST_MARCHC
+# -- Compiling architecture BEHAV of BIST_MARCHC
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/memory.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity RAM1024X16
+# -- Compiling architecture MODEL of RAM1024X16
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CODEUR
+# -- Compiling architecture A of CODEUR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(21): (vcom-1152) Index value 11 is out of index range 10 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(22): (vcom-1152) Index value 11 is out of index range 10 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(23): (vcom-1152) Index value 11 is out of index range 10 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(24): (vcom-1152) Index value 11 is out of index range 10 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(25): (vcom-1152) Index value 11 is out of index range 10 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(28): (vcom-1272) Length of expected is 16; length of actual is 15.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(28): (vcom-1152) Index value 11 is out of index range 10 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(30): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CODEUR
+# -- Compiling architecture A of CODEUR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(28): (vcom-1272) Length of expected is 16; length of actual is 15.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd(30): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CODEUR
+# -- Compiling architecture A of CODEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CODEUR
+# -- Compiling architecture A of CODEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/bench_memory_BIST_MARCHC.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST_MARCHC
+# -- Compiling architecture arch of bench_memory_BIST_MARCHC
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CODEUR
+# -- Compiling architecture A of CODEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/mbist.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity BIST
+# -- Compiling architecture BEHAV of BIST
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/mbist_MARCHC.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity BIST_MARCHC
+# -- Compiling architecture BEHAV of BIST_MARCHC
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/memory.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity RAM1024X16
+# -- Compiling architecture MODEL of RAM1024X16
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd(38): near "then": syntax error
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd(42): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity DECODEUR
+# -- Compiling architecture A of DECODEUR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(32): (vcom-1136) Unknown identifier "sov".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(32): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(36): (vcom-1136) Unknown identifier "S".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(36): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(38): near "<": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(40): near "then": syntax error
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(50): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(51): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(52): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(53): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(54): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(55): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(56): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(57): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(58): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(59): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(60): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(61): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(62): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(63): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(64): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(65): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(69): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GEN_SYN
+# -- Compiling architecture A of GEN_SYN
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(30): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(32): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(34): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(36): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(38): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(40): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity DECODEUR
+# -- Compiling architecture A of DECODEUR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(32): (vcom-1136) Unknown identifier "sov".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(32): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(36): (vcom-1136) Unknown identifier "S".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(36): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(38): near "<": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(40): near "then": syntax error
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(50): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(51): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(52): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(53): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(54): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(55): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(56): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(57): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(58): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(59): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(60): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(61): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(62): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(63): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(64): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(65): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(69): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GEN_SYN
+# -- Compiling architecture A of GEN_SYN
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(30): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(32): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(34): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(36): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(38): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(40): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity DECODEUR
+# -- Compiling architecture A of DECODEUR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(38): near "<": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(40): near "then": syntax error
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(50): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(51): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(52): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(53): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(54): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(55): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(56): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(57): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(58): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(59): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(60): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(61): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(62): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(63): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(64): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(65): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(69): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GEN_SYN
+# -- Compiling architecture A of GEN_SYN
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(30): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(32): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(34): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(36): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(38): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(40): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity DECODEUR
+# -- Compiling architecture A of DECODEUR
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(50): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(51): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(52): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(53): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(54): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(55): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(56): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(57): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(58): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(59): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(60): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(61): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(62): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(63): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(64): (vcom-1272) Length of expected is 15; length of actual is 14.
+# ** Warning: [14] /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd(65): (vcom-1272) Length of expected is 15; length of actual is 14.
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GEN_SYN
+# -- Compiling architecture A of GEN_SYN
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(30): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(32): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(34): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(36): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(38): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(40): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity DECODEUR
+# -- Compiling architecture A of DECODEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GEN_SYN
+# -- Compiling architecture A of GEN_SYN
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(30): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(32): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(34): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(36): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(38): near "=": expecting <= or :=
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd(40): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/memory.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity RAM1024X16
+# -- Compiling architecture MODEL of RAM1024X16
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/bench_memory_BIST_MARCHC.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST_MARCHC
+# -- Compiling architecture arch of bench_memory_BIST_MARCHC
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CODEUR
+# -- Compiling architecture A of CODEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity DECODEUR
+# -- Compiling architecture A of DECODEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GEN_SYN
+# -- Compiling architecture A of GEN_SYN
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/mbist.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity BIST
+# -- Compiling architecture BEHAV of BIST
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/mbist_MARCHC.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity BIST_MARCHC
+# -- Compiling architecture BEHAV of BIST_MARCHC
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/memory.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity RAM1024X16
+# -- Compiling architecture MODEL of RAM1024X16
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd(45): near "entity": expecting BEGIN
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd(45): near "entity": expecting BEGIN
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd(85): Cannot drive signal 'DATA_IN' of mode IN.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd(93): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+vsim work.top(b)
+# vsim work.top(b) 
+# ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
-# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP4/work.bench_memory_bist_marchc(arch)
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.bench_memory_bist_marchc(arch)
-# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP4/work.bist_marchc(behav)
 # Loading ieee.std_logic_arith(body)
-# Loading work.bist_marchc(behav)
-# Loading work.ram1024x16(model)
+# Loading work.top(b)#1
 add wave -position anchor  \
-sim:/bench_memory_bist_marchc/BIST_ADD_OUT_s \
-sim:/bench_memory_bist_marchc/memory_DOUT_s \
-sim:/bench_memory_bist_marchc/BIST_DOUT_s \
-sim:/bench_memory_bist_marchc/WEN_s \
-sim:/bench_memory_bist_marchc/CSn_s \
-sim:/bench_memory_bist_marchc/TEST_RUN_s \
-sim:/bench_memory_bist_marchc/TEST_FAIL_s \
-sim:/bench_memory_bist_marchc/TEST_SO_s \
-sim:/bench_memory_bist_marchc/CLK_s \
-sim:/bench_memory_bist_marchc/memory_DIN_s \
-sim:/bench_memory_bist_marchc/TRASH_s
-run -all
-# ** Failure: END OF SIMULATION
-#    Time: 123990 ns  Iteration: 0  Process: /bench_memory_bist_marchc/line__77 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST_MARCHC.vhdl
-# Break in Process line__77 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST_MARCHC.vhdl line 95
+sim:/top/DATA_IN \
+sim:/top/DATA_OUT \
+sim:/top/DOUBLE_ERROR \
+sim:/top/DATA_IN_s \
+sim:/top/Codeur_out \
+sim:/top/Syndrome_out \
+sim:/top/Signal_DOUBLE_ERROR \
+sim:/top/Signal_NO_ERROR \
+sim:/top/Signal_BIT_POSITION \
+sim:/top/Memory_out
+# Load canceled
+run
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd(81): (vcom-1226) A wait statement is illegal for a process with a sensitivity list.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd(93): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
 restart
-run -all
+run
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of TOP
+# -- Loading entity TOP
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.top(b)#1
+run
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of TOP
+# -- Loading entity TOP
+run
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.top(b)#1
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 100 ns  Iteration: 0  Instance: /top
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of TOP
+# -- Loading entity TOP
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.top(b)#1
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 10 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test CODEUR
+#    Time: 20 ns  Iteration: 0  Instance: /top
 # ** Failure: END OF SIMULATION
-#    Time: 123990 ns  Iteration: 0  Process: /bench_memory_bist_marchc/line__77 File: /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST_MARCHC.vhdl
-# Break in Process line__77 at /tp/xph3sei/xph3sei201/TP_TEST/TP4/bench_memory_BIST_MARCHC.vhdl line 95
+#    Time: 40 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 98
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of TOP
+# -- Loading entity TOP
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.top(b)#1
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 10 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test CODEUR
+#    Time: 20 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test GEN_SYN
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_DOUBLE_ERROR
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Failure: END OF SIMULATION
+#    Time: 60 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 111
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of TOP
+# -- Loading entity TOP
+# Window cannot be closed because the modal window "File is Out-of-Date" is still open.
+add wave -position anchor  \
+sim:/top/DATA_IN \
+sim:/top/DATA_OUT \
+sim:/top/DOUBLE_ERROR \
+sim:/top/DATA_IN_s \
+sim:/top/DATA_OUT_s \
+sim:/top/Codeur_out \
+sim:/top/Syndrome_out \
+sim:/top/Signal_DOUBLE_ERROR \
+sim:/top/Signal_NO_ERROR \
+sim:/top/Signal_BIT_POSITION \
+sim:/top/Memory_out
+add wave -position anchor  \
+sim:/top/DATA_IN \
+sim:/top/DATA_OUT \
+sim:/top/DOUBLE_ERROR \
+sim:/top/DATA_IN_s \
+sim:/top/DATA_OUT_s \
+sim:/top/Codeur_out \
+sim:/top/Syndrome_out \
+sim:/top/Signal_DOUBLE_ERROR \
+sim:/top/Signal_NO_ERROR \
+sim:/top/Signal_BIT_POSITION \
+sim:/top/Memory_out
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.top(b)#1
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 10 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test CODEUR
+#    Time: 20 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test GEN_SYN
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_DOUBLE_ERROR
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Failure: END OF SIMULATION
+#    Time: 60 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 113
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 70 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test CODEUR
+#    Time: 80 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test GEN_SYN
+#    Time: 120 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_DOUBLE_ERROR
+#    Time: 120 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 120 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 120 ns  Iteration: 0  Instance: /top
+# ** Failure: END OF SIMULATION
+#    Time: 120 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 113
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 130 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test CODEUR
+#    Time: 140 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test GEN_SYN
+#    Time: 180 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_DOUBLE_ERROR
+#    Time: 180 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 180 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 180 ns  Iteration: 0  Instance: /top
+# ** Failure: END OF SIMULATION
+#    Time: 180 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 113
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 190 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test CODEUR
+#    Time: 200 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test GEN_SYN
+#    Time: 240 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_DOUBLE_ERROR
+#    Time: 240 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 240 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 240 ns  Iteration: 0  Instance: /top
+# ** Failure: END OF SIMULATION
+#    Time: 240 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 113
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 250 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test CODEUR
+#    Time: 260 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test GEN_SYN
+#    Time: 300 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_DOUBLE_ERROR
+#    Time: 300 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 300 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 300 ns  Iteration: 0  Instance: /top
+# ** Failure: END OF SIMULATION
+#    Time: 300 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 113
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 310 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test CODEUR
+#    Time: 320 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test GEN_SYN
+#    Time: 360 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_DOUBLE_ERROR
+#    Time: 360 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 360 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 360 ns  Iteration: 0  Instance: /top
+# ** Failure: END OF SIMULATION
+#    Time: 360 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 113
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 370 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test CODEUR
+#    Time: 380 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test GEN_SYN
+#    Time: 420 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_DOUBLE_ERROR
+#    Time: 420 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 420 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 420 ns  Iteration: 0  Instance: /top
+# ** Failure: END OF SIMULATION
+#    Time: 420 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 113
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of TOP
+# -- Loading entity TOP
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd(96): near "0000000000000000": expecting ';'
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd(121): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of TOP
+# -- Loading entity TOP
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.top(b)#1
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 10 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test CODEUR
+#    Time: 20 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test GEN_SYN
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Failure: END OF SIMULATION
+#    Time: 60 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 117
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 70 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test CODEUR
+#    Time: 80 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test GEN_SYN
+#    Time: 120 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 120 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 120 ns  Iteration: 0  Instance: /top
+# ** Failure: END OF SIMULATION
+#    Time: 120 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 117
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of TOP
+# -- Loading entity TOP
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.top(b)#1
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 20 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Failure: END OF SIMULATION
+#    Time: 60 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 117
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of TOP
+# -- Loading entity TOP
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.top(b)#1
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 20 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Failure: END OF SIMULATION
+#    Time: 60 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 117
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.top(b)#1
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.top(b)#1
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of TOP
+# -- Loading entity TOP
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 20 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 60 ns  Iteration: 0  Instance: /top
+# ** Failure: END OF SIMULATION
+#    Time: 60 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 117
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of TOP
+# -- Loading entity TOP
+run
+# ** Note: ERROR Test CODEUR
+#    Time: 80 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 120 ns  Iteration: 0  Instance: /top
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 120 ns  Iteration: 0  Instance: /top
+# ** Failure: END OF SIMULATION
+#    Time: 120 ns  Iteration: 0  Process: /top/line__74 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__74 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 117
+
+
+
+quit -sim
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of TOP
+# ** Error: (vcom-11) Could not find work.top.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd(11): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of TOP
+# ** Error: (vcom-11) Could not find work.top.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd(11): VHDL Compiler exiting
+vdel -all -lib work
+vlib work
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/bench_memory_BIST.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST
+# -- Compiling architecture arch of bench_memory_BIST
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/bench_memory_BIST_MARCHC.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_memory_BIST_MARCHC
+# -- Compiling architecture arch of bench_memory_BIST_MARCHC
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/codeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CODEUR
+# -- Compiling architecture A of CODEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity DECODEUR
+# -- Compiling architecture A of DECODEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GEN_SYN
+# -- Compiling architecture A of GEN_SYN
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/mbist.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity BIST
+# -- Compiling architecture BEHAV of BIST
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/mbist_MARCHC.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity BIST_MARCHC
+# -- Compiling architecture BEHAV of BIST_MARCHC
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/memory.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity RAM1024X16
+# -- Compiling architecture MODEL of RAM1024X16
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of TOP
+# ** Error: (vcom-11) Could not find work.top.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd(11): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of testbench_Hamming
+vsim work.testbench_hamming(b)
+# vsim work.testbench_hamming(b) 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.testbench_hamming(b)#1
+add wave -position anchor  \
+sim:/testbench_hamming/DATA_IN_s \
+sim:/testbench_hamming/DATA_OUT_s \
+sim:/testbench_hamming/Codeur_out \
+sim:/testbench_hamming/Syndrome_out \
+sim:/testbench_hamming/Signal_DOUBLE_ERROR \
+sim:/testbench_hamming/Signal_NO_ERROR \
+sim:/testbench_hamming/Signal_BIT_POSITION \
+sim:/testbench_hamming/Memory_out \
+sim:/testbench_hamming/trash
+run
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Failure: END OF SIMULATION
+#    Time: 10 ns  Iteration: 0  Process: /testbench_hamming/line__76 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__76 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 97
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd(34): (vcom-1167) Index value -5 is out of std.STANDARD.NATURAL range 0 to 2147483647.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd(34): (vcom-1272) Length of expected is 11; length of actual is 16.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd(42): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.testbench_hamming(b)#1
+run
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Failure: END OF SIMULATION
+#    Time: 10 ns  Iteration: 0  Process: /testbench_hamming/line__76 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__76 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 97
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.testbench_hamming(b)#1
+run
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Failure: END OF SIMULATION
+#    Time: 10 ns  Iteration: 0  Process: /testbench_hamming/line__76 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__76 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 97
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.testbench_hamming(b)#1
+run
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Failure: END OF SIMULATION
+#    Time: 10 ns  Iteration: 0  Process: /testbench_hamming/line__76 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__76 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 97
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of testbench_Hamming
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.testbench_hamming(b)#1
+run
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Failure: END OF SIMULATION
+#    Time: 20 ns  Iteration: 0  Process: /testbench_hamming/line__76 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__76 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 100
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.testbench_hamming(b)#1
+run
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Failure: END OF SIMULATION
+#    Time: 20 ns  Iteration: 0  Process: /testbench_hamming/line__76 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__76 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 100
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.testbench_hamming(b)#1
+run
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Failure: END OF SIMULATION
+#    Time: 20 ns  Iteration: 0  Process: /testbench_hamming/line__76 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__76 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 100
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/correcteur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity CORRECTEUR
+# -- Compiling architecture A of CORRECTEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/decodeur.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity DECODEUR
+# -- Compiling architecture A of DECODEUR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/gen_syndrome.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity GEN_SYN
+# -- Compiling architecture A of GEN_SYN
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.testbench_hamming(b)#1
+run
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Failure: END OF SIMULATION
+#    Time: 20 ns  Iteration: 0  Process: /testbench_hamming/line__76 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__76 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 100
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of testbench_Hamming
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.testbench_hamming(b)#1
+run
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Failure: END OF SIMULATION
+#    Time: 20 ns  Iteration: 0  Process: /testbench_hamming/line__76 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__76 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 108
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of testbench_Hamming
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd(118): Signal "Syndrome_out" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd(118): near "!": expecting ';'
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd(131): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of testbench_Hamming
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.testbench_hamming(b)#1
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.testbench_hamming(b)#1
+run
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 30 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 30 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 40 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 40 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Failure: END OF SIMULATION
+#    Time: 40 ns  Iteration: 0  Process: /testbench_hamming/line__76 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__76 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 126
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity testbench_Hamming
+# -- Compiling architecture B of testbench_Hamming
+run
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 50 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 60 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 70 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 70 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 80 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 80 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Failure: END OF SIMULATION
+#    Time: 80 ns  Iteration: 0  Process: /testbench_hamming/line__76 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__76 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 126
+run
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 90 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 100 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 110 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 110 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 120 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test DATA_OUT_s
+#    Time: 120 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Failure: END OF SIMULATION
+#    Time: 120 ns  Iteration: 0  Process: /testbench_hamming/line__76 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__76 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 126
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.testbench_hamming(b)#1
+run
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 10 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Note: ERROR Test Signal_NO_ERROR
+#    Time: 30 ns  Iteration: 0  Instance: /testbench_hamming
+# ** Failure: END OF SIMULATION
+#    Time: 30 ns  Iteration: 0  Process: /testbench_hamming/line__76 File: /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd
+# Break in Process line__76 at /tp/xph3sei/xph3sei201/TP_TEST/TP5/top.vhd line 113

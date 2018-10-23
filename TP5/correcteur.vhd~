@@ -31,7 +31,14 @@ begin
 
 	DATA_s <= (CORRECTEUR_IN & '0') xor DATA_IN; -- corrected data
 
-	DATA_OUT <= DATA_s(15 downto 9) & DATA_s(7 downto 5) & DATA_s(3);
+	GEN_OUT : process (CORRECTEUR_IN, DATA_IN, NO_ERROR, DOUBLE_ERROR)
+	begin
+		if DOUBLE_ERROR = '0' and NO_ERROR = '0' then -- case simple error
+			DATA_OUT <= DATA_s(15 downto 9) & DATA_s(7 downto 5) & DATA_s(3);
+		else 
+			DATA_OUT <= DATA_IN(15 downto 9) & DATA_IN(7 downto 5) & DATA_IN(3);
+		end if;
+	end process;
 
 	
 end A;

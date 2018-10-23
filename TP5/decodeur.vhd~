@@ -36,11 +36,11 @@ begin
 		elsif DECODEUR_IN(4 downto 1) = "0000" then -- sov = 0 and no error
 			DOUBLE_ERROR <= '0';
 			NO_ERROR <= '0';
-			BIT_POSITION <= "000000000000000";
+			BIT_POSITION <= "ZZZZZZZZZZZZZZZ";
 		else -- no correction
 			DOUBLE_ERROR <= '1';
 			NO_ERROR <= '1';
-			BIT_POSITION <= "000000000000000";
+			BIT_POSITION <= "ZZZZZZZZZZZZZZZ";
 		end if;
 	end process;
 

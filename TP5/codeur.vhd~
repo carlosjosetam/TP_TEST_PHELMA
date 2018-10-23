@@ -6,32 +6,25 @@ use IEEE.STD_LOGIC_ARITH.all;
 
 entity CODEUR is 
 	port(
-		ADD		:	in 	std_logic_vector(9 downto 0);			-- Address Bus
-		DIN		: in 	std_logic_vector(15 downto 0);		-- Data In
-		DOUT	: out	std_logic_vector(15 downto 0);		-- Data Out
-		CSn		:	in	std_logic;												-- Chip Select
-		WEn		: in	std_logic;												-- Write Enable
-		CLK		: in	std_logic													-- Clock
+		DIN		: in 	std_logic_vector(11 downto 1);		-- Data In
+		DOUT		: out	std_logic_vector(15 downto 0)		-- Data Out
+		
 	);
 end CODEUR;
 
-architecture MODEL of RAM1024X16 is
+architecture A of CODEUR is
 
-type data_type is	array(1023 downto 0) of std_logic_vector(15 downto 0);
-signal DATA : data_type;
-
+signal P : std_logic_vector(5 downto 1);
+ 
 begin
-	
-	WRITE_PROC: process(CLK)
-	begin
-		if (CLK'event and CLK = '1') then
-			if (CSn = '0' and WEn = '0') then
-				DATA(CONV_INTEGER(UNSIGNED(ADD))) <= DIN;
-			end if;
-		end if;
-	end process WRITE_PROC;
+		
+			P(1) <= DIN(1)xor DIN(2)xor DIN(4)xor DIN(5)xor DIN(7)xor DIN(9) xor DIN(11);
+			P(2) <= DIN(1)xor DIN(3)xor DIN(4)xor DIN(6)xor DIN(7)xor DIN(10) xor DIN(11);
+			P(3) <= DIN(2)xor DIN(3)xor DIN(4)xor DIN(8)xor DIN(9)xor DIN(10) xor DIN(11);
+			P(4) <= DIN(9)xor DIN(6)xor DIN(7)xor DIN(8)xor DIN(9)xor DIN(10) xor DIN(11);
+			P(5) <= P(1)xor P(2) xor DIN(1) xor P(3) xor DIN(2) xor DIN(3) xor DIN(4) xor  P(4) xor DIN(5) xor DIN(6)xor DIN(7)xor DIN(8) xor DIN(9) xor DIN(10) xor DIN(11);
 
 
-DOUT <= DATA(CONV_INTEGER(UNSIGNED(ADD))) when CSn = '0' else (others => 'Z');
+DOUT <= DIN(11) & DIN(10)& DIN(9) & DIN(8) & DIN(7) & DIN(6) & DIN(5) & P(4) &  DIN(4) & DIN(3) & DIN(2)& P(3)& DIN(1) & P(2) & P(1) & P(5);
 
-end MODEL;
+end A;
