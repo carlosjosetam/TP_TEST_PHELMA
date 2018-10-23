@@ -1,0 +1,42 @@
+-- Correcteur pour code hamming
+-- 11 bits of data
+-- 4 bits of parity
+-- 1 bit for double error check
+-- m = [pov p1 p2 d3 p4 d5 d6 d7 p8 d9 d10 d11 d12 d13 d14 d15]
+-- S = S = v. T(H) et sov= v0+v1+v2+v3+...+v15
+-- Si sov=0   (s4 s3 s2 s1)= 0 alors pas d’erreurs
+-- 						(s4 s3 s2 s1) différent de 0 alors erreur double (pas de correction)
+-- Si sov=1   erreur simple correction avec la valeur de (s4 s3 s2 s1)
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_ARITH.all;
+
+entity CORRECTEUR is
+	port(
+		CORRECTEUR_IN		:	in 	std_logic_vector(14 downto 0);
+		DATA_IN					:	in 	std_logic_vector(15 downto 0);
+		DATA_OUT				: out	std_logic_vector(10 downto 0);
+		NO_ERROR				: in std_logic;
+		DOUBLE_ERROR		: in std_logic
+		);
+end CORRECTEUR;
+
+architecture A of CORRECTEUR is
+
+signal DATA_s : std_logic_vector(15 downto 0);
+
+begin
+
+	DATA_s <= (CORRECTEUR_IN & '0') xor DATA_IN; -- corrected data
+
+	GEN_OUT : process (CORRECTEUR_IN, DATA_IN, NO_ERROR, DOUBLE_ERROR)
+	begin
+		if DOUBLE_ERROR = '0' and NO_ERROR = '0' then -- case simple error
+			DATA_OUT <= DATA_s(15 downto 9) & DATA_s(7 downto 5) & DATA_s(3);
+		else then
+			DATA_OUT <= DATA_IN(15 downto 9) & DATA_IN(7 downto 5) & DATA_IN(3);
+		end if;
+	end process;
+end A;
