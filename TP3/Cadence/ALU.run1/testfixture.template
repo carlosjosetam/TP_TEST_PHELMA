@@ -1,0 +1,37 @@
+
+`timescale 1ns / 1ps
+
+module test;
+
+
+
+
+wire [7:0]  S;
+
+reg [2:0]  CMD;
+reg [7:0]  B;
+reg [7:0]  A;
+
+
+
+ALU top(A, B, CMD, S); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the testfixture.verilog file
+  `include "testfixture.verilog"
+`endif
+
+`ifdef veritime
+
+ // please enter any veritime stimulus in the testfixture.veritime file
+  `include "testfixture.veritime"
+`endif
+
+`ifdef verifault
+ // please enter any verifault stimulus in the testfixture.verifault file
+  `include "testfixture.verifault"
+`endif
+
+endmodule 

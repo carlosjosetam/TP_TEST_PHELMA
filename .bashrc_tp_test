@@ -1,0 +1,46 @@
+
+#
+#################### Settings for Synopsys 2013.06-sp4#########################
+#
+export SYNOPSYS=/softslin/synthesisvH2013_06_sp4_64b
+#export SYNOPSYS_TMAX=/softslin/tetramaxvH2013_03_sp5_64b
+export SYNOPSYS_TMAX=/softslin/tetramaxvM2016_12
+export SYNOPSYS_IDQ=/softslin/idqvH2013_03_sp5_64b
+export SNPSLMD_LICENSE_FILE="1721@cimekey1"
+export PATH="${PATH}:/usr/bin/X11:$SYNOPSYS/suse64/syn/bin:${SYNOPSYS_TMAX}/bin:${SYNOPSYS_IDQ}/amd64/iddq/bin"
+export MANPATH=${MANPATH}:$SYNOPSYS/doc/snps_gui/man:$SYNOPSYS/doc/snps_tcl/man:$SYNOPSYS/doc/syn/man
+#
+###################### END: Settings for Synopsys 2013.06-sp4##################
+#
+#
+# MENTOR GRAPHICS ModelSim version 10.2c 
+#
+
+export MTI_HOME=/softslin/modelsim10_2c/modeltech
+export PATH="$PATH:$MTI_HOME/`$MTI_HOME/vco`"
+
+
+if [ -n "${LM_LICENSE_FILE}" ] ; then
+    export LM_LICENSE_FILE="${LM_LICENSE_FILE}:1718@cimekey1"
+else
+    export LM_LICENSE_FILE="1718@cimekey1"
+fi
+
+# export MODELSIM="${HOME}/synthesis_linux_64b/modelsim.ini"
+
+#
+# MENTOR GRAPHICS Leonardo 2014a session
+#
+
+export EXEMPLAR=/softslin/leonardo2014a
+
+export PATH="${PATH}:${EXEMPLAR}/bin"
+
+#
+# MENTOR GRAPHICS Precision Synthesis 2014a_64b session in 64-bit mode
+#
+
+export PRECISION_HOME=/softslin/precision2014a_64b/Mgc_home
+
+export PATH="${PATH}:${PRECISION_HOME}/bin"
+

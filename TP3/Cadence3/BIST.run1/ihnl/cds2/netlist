@@ -1,0 +1,35 @@
+// Library - bist, Cell - comparateur, View - schematic
+// LAST TIME SAVED: Nov 11 16:09:06 2004
+// NETLIST TIME: Jan  7 13:03:56 2010
+`timescale 1ns / 1ps 
+
+module comparateur ( OUT, J, K );
+output  OUT;
+
+
+input [7:0]  K;
+input [7:0]  J;
+
+
+specify 
+    specparam CDS_LIBNAME  = "bist";
+    specparam CDS_CELLNAME = "comparateur";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+INV0  I33 ( .Q(net50), .A(net67));
+INV0  I34 ( .Q(OUT), .A(net58));
+INV0  I35 ( .Q(net54), .A(net62));
+NOR20  I32 ( .A(net50), .B(net54), .Q(net58));
+NOR42  I31 ( .A(net81), .B(net84), .C(net87), .Q(net62), .D(net90));
+NOR42  I30 ( .A(net69), .B(net72), .C(net75), .Q(net67), .D(net78));
+XOR20  I15 ( .Q(net69), .A(K[7]), .B(J[7]));
+XOR20  I16 ( .Q(net72), .A(K[6]), .B(J[6]));
+XOR20  I17 ( .Q(net75), .A(K[5]), .B(J[5]));
+XOR20  I18 ( .Q(net78), .A(K[4]), .B(J[4]));
+XOR20  I19 ( .Q(net81), .A(K[3]), .B(J[3]));
+XOR20  I20 ( .Q(net84), .A(K[2]), .B(J[2]));
+XOR20  I21 ( .Q(net87), .A(K[1]), .B(J[1]));
+XOR20  I22 ( .Q(net90), .A(K[0]), .B(J[0]));
+
+endmodule

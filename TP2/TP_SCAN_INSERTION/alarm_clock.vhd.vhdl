@@ -1,0 +1,1598 @@
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+package CONV_PACK_CORE is
+
+-- define attributes
+attribute ENUM_ENCODING : STRING;
+
+-- define any necessary types
+type UNSIGNED is array (INTEGER range <>) of std_logic;
+
+end CONV_PACK_CORE;
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+use work.CONV_PACK_CORE.all;
+
+entity ALARM_COUNTER_test_1 is
+
+   port( HOURS, MINS, CLK, RESETN : in std_logic;  HRS_OUT : out 
+         std_logic_vector (3 downto 0);  MINUTES_OUT : out std_logic_vector (5 
+         downto 0);  AM_PM_OUT : out std_logic;  test_se, test_si1 : in 
+         std_logic;  test_so1 : out std_logic);
+
+end ALARM_COUNTER_test_1;
+
+architecture SYN_RTL of ALARM_COUNTER_test_1 is
+
+   component XOR20
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND20
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component INV3
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND22
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component XNR21
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component AOI221
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR40
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND31
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND41
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR21
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component DFSEC1
+      port( D, SD, E, SE, C, RN : in std_logic;  Q, QN : out std_logic);
+   end component;
+   
+   component DFSC1
+      port( D, SD, SE, C, RN : in std_logic;  Q, QN : out std_logic);
+   end component;
+   
+   component DFSP1
+      port( D, SD, SE, C, SN : in std_logic;  Q, QN : out std_logic);
+   end component;
+   
+   component ADD22
+      port( A, B : in std_logic;  CO, S : out std_logic);
+   end component;
+   
+   component TFSEC3
+      port( T, SD, SE, C, RN : in std_logic;  Q, QN : out std_logic);
+   end component;
+   
+   component OAI222
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component OAI212
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   signal HRS_OUT_3_port, HRS_OUT_2_port, HRS_OUT_1_port, HRS_OUT_0_port, 
+      MINUTES_OUT_5_port, MINUTES_OUT_4_port, MINUTES_OUT_3_port, 
+      MINUTES_OUT_2_port, MINUTES_OUT_1_port, MINUTES_OUT_0_port, N15, N16, N17
+      , N20, N21, N22, N23, N24, N37, N38, N39, n16_port, n17_port, n18, n19, 
+      n28, n31, n32, n33, n34, n35, n36, n37_port, n38_port, n39_port, n40, n41
+      , n42, n43, n44, n45, n46, n47, n48, n49, n50, n51, n52, N79, N77, N76, 
+      N74, U6_carry_2_port, U6_carry_3_port, U6_carry_4_port, U6_carry_5_port, 
+      n1, n2, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15_port, 
+      n20_port, n21_port, n22_port, n23_port, n24_port, n25, n26, n27, n3, n29,
+      n30, n53 : std_logic;
+
+begin
+   HRS_OUT <= ( HRS_OUT_3_port, HRS_OUT_2_port, HRS_OUT_1_port, HRS_OUT_0_port 
+      );
+   MINUTES_OUT <= ( MINUTES_OUT_5_port, MINUTES_OUT_4_port, MINUTES_OUT_3_port,
+      MINUTES_OUT_2_port, MINUTES_OUT_1_port, MINUTES_OUT_0_port );
+   
+   U17 : OAI212 port map( A => n32, B => n19, C => n34, Q => n49);
+   U19 : OAI212 port map( A => n32, B => n18, C => n37_port, Q => n50);
+   U21 : OAI212 port map( A => n17_port, B => n32, C => n38_port, Q => n51);
+   U23 : OAI212 port map( A => n16_port, B => n32, C => n39_port, Q => n52);
+   U27 : OAI222 port map( A => n40, B => n41, C => MINS, D => n23_port, Q => 
+                           n32);
+   AM_PM_OUT_reg : TFSEC3 port map( T => n15_port, SD => test_si1, SE => 
+                           test_se, C => CLK, RN => RESETN, Q => AM_PM_OUT, QN 
+                           => n53);
+   U6_U1_1_1 : ADD22 port map( A => MINUTES_OUT_1_port, B => MINUTES_OUT_0_port
+                           , CO => U6_carry_2_port, S => N20);
+   U6_U1_1_2 : ADD22 port map( A => MINUTES_OUT_2_port, B => U6_carry_2_port, 
+                           CO => U6_carry_3_port, S => N21);
+   U6_U1_1_3 : ADD22 port map( A => MINUTES_OUT_3_port, B => U6_carry_3_port, 
+                           CO => U6_carry_4_port, S => N22);
+   U6_U1_1_4 : ADD22 port map( A => MINUTES_OUT_4_port, B => U6_carry_4_port, 
+                           CO => U6_carry_5_port, S => N23);
+   MINUTES_OUT_reg_2_inst : DFSEC1 port map( D => n12, SD => n30, E => n22_port
+                           , SE => test_se, C => CLK, RN => RESETN, Q => 
+                           MINUTES_OUT_2_port, QN => n28);
+   MINUTES_OUT_reg_3_inst : DFSEC1 port map( D => n11, SD => MINUTES_OUT_2_port
+                           , E => n22_port, SE => test_se, C => CLK, RN => 
+                           RESETN, Q => MINUTES_OUT_3_port, QN => n29);
+   MINUTES_OUT_reg_4_inst : DFSEC1 port map( D => n10, SD => n29, E => n22_port
+                           , SE => test_se, C => CLK, RN => RESETN, Q => 
+                           MINUTES_OUT_4_port, QN => n3);
+   HRS_OUT_reg_3_inst : DFSP1 port map( D => n52, SD => HRS_OUT_2_port, SE => 
+                           test_se, C => CLK, SN => RESETN, Q => HRS_OUT_3_port
+                           , QN => n16_port);
+   HRS_OUT_reg_2_inst : DFSP1 port map( D => n51, SD => n18, SE => test_se, C 
+                           => CLK, SN => RESETN, Q => HRS_OUT_2_port, QN => 
+                           n17_port);
+   MINUTES_OUT_reg_5_inst : DFSEC1 port map( D => n9, SD => n3, E => n22_port, 
+                           SE => test_se, C => CLK, RN => RESETN, Q => 
+                           MINUTES_OUT_5_port, QN => test_so1);
+   MINUTES_OUT_reg_1_inst : DFSEC1 port map( D => n13, SD => n1, E => n22_port,
+                           SE => test_se, C => CLK, RN => RESETN, Q => 
+                           MINUTES_OUT_1_port, QN => n30);
+   HRS_OUT_reg_0_inst : DFSC1 port map( D => n49, SD => n53, SE => test_se, C 
+                           => CLK, RN => RESETN, Q => HRS_OUT_0_port, QN => n19
+                           );
+   HRS_OUT_reg_1_inst : DFSC1 port map( D => n50, SD => n19, SE => test_se, C 
+                           => CLK, RN => RESETN, Q => HRS_OUT_1_port, QN => n18
+                           );
+   MINUTES_OUT_reg_0_inst : DFSEC1 port map( D => n8, SD => HRS_OUT_3_port, E 
+                           => n22_port, SE => test_se, C => CLK, RN => RESETN, 
+                           Q => MINUTES_OUT_0_port, QN => n1);
+   U3 : NOR21 port map( A => n14, B => n22_port, Q => n36);
+   U4 : NOR21 port map( A => n40, B => n14, Q => n35);
+   U5 : NAND22 port map( A => N79, B => N74, Q => n27);
+   U6 : NAND22 port map( A => N79, B => N74, Q => n25);
+   U7 : INV3 port map( A => n32, Q => n14);
+   U8 : INV3 port map( A => n33, Q => n6);
+   U9 : NAND22 port map( A => N76, B => n21_port, Q => n26);
+   U10 : NAND22 port map( A => N76, B => n21_port, Q => n24_port);
+   U11 : INV3 port map( A => n25, Q => n21_port);
+   U12 : INV3 port map( A => n43, Q => n10);
+   U13 : NAND22 port map( A => n41, B => N23, Q => n43);
+   U14 : INV3 port map( A => n45, Q => n12);
+   U15 : NAND22 port map( A => n41, B => N21, Q => n45);
+   U16 : INV3 port map( A => n46, Q => n13);
+   U18 : NAND22 port map( A => n41, B => N20, Q => n46);
+   U20 : INV3 port map( A => n44, Q => n11);
+   U22 : NAND22 port map( A => n41, B => N22, Q => n44);
+   U24 : INV3 port map( A => n31, Q => n15_port);
+   U25 : NAND22 port map( A => n32, B => n33, Q => n31);
+   U26 : INV3 port map( A => n40, Q => n22_port);
+   U28 : NAND41 port map( A => MINUTES_OUT_4_port, B => MINUTES_OUT_3_port, C 
+                           => MINUTES_OUT_5_port, D => n20_port, Q => n41);
+   U29 : INV3 port map( A => n48, Q => n20_port);
+   U30 : NAND31 port map( A => MINUTES_OUT_1_port, B => n28, C => 
+                           MINUTES_OUT_0_port, Q => n48);
+   U31 : NOR40 port map( A => n16_port, B => n17_port, C => HRS_OUT_0_port, D 
+                           => HRS_OUT_1_port, Q => n33);
+   U32 : AOI221 port map( A => N15, B => n35, C => N37, D => n36, Q => n37_port
+                           );
+   U33 : XNR21 port map( A => n5, B => N79, Q => N37);
+   U34 : XNR21 port map( A => n5, B => N79, Q => N15);
+   U35 : AOI221 port map( A => n5, B => n35, C => n5, D => n36, Q => n34);
+   U36 : AOI221 port map( A => N17, B => n35, C => N39, D => n36, Q => n39_port
+                           );
+   U37 : XNR21 port map( A => n24_port, B => N77, Q => N39);
+   U38 : XNR21 port map( A => n26, B => N77, Q => N17);
+   U39 : AOI221 port map( A => N16, B => n35, C => N38, D => n36, Q => n38_port
+                           );
+   U40 : XNR21 port map( A => n25, B => N76, Q => N38);
+   U41 : XNR21 port map( A => n27, B => N76, Q => N16);
+   U42 : INV3 port map( A => n5, Q => N74);
+   U43 : INV3 port map( A => n7, Q => N79);
+   U44 : INV3 port map( A => n42, Q => n9);
+   U45 : NAND22 port map( A => n41, B => N24, Q => n42);
+   U46 : INV3 port map( A => n2, Q => N77);
+   U47 : NAND22 port map( A => MINS, B => n23_port, Q => n40);
+   U48 : INV3 port map( A => n4, Q => N76);
+   U49 : INV3 port map( A => n47, Q => n8);
+   U50 : NAND22 port map( A => n41, B => n1, Q => n47);
+   U51 : INV3 port map( A => HOURS, Q => n23_port);
+   U53 : NAND20 port map( A => HRS_OUT_0_port, B => n6, Q => n5);
+   U54 : NAND20 port map( A => HRS_OUT_2_port, B => n6, Q => n4);
+   U55 : NAND20 port map( A => n6, B => HRS_OUT_3_port, Q => n2);
+   U56 : NAND20 port map( A => HRS_OUT_1_port, B => n6, Q => n7);
+   U57 : XOR20 port map( A => U6_carry_5_port, B => MINUTES_OUT_5_port, Q => 
+                           N24);
+
+end SYN_RTL;
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+use work.CONV_PACK_CORE.all;
+
+entity ALARM_STATE_MACHINE_test_1 is
+
+   port( ALARM_BUTTON, HOURS_BUTTON, MINUTES_BUTTON, CLK, RESETN : in std_logic
+         ;  HOURS, MINS : out std_logic;  test_se, test_si1 : in std_logic;  
+         test_so1 : out std_logic);
+
+end ALARM_STATE_MACHINE_test_1;
+
+architecture SYN_RTL of ALARM_STATE_MACHINE_test_1 is
+
+   component INV3
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR21
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR40
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component DFSC1
+      port( D, SD, SE, C, RN : in std_logic;  Q, QN : out std_logic);
+   end component;
+   
+   signal NEXT_STATE_1_port, NEXT_STATE_0_port, CURRENT_STATE_1_port, 
+      CURRENT_STATE_0_port, NEXT_HOURS, NEXT_MINS, n2, n3, n4, n5, n6, n1, n7, 
+      n8 : std_logic;
+
+begin
+   
+   CURRENT_STATE_reg_0_inst : DFSC1 port map( D => NEXT_STATE_0_port, SD => 
+                           test_si1, SE => test_se, C => CLK, RN => RESETN, Q 
+                           => CURRENT_STATE_0_port, QN => n8);
+   CURRENT_STATE_reg_1_inst : DFSC1 port map( D => NEXT_STATE_1_port, SD => n8,
+                           SE => test_se, C => CLK, RN => RESETN, Q => 
+                           CURRENT_STATE_1_port, QN => n7);
+   HOURS_reg : DFSC1 port map( D => NEXT_HOURS, SD => n7, SE => test_se, C => 
+                           CLK, RN => RESETN, Q => HOURS, QN => n1);
+   MINS_reg : DFSC1 port map( D => NEXT_MINS, SD => n1, SE => test_se, C => CLK
+                           , RN => RESETN, Q => MINS, QN => test_so1);
+   U3 : NOR40 port map( A => n4, B => n6, C => CURRENT_STATE_0_port, D => 
+                           HOURS_BUTTON, Q => NEXT_STATE_1_port);
+   U4 : INV3 port map( A => MINUTES_BUTTON, Q => n6);
+   U5 : NOR40 port map( A => n5, B => n4, C => CURRENT_STATE_1_port, D => 
+                           MINUTES_BUTTON, Q => NEXT_STATE_0_port);
+   U6 : INV3 port map( A => HOURS_BUTTON, Q => n5);
+   U7 : NOR21 port map( A => CURRENT_STATE_0_port, B => n3, Q => NEXT_HOURS);
+   U8 : INV3 port map( A => NEXT_STATE_0_port, Q => n3);
+   U9 : NOR21 port map( A => CURRENT_STATE_1_port, B => n2, Q => NEXT_MINS);
+   U10 : INV3 port map( A => NEXT_STATE_1_port, Q => n2);
+   U11 : INV3 port map( A => ALARM_BUTTON, Q => n4);
+
+end SYN_RTL;
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+use work.CONV_PACK_CORE.all;
+
+entity TIME_COUNTER_test_1 is
+
+   port( HOURS, MINS, SECS, CLK, RESETN : in std_logic;  HOURS_OUT : out 
+         std_logic_vector (3 downto 0);  MINUTES_OUT : out std_logic_vector (5 
+         downto 0);  AM_PM_OUT, test_so : out std_logic;  test_se, test_si1 : 
+         in std_logic;  test_so1 : out std_logic);
+
+end TIME_COUNTER_test_1;
+
+architecture SYN_RTL of TIME_COUNTER_test_1 is
+
+   component XOR20
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND20
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR21
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND22
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND31
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR31
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND41
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component INV3
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component XNR21
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component AOI211
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component AOI221
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component XOR21
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component DFSP1
+      port( D, SD, SE, C, SN : in std_logic;  Q, QN : out std_logic);
+   end component;
+   
+   component DFSC1
+      port( D, SD, SE, C, RN : in std_logic;  Q, QN : out std_logic);
+   end component;
+   
+   component DFSEC1
+      port( D, SD, E, SE, C, RN : in std_logic;  Q, QN : out std_logic);
+   end component;
+   
+   component ADD22
+      port( A, B : in std_logic;  CO, S : out std_logic);
+   end component;
+   
+   component OAI212
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   signal HOURS_OUT_3_port, HOURS_OUT_2_port, HOURS_OUT_1_port, 
+      HOURS_OUT_0_port, MINUTES_OUT_5_port, MINUTES_OUT_4_port, 
+      MINUTES_OUT_3_port, MINUTES_OUT_2_port, MINUTES_OUT_1_port, 
+      MINUTES_OUT_0_port, AM_PM_OUT_port, CURRENT_SECS_5_port, 
+      CURRENT_SECS_4_port, CURRENT_SECS_3_port, CURRENT_SECS_2_port, 
+      CURRENT_SECS_1_port, CURRENT_SECS_0_port, N23, N24, N25, N28, N29, N30, 
+      N31, N32, N45, N46, N47, N48, N49, N63, N64, N65, N90, N91, N92, N137, 
+      n22, n26, n27, n28_port, n29_port, n30_port, n31_port, n32_port, n33, n34
+      , test_so_port, n37, n38, n39, n40, n41, n45_port, n47_port, n48_port, 
+      n49_port, n50, n51, n52, n53, n54, n55, n56, n57, n58, n59, n60, n61, n62
+      , n63_port, n64_port, n65_port, n66, n67, n68, n69, n70, n71, n72, n73, 
+      n74, n75, n76, n77, n78, n79, n80, n81, n82, n83, n84, n85, n86, n87, n88
+      , n89, n90_port, n91_port, n92_port, n93, n94, n95, n96, n97, n98, n99, 
+      n100, n101, n102, n103, N179, N173, N172, N170, U10_carry_2_port, 
+      U10_carry_3_port, U10_carry_4_port, U10_carry_5_port, r84_carry_2_port, 
+      r84_carry_3_port, r84_carry_4_port, r84_carry_5_port, n1, n2, n3, n4, n6,
+      n7, n8, n9, n10, n11, n12, n13, n14, n15, n16, n17, n18, n19, n20, n21, 
+      n5 : std_logic;
+
+begin
+   HOURS_OUT <= ( HOURS_OUT_3_port, HOURS_OUT_2_port, HOURS_OUT_1_port, 
+      HOURS_OUT_0_port );
+   MINUTES_OUT <= ( MINUTES_OUT_5_port, MINUTES_OUT_4_port, MINUTES_OUT_3_port,
+      MINUTES_OUT_2_port, MINUTES_OUT_1_port, MINUTES_OUT_0_port );
+   AM_PM_OUT <= AM_PM_OUT_port;
+   test_so <= test_so_port;
+   test_so1 <= test_so_port;
+   
+   U24 : OAI212 port map( A => n49_port, B => n31_port, C => n50, Q => n88);
+   U28 : OAI212 port map( A => n49_port, B => n32_port, C => n57, Q => n89);
+   U32 : OAI212 port map( A => n49_port, B => n33, C => n60, Q => n90_port);
+   U36 : OAI212 port map( A => n49_port, B => n34, C => n63_port, Q => n91_port
+                           );
+   U46 : OAI212 port map( A => n69, B => test_so_port, C => n70, Q => n92_port)
+                           ;
+   U48 : OAI212 port map( A => n69, B => n37, C => n72, Q => n93);
+   U50 : OAI212 port map( A => n69, B => n38, C => n73, Q => n94);
+   U52 : OAI212 port map( A => n69, B => n39, C => n74, Q => n95);
+   U54 : OAI212 port map( A => n69, B => n40, C => n75, Q => n96);
+   U56 : OAI212 port map( A => n69, B => n41, C => n76, Q => n97);
+   U61 : OAI212 port map( A => n78, B => n66, C => n56, Q => n69);
+   U62 : OAI212 port map( A => n22, B => n79, C => n80, Q => n98);
+   U64 : OAI212 port map( A => n26, B => n79, C => n82, Q => n99);
+   U66 : OAI212 port map( A => n27, B => n79, C => n83, Q => n100);
+   U68 : OAI212 port map( A => n79, B => n28_port, C => n84, Q => n101);
+   U70 : OAI212 port map( A => n29_port, B => n79, C => n85, Q => n102);
+   U72 : OAI212 port map( A => n30_port, B => n79, C => n86, Q => n103);
+   U10_U1_1_1 : ADD22 port map( A => CURRENT_SECS_1_port, B => 
+                           CURRENT_SECS_0_port, CO => U10_carry_2_port, S => 
+                           N45);
+   U10_U1_1_2 : ADD22 port map( A => CURRENT_SECS_2_port, B => U10_carry_2_port
+                           , CO => U10_carry_3_port, S => N46);
+   U10_U1_1_3 : ADD22 port map( A => CURRENT_SECS_3_port, B => U10_carry_3_port
+                           , CO => U10_carry_4_port, S => N47);
+   U10_U1_1_4 : ADD22 port map( A => CURRENT_SECS_4_port, B => U10_carry_4_port
+                           , CO => U10_carry_5_port, S => N48);
+   r84_U1_1_1 : ADD22 port map( A => MINUTES_OUT_1_port, B => 
+                           MINUTES_OUT_0_port, CO => r84_carry_2_port, S => N28
+                           );
+   r84_U1_1_2 : ADD22 port map( A => MINUTES_OUT_2_port, B => r84_carry_2_port,
+                           CO => r84_carry_3_port, S => N29);
+   r84_U1_1_3 : ADD22 port map( A => MINUTES_OUT_3_port, B => r84_carry_3_port,
+                           CO => r84_carry_4_port, S => N30);
+   r84_U1_1_4 : ADD22 port map( A => MINUTES_OUT_4_port, B => r84_carry_4_port,
+                           CO => r84_carry_5_port, S => N31);
+   AM_PM_OUT_reg : DFSEC1 port map( D => n1, SD => test_si1, E => n45_port, SE 
+                           => test_se, C => CLK, RN => RESETN, Q => 
+                           AM_PM_OUT_port, QN => n5);
+   CURRENT_SECS_reg_5_inst : DFSC1 port map( D => n98, SD => n26, SE => test_se
+                           , C => CLK, RN => RESETN, Q => CURRENT_SECS_5_port, 
+                           QN => n22);
+   CURRENT_SECS_reg_3_inst : DFSC1 port map( D => n100, SD => n28_port, SE => 
+                           test_se, C => CLK, RN => RESETN, Q => 
+                           CURRENT_SECS_3_port, QN => n27);
+   CURRENT_SECS_reg_2_inst : DFSC1 port map( D => n101, SD => 
+                           CURRENT_SECS_1_port, SE => test_se, C => CLK, RN => 
+                           RESETN, Q => CURRENT_SECS_2_port, QN => n28_port);
+   CURRENT_SECS_reg_4_inst : DFSC1 port map( D => n99, SD => n27, SE => test_se
+                           , C => CLK, RN => RESETN, Q => CURRENT_SECS_4_port, 
+                           QN => n26);
+   MINUTES_OUT_reg_3_inst : DFSC1 port map( D => n94, SD => n39, SE => test_se,
+                           C => CLK, RN => RESETN, Q => MINUTES_OUT_3_port, QN 
+                           => n38);
+   MINUTES_OUT_reg_2_inst : DFSC1 port map( D => n95, SD => MINUTES_OUT_1_port,
+                           SE => test_se, C => CLK, RN => RESETN, Q => 
+                           MINUTES_OUT_2_port, QN => n39);
+   MINUTES_OUT_reg_4_inst : DFSC1 port map( D => n93, SD => n38, SE => test_se,
+                           C => CLK, RN => RESETN, Q => MINUTES_OUT_4_port, QN 
+                           => n37);
+   CURRENT_SECS_reg_1_inst : DFSC1 port map( D => n102, SD => 
+                           CURRENT_SECS_0_port, SE => test_se, C => CLK, RN => 
+                           RESETN, Q => CURRENT_SECS_1_port, QN => n29_port);
+   HOURS_OUT_reg_1_inst : DFSC1 port map( D => n90_port, SD => HOURS_OUT_0_port
+                           , SE => test_se, C => CLK, RN => RESETN, Q => 
+                           HOURS_OUT_1_port, QN => n33);
+   HOURS_OUT_reg_0_inst : DFSC1 port map( D => n91_port, SD => n22, SE => 
+                           test_se, C => CLK, RN => RESETN, Q => 
+                           HOURS_OUT_0_port, QN => n34);
+   CURRENT_SECS_reg_0_inst : DFSC1 port map( D => n103, SD => n5, SE => test_se
+                           , C => CLK, RN => RESETN, Q => CURRENT_SECS_0_port, 
+                           QN => n30_port);
+   MINUTES_OUT_reg_1_inst : DFSC1 port map( D => n96, SD => n41, SE => test_se,
+                           C => CLK, RN => RESETN, Q => MINUTES_OUT_1_port, QN 
+                           => n40);
+   MINUTES_OUT_reg_5_inst : DFSC1 port map( D => n92_port, SD => n37, SE => 
+                           test_se, C => CLK, RN => RESETN, Q => 
+                           MINUTES_OUT_5_port, QN => test_so_port);
+   MINUTES_OUT_reg_0_inst : DFSC1 port map( D => n97, SD => n31_port, SE => 
+                           test_se, C => CLK, RN => RESETN, Q => 
+                           MINUTES_OUT_0_port, QN => n41);
+   HOURS_OUT_reg_2_inst : DFSP1 port map( D => n89, SD => HOURS_OUT_1_port, SE 
+                           => test_se, C => CLK, SN => RESETN, Q => 
+                           HOURS_OUT_2_port, QN => n32_port);
+   HOURS_OUT_reg_3_inst : DFSP1 port map( D => n88, SD => n32_port, SE => 
+                           test_se, C => CLK, SN => RESETN, Q => 
+                           HOURS_OUT_3_port, QN => n31_port);
+   U3 : XOR21 port map( A => AM_PM_OUT_port, B => n47_port, Q => n1);
+   U4 : INV3 port map( A => n69, Q => n10);
+   U5 : INV3 port map( A => n45_port, Q => n9);
+   U6 : NOR21 port map( A => n11, B => n10, Q => n71);
+   U7 : NOR21 port map( A => n9, B => n48_port, Q => n49_port);
+   U8 : NOR31 port map( A => n66, B => n9, C => n67, Q => n51);
+   U9 : AOI221 port map( A => N65, B => n55, C => N92, D => n56, Q => n53);
+   U10 : XNR21 port map( A => n16, B => N173, Q => N92);
+   U11 : XNR21 port map( A => n18, B => N173, Q => N65);
+   U12 : INV3 port map( A => n4, Q => N173);
+   U13 : NAND22 port map( A => n10, B => n68, Q => n45_port);
+   U14 : NAND22 port map( A => N179, B => N170, Q => n19);
+   U15 : NAND22 port map( A => N179, B => N170, Q => n17);
+   U16 : NAND22 port map( A => N179, B => N170, Q => n21);
+   U17 : AOI221 port map( A => N63, B => n55, C => N90, D => n56, Q => n62);
+   U18 : XNR21 port map( A => n3, B => N179, Q => N90);
+   U19 : XNR21 port map( A => n3, B => N179, Q => N63);
+   U20 : AOI221 port map( A => N64, B => n55, C => N91, D => n56, Q => n59);
+   U21 : XNR21 port map( A => n17, B => N172, Q => N91);
+   U22 : XNR21 port map( A => n19, B => N172, Q => N64);
+   U23 : NAND22 port map( A => N172, B => n12, Q => n18);
+   U25 : NAND22 port map( A => N172, B => n12, Q => n16);
+   U26 : NAND22 port map( A => N172, B => n12, Q => n20);
+   U27 : INV3 port map( A => n21, Q => n12);
+   U29 : NAND31 port map( A => n66, B => n68, C => n56, Q => n79);
+   U30 : NOR21 port map( A => n66, B => n8, Q => n81);
+   U31 : INV3 port map( A => n78, Q => n8);
+   U33 : AOI211 port map( A => n66, B => n56, C => n11, Q => n48_port);
+   U34 : NAND22 port map( A => n45_port, B => n66, Q => n54);
+   U35 : NOR21 port map( A => n67, B => n56, Q => n55);
+   U37 : INV3 port map( A => n67, Q => n11);
+   U38 : NAND31 port map( A => n15, B => n14, C => MINS, Q => n56);
+   U39 : NAND31 port map( A => n15, B => n13, C => SECS, Q => n66);
+   U40 : NAND41 port map( A => CURRENT_SECS_4_port, B => CURRENT_SECS_3_port, C
+                           => CURRENT_SECS_5_port, D => n87, Q => n78);
+   U41 : NOR31 port map( A => n29_port, B => CURRENT_SECS_2_port, C => n30_port
+                           , Q => n87);
+   U42 : NAND22 port map( A => N32, B => n71, Q => n70);
+   U43 : NAND22 port map( A => N49, B => n81, Q => n80);
+   U44 : AOI211 port map( A => n3, B => n51, C => n64_port, Q => n63_port);
+   U45 : NOR21 port map( A => n65_port, B => n54, Q => n64_port);
+   U47 : AOI221 port map( A => n3, B => n55, C => n3, D => n56, Q => n65_port);
+   U49 : AOI211 port map( A => N23, B => n51, C => n61, Q => n60);
+   U51 : XNR21 port map( A => n7, B => N179, Q => N23);
+   U53 : NOR21 port map( A => n62, B => n54, Q => n61);
+   U55 : AOI211 port map( A => N24, B => n51, C => n58, Q => n57);
+   U57 : XNR21 port map( A => n21, B => N172, Q => N24);
+   U58 : NOR21 port map( A => n59, B => n54, Q => n58);
+   U59 : AOI211 port map( A => N25, B => n51, C => n52, Q => n50);
+   U60 : XNR21 port map( A => n20, B => N173, Q => N25);
+   U63 : NOR21 port map( A => n53, B => n54, Q => n52);
+   U65 : INV3 port map( A => n7, Q => N170);
+   U67 : INV3 port map( A => n6, Q => N172);
+   U69 : INV3 port map( A => n2, Q => N179);
+   U71 : NAND41 port map( A => HOURS_OUT_3_port, B => HOURS_OUT_2_port, C => 
+                           n34, D => n33, Q => N137);
+   U73 : INV3 port map( A => SECS, Q => n14);
+   U74 : INV3 port map( A => MINS, Q => n13);
+   U75 : INV3 port map( A => HOURS, Q => n15);
+   U76 : NAND41 port map( A => MINUTES_OUT_4_port, B => MINUTES_OUT_3_port, C 
+                           => MINUTES_OUT_5_port, D => n77, Q => n67);
+   U77 : NOR31 port map( A => n40, B => MINUTES_OUT_2_port, C => n41, Q => n77)
+                           ;
+   U78 : NAND31 port map( A => n13, B => n14, C => HOURS, Q => n68);
+   U79 : NAND22 port map( A => N31, B => n71, Q => n72);
+   U80 : NAND22 port map( A => N30, B => n71, Q => n73);
+   U81 : NAND22 port map( A => N29, B => n71, Q => n74);
+   U82 : NAND22 port map( A => N28, B => n71, Q => n75);
+   U83 : NAND22 port map( A => n41, B => n71, Q => n76);
+   U84 : NAND22 port map( A => N48, B => n81, Q => n82);
+   U85 : NAND22 port map( A => N47, B => n81, Q => n83);
+   U86 : NAND22 port map( A => N45, B => n81, Q => n85);
+   U87 : NAND22 port map( A => n30_port, B => n81, Q => n86);
+   U88 : NAND22 port map( A => N46, B => n81, Q => n84);
+   U89 : NOR21 port map( A => N137, B => n48_port, Q => n47_port);
+   U91 : NAND20 port map( A => HOURS_OUT_0_port, B => N137, Q => n3);
+   U92 : NAND20 port map( A => HOURS_OUT_1_port, B => N137, Q => n2);
+   U93 : NAND20 port map( A => HOURS_OUT_0_port, B => N137, Q => n7);
+   U94 : NAND20 port map( A => HOURS_OUT_2_port, B => N137, Q => n6);
+   U95 : NAND20 port map( A => N137, B => HOURS_OUT_3_port, Q => n4);
+   U96 : XOR20 port map( A => r84_carry_5_port, B => MINUTES_OUT_5_port, Q => 
+                           N32);
+   U97 : XOR20 port map( A => U10_carry_5_port, B => CURRENT_SECS_5_port, Q => 
+                           N49);
+
+end SYN_RTL;
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+use work.CONV_PACK_CORE.all;
+
+entity TIME_STATE_MACHINE_test_1 is
+
+   port( TIME_BUTTON, HOURS_BUTTON, MINUTES_BUTTON, CLK, RESETN : in std_logic;
+         SECS, HOURS, MINS : out std_logic;  test_se, test_si1 : in std_logic; 
+         test_so1 : out std_logic);
+
+end TIME_STATE_MACHINE_test_1;
+
+architecture SYN_RTL of TIME_STATE_MACHINE_test_1 is
+
+   component INV3
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND31
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR21
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND22
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR31
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component OAI311
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR40
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component DFSC1
+      port( D, SD, SE, C, RN : in std_logic;  Q, QN : out std_logic);
+   end component;
+   
+   signal NEXT_STATE_1_port, NEXT_STATE_0_port, CURRENT_STATE_1_port, 
+      CURRENT_STATE_0_port, NEXT_SECS, NEXT_HOURS, n7, n11, n12, n13, n14, n2, 
+      n3, n4, n5, n1, n6, n8 : std_logic;
+
+begin
+   
+   CURRENT_STATE_reg_1_inst : DFSC1 port map( D => NEXT_STATE_1_port, SD => n8,
+                           SE => test_se, C => CLK, RN => RESETN, Q => 
+                           CURRENT_STATE_1_port, QN => n7);
+   CURRENT_STATE_reg_0_inst : DFSC1 port map( D => NEXT_STATE_0_port, SD => 
+                           test_si1, SE => test_se, C => CLK, RN => RESETN, Q 
+                           => CURRENT_STATE_0_port, QN => n8);
+   MINS_reg : DFSC1 port map( D => n2, SD => n6, SE => test_se, C => CLK, RN =>
+                           RESETN, Q => MINS, QN => n1);
+   SECS_reg : DFSC1 port map( D => NEXT_SECS, SD => n1, SE => test_se, C => CLK
+                           , RN => RESETN, Q => SECS, QN => test_so1);
+   HOURS_reg : DFSC1 port map( D => NEXT_HOURS, SD => n7, SE => test_se, C => 
+                           CLK, RN => RESETN, Q => HOURS, QN => n6);
+   U3 : NOR40 port map( A => n4, B => n5, C => CURRENT_STATE_0_port, D => 
+                           HOURS_BUTTON, Q => NEXT_STATE_1_port);
+   U4 : NOR21 port map( A => n13, B => CURRENT_STATE_1_port, Q => 
+                           NEXT_STATE_0_port);
+   U5 : OAI311 port map( A => n11, B => CURRENT_STATE_0_port, C => 
+                           NEXT_STATE_0_port, D => n12, Q => NEXT_SECS);
+   U6 : NOR31 port map( A => n4, B => HOURS_BUTTON, C => n5, Q => n11);
+   U7 : NAND31 port map( A => n13, B => n7, C => CURRENT_STATE_0_port, Q => n12
+                           );
+   U8 : INV3 port map( A => n14, Q => n2);
+   U9 : NAND22 port map( A => n7, B => NEXT_STATE_1_port, Q => n14);
+   U10 : NOR21 port map( A => CURRENT_STATE_0_port, B => n3, Q => NEXT_HOURS);
+   U11 : INV3 port map( A => NEXT_STATE_0_port, Q => n3);
+   U12 : NAND31 port map( A => HOURS_BUTTON, B => n5, C => TIME_BUTTON, Q => 
+                           n13);
+   U13 : INV3 port map( A => MINUTES_BUTTON, Q => n5);
+   U14 : INV3 port map( A => TIME_BUTTON, Q => n4);
+
+end SYN_RTL;
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+use work.CONV_PACK_CORE.all;
+
+entity ALARM_SM_2_test_1 is
+
+   port( COMPARE_IN, TOGGLE_ON, CLOCK, RESETN : in std_logic;  RING : out 
+         std_logic;  test_se, test_si1 : in std_logic);
+
+end ALARM_SM_2_test_1;
+
+architecture SYN_RTL of ALARM_SM_2_test_1 is
+
+   component INV3
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component DFSC1
+      port( D, SD, SE, C, RN : in std_logic;  Q, QN : out std_logic);
+   end component;
+   
+   component OAI212
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   signal RING_port, n3, n2, n_1000 : std_logic;
+
+begin
+   RING <= RING_port;
+   
+   U4 : OAI212 port map( A => COMPARE_IN, B => RING_port, C => TOGGLE_ON, Q => 
+                           n3);
+   CURRENT_STATE_reg : DFSC1 port map( D => n2, SD => test_si1, SE => test_se, 
+                           C => CLOCK, RN => RESETN, Q => RING_port, QN => 
+                           n_1000);
+   U3 : INV3 port map( A => n3, Q => n2);
+
+end SYN_RTL;
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+use work.CONV_PACK_CORE.all;
+
+entity COMPARATOR is
+
+   port( ALARM_HRS, TIME_HRS : in std_logic_vector (3 downto 0);  ALARM_MINS, 
+         TIME_MINS : in std_logic_vector (5 downto 0);  ALARM_AM_PM, TIME_AM_PM
+         : in std_logic;  RINGER : out std_logic);
+
+end COMPARATOR;
+
+architecture SYN_RTL of COMPARATOR is
+
+   component NOR40
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component XOR20
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND30
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component XNR20
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component OAI220
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR20
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component AOI220
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND20
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component XOR21
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component INV3
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component XNR21
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND31
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   signal N2, n2_port, n3, n4, n5, n6, n7, n1, n8, n9, n10, n11, n12, n13, n14,
+      n15, n16, n17, n18 : std_logic;
+
+begin
+   
+   U1 : INV3 port map( A => n8, Q => n18);
+   U2 : NOR40 port map( A => n2_port, B => n3, C => n4, D => n5, Q => RINGER);
+   U3 : XOR21 port map( A => TIME_AM_PM, B => ALARM_AM_PM, Q => n5);
+   U4 : NAND31 port map( A => n6, B => N2, C => n7, Q => n2_port);
+   U5 : XNR21 port map( A => TIME_HRS(3), B => ALARM_HRS(3), Q => n6);
+   U6 : XNR21 port map( A => TIME_HRS(1), B => ALARM_HRS(1), Q => n7);
+   U7 : INV3 port map( A => TIME_MINS(0), Q => n16);
+   U8 : INV3 port map( A => ALARM_MINS(1), Q => n17);
+   U9 : XOR21 port map( A => TIME_HRS(2), B => ALARM_HRS(2), Q => n4);
+   U10 : XOR21 port map( A => TIME_HRS(0), B => ALARM_HRS(0), Q => n3);
+   U11 : NAND20 port map( A => ALARM_MINS(0), B => n16, Q => n1);
+   U12 : AOI220 port map( A => n17, B => n1, C => n1, D => TIME_MINS(1), Q => 
+                           n8);
+   U13 : NOR20 port map( A => n16, B => ALARM_MINS(0), Q => n9);
+   U14 : OAI220 port map( A => n9, B => n17, C => TIME_MINS(1), D => n9, Q => 
+                           n11);
+   U15 : XNR20 port map( A => TIME_MINS(5), B => ALARM_MINS(5), Q => n10);
+   U16 : NAND30 port map( A => n18, B => n11, C => n10, Q => n15);
+   U17 : XOR20 port map( A => TIME_MINS(4), B => ALARM_MINS(4), Q => n14);
+   U18 : XOR20 port map( A => TIME_MINS(2), B => ALARM_MINS(2), Q => n13);
+   U19 : XOR20 port map( A => TIME_MINS(3), B => ALARM_MINS(3), Q => n12);
+   U20 : NOR40 port map( A => n15, B => n14, C => n13, D => n12, Q => N2);
+
+end SYN_RTL;
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+use work.CONV_PACK_CORE.all;
+
+entity ALARM_BLOCK_test_1 is
+
+   port( ALARM, HRS, MINS, CLK, RESETN, ENABLE : in std_logic;  HRS_OUT : out 
+         std_logic_vector (3 downto 0);  MINS_OUT : out std_logic_vector (5 
+         downto 0);  AM_PM_OUT : out std_logic;  DISPLAY_BUS : out 
+         std_logic_vector (10 downto 0);  test_se, test_si1 : in std_logic;  
+         test_so1 : out std_logic);
+
+end ALARM_BLOCK_test_1;
+
+architecture SYN_NET of ALARM_BLOCK_test_1 is
+
+   component ALARM_COUNTER_test_1
+      port( HOURS, MINS, CLK, RESETN : in std_logic;  HRS_OUT : out 
+            std_logic_vector (3 downto 0);  MINUTES_OUT : out std_logic_vector 
+            (5 downto 0);  AM_PM_OUT : out std_logic;  test_se, test_si1 : in 
+            std_logic;  test_so1 : out std_logic);
+   end component;
+   
+   component ALARM_STATE_MACHINE_test_1
+      port( ALARM_BUTTON, HOURS_BUTTON, MINUTES_BUTTON, CLK, RESETN : in 
+            std_logic;  HOURS, MINS : out std_logic;  test_se, test_si1 : in 
+            std_logic;  test_so1 : out std_logic);
+   end component;
+   
+   component INV0
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component CLKIN0
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR20
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component BUFE2
+      port( A, E : in std_logic;  Q : out std_logic);
+   end component;
+   
+   signal HRS_OUT_3_port, HRS_OUT_2_port, HRS_OUT_1_port, HRS_OUT_0_port, 
+      MINS_OUT_5_port, MINS_OUT_4_port, MINS_OUT_3_port, MINS_OUT_2_port, 
+      MINS_OUT_1_port, MINS_OUT_0_port, AM_PM_OUT_port, CONNECT1, CONNECT2, n1,
+      n6, n7, n8, n9, n3 : std_logic;
+
+begin
+   HRS_OUT <= ( HRS_OUT_3_port, HRS_OUT_2_port, HRS_OUT_1_port, HRS_OUT_0_port 
+      );
+   MINS_OUT <= ( MINS_OUT_5_port, MINS_OUT_4_port, MINS_OUT_3_port, 
+      MINS_OUT_2_port, MINS_OUT_1_port, MINS_OUT_0_port );
+   AM_PM_OUT <= AM_PM_OUT_port;
+   
+   DISPLAY_BUS_tri_10_inst : BUFE2 port map( A => AM_PM_OUT_port, E => n9, Q =>
+                           DISPLAY_BUS(10));
+   DISPLAY_BUS_tri_2_inst : BUFE2 port map( A => MINS_OUT_2_port, E => n9, Q =>
+                           DISPLAY_BUS(2));
+   DISPLAY_BUS_tri_9_inst : BUFE2 port map( A => HRS_OUT_3_port, E => n8, Q => 
+                           DISPLAY_BUS(9));
+   DISPLAY_BUS_tri_8_inst : BUFE2 port map( A => HRS_OUT_2_port, E => n8, Q => 
+                           DISPLAY_BUS(8));
+   DISPLAY_BUS_tri_5_inst : BUFE2 port map( A => MINS_OUT_5_port, E => n8, Q =>
+                           DISPLAY_BUS(5));
+   DISPLAY_BUS_tri_4_inst : BUFE2 port map( A => MINS_OUT_4_port, E => n8, Q =>
+                           DISPLAY_BUS(4));
+   DISPLAY_BUS_tri_3_inst : BUFE2 port map( A => MINS_OUT_3_port, E => n9, Q =>
+                           DISPLAY_BUS(3));
+   DISPLAY_BUS_tri_1_inst : BUFE2 port map( A => MINS_OUT_1_port, E => n8, Q =>
+                           DISPLAY_BUS(1));
+   DISPLAY_BUS_tri_7_inst : BUFE2 port map( A => HRS_OUT_1_port, E => n9, Q => 
+                           DISPLAY_BUS(7));
+   DISPLAY_BUS_tri_6_inst : BUFE2 port map( A => HRS_OUT_0_port, E => n9, Q => 
+                           DISPLAY_BUS(6));
+   DISPLAY_BUS_tri_0_inst : BUFE2 port map( A => MINS_OUT_0_port, E => n8, Q =>
+                           DISPLAY_BUS(0));
+   U1 : NOR20 port map( A => test_se, B => n1, Q => n6);
+   U2 : CLKIN0 port map( A => ENABLE, Q => n1);
+   U4 : INV0 port map( A => n6, Q => n7);
+   U5 : INV0 port map( A => n7, Q => n8);
+   U6 : INV0 port map( A => n7, Q => n9);
+   U0 : ALARM_STATE_MACHINE_test_1 port map( ALARM_BUTTON => ALARM, 
+                           HOURS_BUTTON => HRS, MINUTES_BUTTON => MINS, CLK => 
+                           CLK, RESETN => RESETN, HOURS => CONNECT1, MINS => 
+                           CONNECT2, test_se => test_se, test_si1 => test_si1, 
+                           test_so1 => n3);
+   U3 : ALARM_COUNTER_test_1 port map( HOURS => CONNECT1, MINS => CONNECT2, CLK
+                           => CLK, RESETN => RESETN, HRS_OUT(3) => 
+                           HRS_OUT_3_port, HRS_OUT(2) => HRS_OUT_2_port, 
+                           HRS_OUT(1) => HRS_OUT_1_port, HRS_OUT(0) => 
+                           HRS_OUT_0_port, MINUTES_OUT(5) => MINS_OUT_5_port, 
+                           MINUTES_OUT(4) => MINS_OUT_4_port, MINUTES_OUT(3) =>
+                           MINS_OUT_3_port, MINUTES_OUT(2) => MINS_OUT_2_port, 
+                           MINUTES_OUT(1) => MINS_OUT_1_port, MINUTES_OUT(0) =>
+                           MINS_OUT_0_port, AM_PM_OUT => AM_PM_OUT_port, 
+                           test_se => test_se, test_si1 => n3, test_so1 => 
+                           test_so1);
+
+end SYN_NET;
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+use work.CONV_PACK_CORE.all;
+
+entity TIME_BLOCK_test_1 is
+
+   port( SET_TIME, HRS, MINS, CLK, RESETN, ENABLE : in std_logic;  HRS_OUT : 
+         out std_logic_vector (3 downto 0);  MINS_OUT : out std_logic_vector (5
+         downto 0);  AM_PM_OUT : out std_logic;  DISPLAY_BUS : out 
+         std_logic_vector (10 downto 0);  test_se, test_si1 : in std_logic;  
+         test_so1 : out std_logic);
+
+end TIME_BLOCK_test_1;
+
+architecture SYN_NET of TIME_BLOCK_test_1 is
+
+   component TIME_COUNTER_test_1
+      port( HOURS, MINS, SECS, CLK, RESETN : in std_logic;  HOURS_OUT : out 
+            std_logic_vector (3 downto 0);  MINUTES_OUT : out std_logic_vector 
+            (5 downto 0);  AM_PM_OUT, test_so : out std_logic;  test_se, 
+            test_si1 : in std_logic;  test_so1 : out std_logic);
+   end component;
+   
+   component TIME_STATE_MACHINE_test_1
+      port( TIME_BUTTON, HOURS_BUTTON, MINUTES_BUTTON, CLK, RESETN : in 
+            std_logic;  SECS, HOURS, MINS : out std_logic;  test_se, test_si1 :
+            in std_logic;  test_so1 : out std_logic);
+   end component;
+   
+   component INV0
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component CLKIN0
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR20
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component BUFE2
+      port( A, E : in std_logic;  Q : out std_logic);
+   end component;
+   
+   signal HRS_OUT_3_port, HRS_OUT_2_port, HRS_OUT_1_port, HRS_OUT_0_port, 
+      MINS_OUT_5_port, MINS_OUT_4_port, MINS_OUT_3_port, MINS_OUT_2_port, 
+      MINS_OUT_1_port, MINS_OUT_0_port, AM_PM_OUT_port, CONNECT5, CONNECT3, 
+      CONNECT4, n1, test_so, n6, n7, n8, n9, n3 : std_logic;
+
+begin
+   HRS_OUT <= ( HRS_OUT_3_port, HRS_OUT_2_port, HRS_OUT_1_port, HRS_OUT_0_port 
+      );
+   MINS_OUT <= ( MINS_OUT_5_port, MINS_OUT_4_port, MINS_OUT_3_port, 
+      MINS_OUT_2_port, MINS_OUT_1_port, MINS_OUT_0_port );
+   AM_PM_OUT <= AM_PM_OUT_port;
+   
+   DISPLAY_BUS_tri_1_inst : BUFE2 port map( A => MINS_OUT_1_port, E => n8, Q =>
+                           DISPLAY_BUS(1));
+   DISPLAY_BUS_tri_5_inst : BUFE2 port map( A => MINS_OUT_5_port, E => n8, Q =>
+                           DISPLAY_BUS(5));
+   DISPLAY_BUS_tri_3_inst : BUFE2 port map( A => MINS_OUT_3_port, E => n9, Q =>
+                           DISPLAY_BUS(3));
+   DISPLAY_BUS_tri_6_inst : BUFE2 port map( A => HRS_OUT_0_port, E => n9, Q => 
+                           DISPLAY_BUS(6));
+   DISPLAY_BUS_tri_10_inst : BUFE2 port map( A => AM_PM_OUT_port, E => n9, Q =>
+                           DISPLAY_BUS(10));
+   DISPLAY_BUS_tri_7_inst : BUFE2 port map( A => HRS_OUT_1_port, E => n9, Q => 
+                           DISPLAY_BUS(7));
+   DISPLAY_BUS_tri_2_inst : BUFE2 port map( A => MINS_OUT_2_port, E => n9, Q =>
+                           DISPLAY_BUS(2));
+   DISPLAY_BUS_tri_4_inst : BUFE2 port map( A => MINS_OUT_4_port, E => n8, Q =>
+                           DISPLAY_BUS(4));
+   DISPLAY_BUS_tri_0_inst : BUFE2 port map( A => MINS_OUT_0_port, E => n8, Q =>
+                           DISPLAY_BUS(0));
+   DISPLAY_BUS_tri_8_inst : BUFE2 port map( A => HRS_OUT_2_port, E => n8, Q => 
+                           DISPLAY_BUS(8));
+   DISPLAY_BUS_tri_9_inst : BUFE2 port map( A => HRS_OUT_3_port, E => n8, Q => 
+                           DISPLAY_BUS(9));
+   U3 : NOR20 port map( A => test_se, B => n1, Q => n6);
+   U4 : CLKIN0 port map( A => ENABLE, Q => n1);
+   U5 : INV0 port map( A => n6, Q => n7);
+   U6 : INV0 port map( A => n7, Q => n8);
+   U7 : INV0 port map( A => n7, Q => n9);
+   U1 : TIME_STATE_MACHINE_test_1 port map( TIME_BUTTON => SET_TIME, 
+                           HOURS_BUTTON => HRS, MINUTES_BUTTON => MINS, CLK => 
+                           CLK, RESETN => RESETN, SECS => CONNECT5, HOURS => 
+                           CONNECT3, MINS => CONNECT4, test_se => test_se, 
+                           test_si1 => test_si1, test_so1 => n3);
+   U2 : TIME_COUNTER_test_1 port map( HOURS => CONNECT3, MINS => CONNECT4, SECS
+                           => CONNECT5, CLK => CLK, RESETN => RESETN, 
+                           HOURS_OUT(3) => HRS_OUT_3_port, HOURS_OUT(2) => 
+                           HRS_OUT_2_port, HOURS_OUT(1) => HRS_OUT_1_port, 
+                           HOURS_OUT(0) => HRS_OUT_0_port, MINUTES_OUT(5) => 
+                           MINS_OUT_5_port, MINUTES_OUT(4) => MINS_OUT_4_port, 
+                           MINUTES_OUT(3) => MINS_OUT_3_port, MINUTES_OUT(2) =>
+                           MINS_OUT_2_port, MINUTES_OUT(1) => MINS_OUT_1_port, 
+                           MINUTES_OUT(0) => MINS_OUT_0_port, AM_PM_OUT => 
+                           AM_PM_OUT_port, test_so => test_so, test_se => 
+                           test_se, test_si1 => n3, test_so1 => test_so1);
+
+end SYN_NET;
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+use work.CONV_PACK_CORE.all;
+
+entity CLOCK_GEN_test_1 is
+
+   port( CLK, RESETN : in std_logic;  INT_CLK : out std_logic;  
+         COMPUTE_BLOCK_TM_FIX_in, test_se, test_si1 : in std_logic;  test_so1 :
+         out std_logic);
+
+end CLOCK_GEN_test_1;
+
+architecture SYN_RTL of CLOCK_GEN_test_1 is
+
+   component IMUX23
+      port( A, B, S : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component CLKIN6
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component LOGIC1
+      port( Q : out std_logic);
+   end component;
+   
+   component DFSC3
+      port( D, SD, SE, C, RN : in std_logic;  Q, QN : out std_logic);
+   end component;
+   
+   component TFSEC3
+      port( T, SD, SE, C, RN : in std_logic;  Q, QN : out std_logic);
+   end component;
+   
+   signal COUNT, n2, n4, n5, test_so1_port, n_1001, n_1002 : std_logic;
+
+begin
+   test_so1 <= test_so1_port;
+   
+   COUNT_reg : TFSEC3 port map( T => n2, SD => test_si1, SE => test_se, C => 
+                           CLK, RN => RESETN, Q => COUNT, QN => n_1001);
+   INT_CLK_reg : DFSC3 port map( D => COUNT, SD => COUNT, SE => test_se, C => 
+                           CLK, RN => RESETN, Q => test_so1_port, QN => n_1002)
+                           ;
+   U4 : LOGIC1 port map( Q => n2);
+   U3 : CLKIN6 port map( A => test_so1_port, Q => n5);
+   U5 : CLKIN6 port map( A => CLK, Q => n4);
+   U6 : IMUX23 port map( A => n5, B => n4, S => COMPUTE_BLOCK_TM_FIX_in, Q => 
+                           INT_CLK);
+
+end SYN_RTL;
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+use work.CONV_PACK_CORE.all;
+
+entity CONVERTOR_CKT is
+
+   port( bin_time : in std_logic_vector (10 downto 0);  hr_display, min_display
+         : out std_logic_vector (13 downto 0);  am_pm_display : out std_logic);
+
+end CONVERTOR_CKT;
+
+architecture SYN_SYN_RTL of CONVERTOR_CKT is
+
+   component NOR40
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component LOGIC0
+      port( Q : out std_logic);
+   end component;
+   
+   component INV3
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND22
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR21
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component AOI2111
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component AOI211
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component AOI311
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR31
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component OAI2111
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component OAI222
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component IMUX21
+      port( A, B, S : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component OAI212
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component OAI311
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component AOI221
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND31
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component OAI2110
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR30
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component OAI210
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component AOI210
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   signal hr_display_13_port, hr_display_12_port, hr_display_6_port, 
+      hr_display_5_port, hr_display_4_port, hr_display_3_port, 
+      hr_display_2_port, hr_display_1_port, hr_display_0_port, 
+      min_display_13_port, min_display_12_port, min_display_11_port, 
+      min_display_9_port, min_display_8_port, min_display_7_port, 
+      min_display_6_port, min_display_5_port, min_display_4_port, 
+      min_display_3_port, min_display_2_port, min_display_1_port, 
+      min_display_0_port, n170, n191, n114, n203, n210, n213, n216, n179, n115,
+      n206, n217, n128, n131, n127, n130, n125, n124, n126, n123, n196, n198, 
+      n212, n195, n215, n200, n190, n189, n188, n192, n181, n182, n178, n183, 
+      n177, n186, n208, n176, n175, n172, n193, n171, n174, n211, n162, n194, 
+      n165, n161, n158, n157, n159, n160, n150, n146, n145, n147, n173, n144, 
+      n143, n168, n167, n207, n142, n148, n153, n134, n187, n163, n116, n132, 
+      n129, n122, n121, n120, n119, n118, n117, n141, n154, n140, n139, n138, 
+      n218, n214, n209, n205, n204, n202, n201, n199, n197, n185, n184, n169, 
+      n166, n164, n156, n155, n152, n180, n151, n149, n137, n136, n135, n133 : 
+      std_logic;
+
+begin
+   hr_display <= ( hr_display_13_port, hr_display_12_port, hr_display_12_port, 
+      hr_display_13_port, hr_display_13_port, hr_display_13_port, 
+      hr_display_13_port, hr_display_6_port, hr_display_5_port, 
+      hr_display_4_port, hr_display_3_port, hr_display_2_port, 
+      hr_display_1_port, hr_display_0_port );
+   min_display <= ( min_display_13_port, min_display_12_port, 
+      min_display_11_port, min_display_13_port, min_display_9_port, 
+      min_display_8_port, min_display_7_port, min_display_6_port, 
+      min_display_5_port, min_display_4_port, min_display_3_port, 
+      min_display_2_port, min_display_1_port, min_display_0_port );
+   
+   U136 : AOI210 port map( A => bin_time(2), B => n170, C => n191, Q => n114);
+   U137 : OAI210 port map( A => n203, B => n210, C => n114, Q => n213);
+   U138 : NOR30 port map( A => n216, B => n179, C => n213, Q => n115);
+   U139 : OAI2110 port map( A => n206, B => n210, C => n217, D => n115, Q => 
+                           min_display_13_port);
+   U140 : AOI211 port map( A => n128, B => n131, C => n127, Q => n130);
+   U141 : AOI2111 port map( A => bin_time(9), B => n125, C => n127, D => n124, 
+                           Q => n126);
+   U142 : AOI211 port map( A => n123, B => n131, C => bin_time(8), Q => n124);
+   U143 : INV3 port map( A => bin_time(7), Q => n123);
+   U144 : IMUX21 port map( A => bin_time(3), B => n196, S => bin_time(4), Q => 
+                           n198);
+   U145 : OAI222 port map( A => bin_time(1), B => n212, C => n195, D => n215, Q
+                           => n200);
+   U146 : AOI221 port map( A => n190, B => n189, C => n215, D => n188, Q => 
+                           n192);
+   U147 : OAI311 port map( A => bin_time(5), B => n196, C => n215, D => n181, Q
+                           => n182);
+   U148 : OAI222 port map( A => bin_time(2), B => n189, C => bin_time(4), D => 
+                           n178, Q => n183);
+   U149 : AOI221 port map( A => n190, B => n206, C => n215, D => n177, Q => 
+                           n186);
+   U150 : OAI212 port map( A => n208, B => n176, C => n175, Q => n177);
+   U151 : OAI212 port map( A => n172, B => n193, C => n171, Q => n174);
+   U152 : IMUX21 port map( A => bin_time(5), B => n193, S => bin_time(0), Q => 
+                           n176);
+   U153 : AOI2111 port map( A => bin_time(5), B => n211, C => n162, D => n194, 
+                           Q => n165);
+   U154 : AOI221 port map( A => n196, B => n215, C => n190, D => n203, Q => 
+                           n161);
+   U155 : AOI211 port map( A => n158, B => n157, C => bin_time(0), Q => n159);
+   U156 : OAI212 port map( A => n210, B => n203, C => n158, Q => n160);
+   U157 : NAND22 port map( A => bin_time(3), B => n172, Q => n150);
+   U158 : OAI222 port map( A => bin_time(0), B => n146, C => n145, D => n215, Q
+                           => n147);
+   U159 : AOI211 port map( A => n173, B => n144, C => n143, Q => n145);
+   U160 : OAI222 port map( A => bin_time(0), B => n158, C => n144, D => n206, Q
+                           => n143);
+   U161 : NOR21 port map( A => n168, B => n167, Q => n146);
+   U162 : AOI221 port map( A => bin_time(2), B => n210, C => n207, D => n178, Q
+                           => n168);
+   U163 : AOI211 port map( A => n195, B => n142, C => n206, Q => n148);
+   U164 : INV3 port map( A => n153, Q => n142);
+   U165 : NOR21 port map( A => n215, B => n172, Q => n190);
+   U166 : OAI212 port map( A => n134, B => n215, C => n187, Q => n163);
+   U167 : INV3 port map( A => bin_time(2), Q => n215);
+   U168 : AOI2111 port map( A => n173, B => n189, C => n208, D => n179, Q => 
+                           n134);
+   U169 : INV3 port map( A => bin_time(5), Q => n206);
+   U170 : NOR21 port map( A => bin_time(1), B => n170, Q => n208);
+   U171 : INV3 port map( A => bin_time(4), Q => n172);
+   U172 : INV3 port map( A => bin_time(3), Q => n170);
+   U173 : INV3 port map( A => bin_time(10), Q => am_pm_display);
+   U174 : INV3 port map( A => n116, Q => hr_display_12_port);
+   U175 : OAI212 port map( A => bin_time(7), B => bin_time(8), C => bin_time(9)
+                           , Q => n116);
+   U176 : OAI2111 port map( A => n132, B => n131, C => n130, D => n129, Q => 
+                           hr_display_6_port);
+   U177 : OAI311 port map( A => bin_time(7), B => bin_time(6), C => n132, D => 
+                           n126, Q => hr_display_5_port);
+   U178 : OAI2111 port map( A => n132, B => n123, C => n131, D => n122, Q => 
+                           hr_display_4_port);
+   U179 : NAND31 port map( A => n121, B => n120, C => n119, Q => 
+                           hr_display_3_port);
+   U180 : OAI2111 port map( A => bin_time(9), B => n123, C => bin_time(8), D =>
+                           bin_time(6), Q => n120);
+   U181 : OAI212 port map( A => bin_time(6), B => n129, C => n119, Q => 
+                           hr_display_2_port);
+   U182 : NAND31 port map( A => bin_time(7), B => n131, C => n118, Q => n119);
+   U183 : NAND22 port map( A => bin_time(9), B => n123, Q => n129);
+   U184 : OAI222 port map( A => n117, B => n122, C => n123, D => n118, Q => 
+                           hr_display_1_port);
+   U185 : OAI212 port map( A => bin_time(9), B => bin_time(8), C => n118, Q => 
+                           n122);
+   U186 : INV3 port map( A => n125, Q => n117);
+   U187 : OAI212 port map( A => n127, B => n132, C => n121, Q => 
+                           hr_display_0_port);
+   U188 : IMUX21 port map( A => n128, B => n123, S => bin_time(9), Q => n121);
+   U189 : NOR21 port map( A => bin_time(8), B => n123, Q => n128);
+   U190 : NOR21 port map( A => bin_time(9), B => n125, Q => n127);
+   U191 : NAND22 port map( A => bin_time(7), B => bin_time(6), Q => n125);
+   U192 : OAI311 port map( A => bin_time(3), B => bin_time(2), C => n171, D => 
+                           n141, Q => min_display_12_port);
+   U193 : NOR21 port map( A => n154, B => n140, Q => n141);
+   U194 : OAI212 port map( A => bin_time(2), B => n157, C => n139, Q => 
+                           min_display_11_port);
+   U195 : AOI2111 port map( A => bin_time(2), B => n138, C => bin_time(5), D =>
+                           n140, Q => n139);
+   U196 : AOI211 port map( A => n211, B => n170, C => bin_time(4), Q => n140);
+   U197 : INV3 port map( A => n158, Q => n138);
+   U198 : OAI212 port map( A => bin_time(5), B => n218, C => n217, Q => 
+                           min_display_9_port);
+   U199 : AOI2111 port map( A => n216, B => n215, C => n214, D => n213, Q => 
+                           n218);
+   U200 : NOR21 port map( A => bin_time(1), B => n212, Q => n214);
+   U201 : OAI311 port map( A => bin_time(5), B => n211, C => n210, D => n209, Q
+                           => min_display_8_port);
+   U202 : AOI221 port map( A => bin_time(5), B => n210, C => n208, D => n207, Q
+                           => n209);
+   U203 : NAND31 port map( A => n206, B => n212, C => n205, Q => 
+                           min_display_7_port);
+   U204 : OAI2111 port map( A => n204, B => n203, C => n202, D => n201, Q => 
+                           min_display_6_port);
+   U205 : AOI221 port map( A => bin_time(5), B => n200, C => n215, D => n199, Q
+                           => n201);
+   U206 : OAI212 port map( A => bin_time(0), B => n198, C => n197, Q => n199);
+   U207 : INV3 port map( A => n194, Q => n202);
+   U208 : AOI2111 port map( A => n216, B => n193, C => n192, D => n191, Q => 
+                           n204);
+   U209 : OAI2111 port map( A => bin_time(4), B => n187, C => n186, D => n185, 
+                           Q => min_display_5_port);
+   U210 : OAI222 port map( A => n203, B => n184, C => n183, D => n182, Q => 
+                           n185);
+   U211 : AOI221 port map( A => bin_time(0), B => n174, C => bin_time(1), D => 
+                           n173, Q => n175);
+   U212 : OAI311 port map( A => n206, B => n170, C => n215, D => n169, Q => 
+                           min_display_4_port);
+   U213 : OAI2111 port map( A => bin_time(2), B => n166, C => n165, D => n164, 
+                           Q => min_display_3_port);
+   U214 : IMUX21 port map( A => n184, B => n163, S => bin_time(0), Q => n164);
+   U215 : OAI222 port map( A => bin_time(5), B => n161, C => bin_time(4), D => 
+                           n187, Q => n194);
+   U216 : AOI211 port map( A => bin_time(5), B => n160, C => n159, Q => n166);
+   U217 : AOI211 port map( A => n156, B => n155, C => bin_time(0), Q => 
+                           min_display_2_port);
+   U218 : AOI2111 port map( A => n154, B => n170, C => n153, D => n184, Q => 
+                           n155);
+   U219 : OAI212 port map( A => n195, B => n215, C => n197, Q => n184);
+   U220 : INV3 port map( A => n188, Q => n154);
+   U221 : IMUX21 port map( A => n152, B => n180, S => bin_time(2), Q => n156);
+   U222 : OAI2111 port map( A => n172, B => n206, C => n151, D => n150, Q => 
+                           n152);
+   U223 : OAI2111 port map( A => n212, B => n178, C => n149, D => n217, Q => 
+                           min_display_1_port);
+   U224 : NAND22 port map( A => n180, B => n215, Q => n217);
+   U225 : AOI2111 port map( A => n162, B => n215, C => n148, D => n147, Q => 
+                           n149);
+   U226 : OAI222 port map( A => bin_time(1), B => n188, C => bin_time(5), D => 
+                           n158, Q => n167);
+   U227 : NAND22 port map( A => bin_time(3), B => bin_time(1), Q => n158);
+   U228 : NAND22 port map( A => bin_time(4), B => n206, Q => n188);
+   U229 : NOR21 port map( A => bin_time(2), B => bin_time(4), Q => n207);
+   U230 : NOR21 port map( A => n193, B => n205, Q => n153);
+   U231 : INV3 port map( A => n216, Q => n205);
+   U232 : INV3 port map( A => n208, Q => n178);
+   U233 : OAI2111 port map( A => bin_time(2), B => n137, C => n136, D => n135, 
+                           Q => min_display_0_port);
+   U234 : AOI211 port map( A => bin_time(4), B => n211, C => n163, Q => n135);
+   U235 : NOR21 port map( A => n206, B => n189, Q => n179);
+   U236 : INV3 port map( A => n196, Q => n189);
+   U237 : NOR21 port map( A => bin_time(5), B => bin_time(4), Q => n173);
+   U238 : NOR31 port map( A => bin_time(0), B => bin_time(1), C => bin_time(2),
+                           Q => n211);
+   U239 : AOI311 port map( A => bin_time(2), B => n203, C => n172, D => n162, Q
+                           => n136);
+   U240 : AOI211 port map( A => n171, B => n151, C => n157, Q => n162);
+   U241 : NAND22 port map( A => bin_time(4), B => n170, Q => n157);
+   U242 : NAND22 port map( A => bin_time(1), B => n206, Q => n151);
+   U243 : NAND22 port map( A => bin_time(5), B => n193, Q => n171);
+   U244 : AOI2111 port map( A => n216, B => n203, C => n133, D => n191, Q => 
+                           n137);
+   U245 : INV3 port map( A => n195, Q => n191);
+   U246 : NAND22 port map( A => n196, B => n172, Q => n195);
+   U247 : INV3 port map( A => n197, Q => n133);
+   U248 : NAND22 port map( A => bin_time(5), B => n144, Q => n197);
+   U249 : NOR21 port map( A => n208, B => n196, Q => n144);
+   U250 : NOR21 port map( A => bin_time(3), B => n193, Q => n196);
+   U251 : NAND22 port map( A => n208, B => n206, Q => n187);
+   U252 : NOR21 port map( A => n170, B => n172, Q => n216);
+   U253 : INV3 port map( A => bin_time(6), Q => n131);
+   U254 : NAND22 port map( A => bin_time(9), B => bin_time(8), Q => n118);
+   U255 : INV3 port map( A => bin_time(8), Q => n132);
+   U256 : INV3 port map( A => n187, Q => n180);
+   U257 : NAND22 port map( A => n170, B => n172, Q => n210);
+   U258 : INV3 port map( A => n190, Q => n212);
+   U259 : INV3 port map( A => bin_time(1), Q => n193);
+   U260 : INV3 port map( A => bin_time(0), Q => n203);
+   U261 : LOGIC0 port map( Q => hr_display_13_port);
+   U262 : NOR40 port map( A => bin_time(0), B => n179, C => n168, D => n167, Q 
+                           => n169);
+   U263 : NOR40 port map( A => bin_time(0), B => n180, C => n179, D => n190, Q 
+                           => n181);
+
+end SYN_SYN_RTL;
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+use work.CONV_PACK_CORE.all;
+
+entity COMPUTE_BLOCK is
+
+   port( SET_TIME, ALARM, HRS, MINS, TOGGLE_SWITCH, CLK, TM_FIX, RESETN : in 
+         std_logic;  TIM_DISPLAY, ALM_DISPLAY : out std_logic_vector (10 downto
+         0);  SPEAKER_OUT : out std_logic;  test_si, test_se : in std_logic);
+
+end COMPUTE_BLOCK;
+
+architecture SYN_NET of COMPUTE_BLOCK is
+
+   component ALARM_SM_2_test_1
+      port( COMPARE_IN, TOGGLE_ON, CLOCK, RESETN : in std_logic;  RING : out 
+            std_logic;  test_se, test_si1 : in std_logic);
+   end component;
+   
+   component COMPARATOR
+      port( ALARM_HRS, TIME_HRS : in std_logic_vector (3 downto 0);  ALARM_MINS
+            , TIME_MINS : in std_logic_vector (5 downto 0);  ALARM_AM_PM, 
+            TIME_AM_PM : in std_logic;  RINGER : out std_logic);
+   end component;
+   
+   component ALARM_BLOCK_test_1
+      port( ALARM, HRS, MINS, CLK, RESETN, ENABLE : in std_logic;  HRS_OUT : 
+            out std_logic_vector (3 downto 0);  MINS_OUT : out std_logic_vector
+            (5 downto 0);  AM_PM_OUT : out std_logic;  DISPLAY_BUS : out 
+            std_logic_vector (10 downto 0);  test_se, test_si1 : in std_logic; 
+            test_so1 : out std_logic);
+   end component;
+   
+   component TIME_BLOCK_test_1
+      port( SET_TIME, HRS, MINS, CLK, RESETN, ENABLE : in std_logic;  HRS_OUT :
+            out std_logic_vector (3 downto 0);  MINS_OUT : out std_logic_vector
+            (5 downto 0);  AM_PM_OUT : out std_logic;  DISPLAY_BUS : out 
+            std_logic_vector (10 downto 0);  test_se, test_si1 : in std_logic; 
+            test_so1 : out std_logic);
+   end component;
+   
+   component CLOCK_GEN_test_1
+      port( CLK, RESETN : in std_logic;  INT_CLK : out std_logic;  
+            COMPUTE_BLOCK_TM_FIX_in, test_se, test_si1 : in std_logic;  
+            test_so1 : out std_logic);
+   end component;
+   
+   component INV3
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   signal INT_CLK, TIM_HRS_3_port, TIM_HRS_2_port, TIM_HRS_1_port, 
+      TIM_HRS_0_port, TIM_MINS_5_port, TIM_MINS_4_port, TIM_MINS_3_port, 
+      TIM_MINS_2_port, TIM_MINS_1_port, TIM_MINS_0_port, TIM_AM_PM, 
+      ALM_HRS_3_port, ALM_HRS_2_port, ALM_HRS_1_port, ALM_HRS_0_port, 
+      ALM_MINS_5_port, ALM_MINS_4_port, ALM_MINS_3_port, ALM_MINS_2_port, 
+      ALM_MINS_1_port, ALM_MINS_0_port, ALM_AM_PM, KONNECT12, n2, n9, n10, n11 
+      : std_logic;
+
+begin
+   
+   U6 : INV3 port map( A => ALARM, Q => n2);
+   U7 : CLOCK_GEN_test_1 port map( CLK => CLK, RESETN => RESETN, INT_CLK => 
+                           INT_CLK, COMPUTE_BLOCK_TM_FIX_in => TM_FIX, test_se 
+                           => test_se, test_si1 => n10, test_so1 => n9);
+   U1 : TIME_BLOCK_test_1 port map( SET_TIME => SET_TIME, HRS => HRS, MINS => 
+                           MINS, CLK => INT_CLK, RESETN => RESETN, ENABLE => n2
+                           , HRS_OUT(3) => TIM_HRS_3_port, HRS_OUT(2) => 
+                           TIM_HRS_2_port, HRS_OUT(1) => TIM_HRS_1_port, 
+                           HRS_OUT(0) => TIM_HRS_0_port, MINS_OUT(5) => 
+                           TIM_MINS_5_port, MINS_OUT(4) => TIM_MINS_4_port, 
+                           MINS_OUT(3) => TIM_MINS_3_port, MINS_OUT(2) => 
+                           TIM_MINS_2_port, MINS_OUT(1) => TIM_MINS_1_port, 
+                           MINS_OUT(0) => TIM_MINS_0_port, AM_PM_OUT => 
+                           TIM_AM_PM, DISPLAY_BUS(10) => TIM_DISPLAY(10), 
+                           DISPLAY_BUS(9) => TIM_DISPLAY(9), DISPLAY_BUS(8) => 
+                           TIM_DISPLAY(8), DISPLAY_BUS(7) => TIM_DISPLAY(7), 
+                           DISPLAY_BUS(6) => TIM_DISPLAY(6), DISPLAY_BUS(5) => 
+                           TIM_DISPLAY(5), DISPLAY_BUS(4) => TIM_DISPLAY(4), 
+                           DISPLAY_BUS(3) => TIM_DISPLAY(3), DISPLAY_BUS(2) => 
+                           TIM_DISPLAY(2), DISPLAY_BUS(1) => TIM_DISPLAY(1), 
+                           DISPLAY_BUS(0) => TIM_DISPLAY(0), test_se => test_se
+                           , test_si1 => test_si, test_so1 => n11);
+   U2 : ALARM_BLOCK_test_1 port map( ALARM => ALARM, HRS => HRS, MINS => MINS, 
+                           CLK => INT_CLK, RESETN => RESETN, ENABLE => ALARM, 
+                           HRS_OUT(3) => ALM_HRS_3_port, HRS_OUT(2) => 
+                           ALM_HRS_2_port, HRS_OUT(1) => ALM_HRS_1_port, 
+                           HRS_OUT(0) => ALM_HRS_0_port, MINS_OUT(5) => 
+                           ALM_MINS_5_port, MINS_OUT(4) => ALM_MINS_4_port, 
+                           MINS_OUT(3) => ALM_MINS_3_port, MINS_OUT(2) => 
+                           ALM_MINS_2_port, MINS_OUT(1) => ALM_MINS_1_port, 
+                           MINS_OUT(0) => ALM_MINS_0_port, AM_PM_OUT => 
+                           ALM_AM_PM, DISPLAY_BUS(10) => ALM_DISPLAY(10), 
+                           DISPLAY_BUS(9) => ALM_DISPLAY(9), DISPLAY_BUS(8) => 
+                           ALM_DISPLAY(8), DISPLAY_BUS(7) => ALM_DISPLAY(7), 
+                           DISPLAY_BUS(6) => ALM_DISPLAY(6), DISPLAY_BUS(5) => 
+                           ALM_DISPLAY(5), DISPLAY_BUS(4) => ALM_DISPLAY(4), 
+                           DISPLAY_BUS(3) => ALM_DISPLAY(3), DISPLAY_BUS(2) => 
+                           ALM_DISPLAY(2), DISPLAY_BUS(1) => ALM_DISPLAY(1), 
+                           DISPLAY_BUS(0) => ALM_DISPLAY(0), test_se => test_se
+                           , test_si1 => n11, test_so1 => n10);
+   U4 : COMPARATOR port map( ALARM_HRS(3) => ALM_HRS_3_port, ALARM_HRS(2) => 
+                           ALM_HRS_2_port, ALARM_HRS(1) => ALM_HRS_1_port, 
+                           ALARM_HRS(0) => ALM_HRS_0_port, TIME_HRS(3) => 
+                           TIM_HRS_3_port, TIME_HRS(2) => TIM_HRS_2_port, 
+                           TIME_HRS(1) => TIM_HRS_1_port, TIME_HRS(0) => 
+                           TIM_HRS_0_port, ALARM_MINS(5) => ALM_MINS_5_port, 
+                           ALARM_MINS(4) => ALM_MINS_4_port, ALARM_MINS(3) => 
+                           ALM_MINS_3_port, ALARM_MINS(2) => ALM_MINS_2_port, 
+                           ALARM_MINS(1) => ALM_MINS_1_port, ALARM_MINS(0) => 
+                           ALM_MINS_0_port, TIME_MINS(5) => TIM_MINS_5_port, 
+                           TIME_MINS(4) => TIM_MINS_4_port, TIME_MINS(3) => 
+                           TIM_MINS_3_port, TIME_MINS(2) => TIM_MINS_2_port, 
+                           TIME_MINS(1) => TIM_MINS_1_port, TIME_MINS(0) => 
+                           TIM_MINS_0_port, ALARM_AM_PM => ALM_AM_PM, 
+                           TIME_AM_PM => TIM_AM_PM, RINGER => KONNECT12);
+   U5 : ALARM_SM_2_test_1 port map( COMPARE_IN => KONNECT12, TOGGLE_ON => 
+                           TOGGLE_SWITCH, CLOCK => INT_CLK, RESETN => RESETN, 
+                           RING => SPEAKER_OUT, test_se => test_se, test_si1 =>
+                           n9);
+
+end SYN_NET;
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+use work.CONV_PACK_CORE.all;
+
+entity CORE is
+
+   port( SET_TIME, ALARM, HOURS, MINUTES, TOGGLE, CLOCK, RESETN : in std_logic;
+         SPEAKER : out std_logic;  HR, MIN : out std_logic_vector (13 downto 0)
+         ;  AM_PM : out std_logic;  TEST_MODE, TEST_SE, TEST_SI : in std_logic
+         );
+
+end CORE;
+
+architecture SYN_NET of CORE is
+
+   component LOGIC0
+      port( Q : out std_logic);
+   end component;
+   
+   component CONVERTOR_CKT
+      port( bin_time : in std_logic_vector (10 downto 0);  hr_display, 
+            min_display : out std_logic_vector (13 downto 0);  am_pm_display : 
+            out std_logic);
+   end component;
+   
+   component COMPUTE_BLOCK
+      port( SET_TIME, ALARM, HRS, MINS, TOGGLE_SWITCH, CLK, TM_FIX, RESETN : in
+            std_logic;  TIM_DISPLAY, ALM_DISPLAY : out std_logic_vector (10 
+            downto 0);  SPEAKER_OUT : out std_logic;  test_si, test_se : in 
+            std_logic);
+   end component;
+   
+   signal HR_12_port, HR_11_port, HR_6_port, HR_5_port, HR_4_port, HR_3_port, 
+      HR_2_port, HR_1_port, HR_0_port, CLK_DISPLAY_10_port, CLK_DISPLAY_9_port,
+      CLK_DISPLAY_8_port, CLK_DISPLAY_7_port, CLK_DISPLAY_6_port, 
+      CLK_DISPLAY_5_port, CLK_DISPLAY_4_port, CLK_DISPLAY_3_port, 
+      CLK_DISPLAY_2_port, CLK_DISPLAY_1_port, CLK_DISPLAY_0_port, HR_13_port, 
+      SYNOPSYS_UNCONNECTED_1, SYNOPSYS_UNCONNECTED_2, SYNOPSYS_UNCONNECTED_3, 
+      SYNOPSYS_UNCONNECTED_4, SYNOPSYS_UNCONNECTED_5 : std_logic;
+
+begin
+   HR <= ( HR_13_port, HR_12_port, HR_11_port, HR_13_port, HR_13_port, 
+      HR_13_port, HR_13_port, HR_6_port, HR_5_port, HR_4_port, HR_3_port, 
+      HR_2_port, HR_1_port, HR_0_port );
+   
+   U1 : COMPUTE_BLOCK port map( SET_TIME => SET_TIME, ALARM => ALARM, HRS => 
+                           HOURS, MINS => MINUTES, TOGGLE_SWITCH => TOGGLE, CLK
+                           => CLOCK, TM_FIX => TEST_MODE, RESETN => RESETN, 
+                           TIM_DISPLAY(10) => CLK_DISPLAY_10_port, 
+                           TIM_DISPLAY(9) => CLK_DISPLAY_9_port, TIM_DISPLAY(8)
+                           => CLK_DISPLAY_8_port, TIM_DISPLAY(7) => 
+                           CLK_DISPLAY_7_port, TIM_DISPLAY(6) => 
+                           CLK_DISPLAY_6_port, TIM_DISPLAY(5) => 
+                           CLK_DISPLAY_5_port, TIM_DISPLAY(4) => 
+                           CLK_DISPLAY_4_port, TIM_DISPLAY(3) => 
+                           CLK_DISPLAY_3_port, TIM_DISPLAY(2) => 
+                           CLK_DISPLAY_2_port, TIM_DISPLAY(1) => 
+                           CLK_DISPLAY_1_port, TIM_DISPLAY(0) => 
+                           CLK_DISPLAY_0_port, ALM_DISPLAY(10) => 
+                           CLK_DISPLAY_10_port, ALM_DISPLAY(9) => 
+                           CLK_DISPLAY_9_port, ALM_DISPLAY(8) => 
+                           CLK_DISPLAY_8_port, ALM_DISPLAY(7) => 
+                           CLK_DISPLAY_7_port, ALM_DISPLAY(6) => 
+                           CLK_DISPLAY_6_port, ALM_DISPLAY(5) => 
+                           CLK_DISPLAY_5_port, ALM_DISPLAY(4) => 
+                           CLK_DISPLAY_4_port, ALM_DISPLAY(3) => 
+                           CLK_DISPLAY_3_port, ALM_DISPLAY(2) => 
+                           CLK_DISPLAY_2_port, ALM_DISPLAY(1) => 
+                           CLK_DISPLAY_1_port, ALM_DISPLAY(0) => 
+                           CLK_DISPLAY_0_port, SPEAKER_OUT => SPEAKER, test_si 
+                           => TEST_SI, test_se => TEST_SE);
+   U3 : CONVERTOR_CKT port map( bin_time(10) => CLK_DISPLAY_10_port, 
+                           bin_time(9) => CLK_DISPLAY_9_port, bin_time(8) => 
+                           CLK_DISPLAY_8_port, bin_time(7) => 
+                           CLK_DISPLAY_7_port, bin_time(6) => 
+                           CLK_DISPLAY_6_port, bin_time(5) => 
+                           CLK_DISPLAY_5_port, bin_time(4) => 
+                           CLK_DISPLAY_4_port, bin_time(3) => 
+                           CLK_DISPLAY_3_port, bin_time(2) => 
+                           CLK_DISPLAY_2_port, bin_time(1) => 
+                           CLK_DISPLAY_1_port, bin_time(0) => 
+                           CLK_DISPLAY_0_port, hr_display(13) => 
+                           SYNOPSYS_UNCONNECTED_1, hr_display(12) => HR_12_port
+                           , hr_display(11) => HR_11_port, hr_display(10) => 
+                           SYNOPSYS_UNCONNECTED_2, hr_display(9) => 
+                           SYNOPSYS_UNCONNECTED_3, hr_display(8) => 
+                           SYNOPSYS_UNCONNECTED_4, hr_display(7) => 
+                           SYNOPSYS_UNCONNECTED_5, hr_display(6) => HR_6_port, 
+                           hr_display(5) => HR_5_port, hr_display(4) => 
+                           HR_4_port, hr_display(3) => HR_3_port, hr_display(2)
+                           => HR_2_port, hr_display(1) => HR_1_port, 
+                           hr_display(0) => HR_0_port, min_display(13) => 
+                           MIN(13), min_display(12) => MIN(12), min_display(11)
+                           => MIN(11), min_display(10) => MIN(10), 
+                           min_display(9) => MIN(9), min_display(8) => MIN(8), 
+                           min_display(7) => MIN(7), min_display(6) => MIN(6), 
+                           min_display(5) => MIN(5), min_display(4) => MIN(4), 
+                           min_display(3) => MIN(3), min_display(2) => MIN(2), 
+                           min_display(1) => MIN(1), min_display(0) => MIN(0), 
+                           am_pm_display => AM_PM);
+   U2 : LOGIC0 port map( Q => HR_13_port);
+
+end SYN_NET;

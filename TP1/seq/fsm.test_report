@@ -1,0 +1,6 @@
+Error: This command is not recognized in XG mode. 
+The new command(s) for this function are report_dft_signal and report_scan_path.
+Please see the man pages for report_dft_signal and report_scan_path to list the corresponding options available.
+
+You may also use the db2xg conversion utility available from $SYNOPSYS/auxx/syn/dftc to help translate your DFT Compiler script fom TCL mode to XG mode.
+0

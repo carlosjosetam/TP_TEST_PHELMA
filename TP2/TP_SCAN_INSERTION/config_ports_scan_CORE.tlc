@@ -1,0 +1,11 @@
+set_dft_signal -view existing_dft -type ScanDataIn -port TEST_SI
+
+set_dft_signal -view existing_dft -type ScanEnable -port TEST_SE
+
+set_dft_signal -view existing_dft -type ScanDataOut -port SPEAKER
+
+set_dft_signal -view existing_dft -type TestMode -port TEST_MODE
+
+create_test_protocol
+preview_dft 
+insert_df

@@ -1,0 +1,90 @@
+analyze -library WORK -format vhdl {/tp/xph3sei/xph3seilan/TP_TEST/TP2/TP_SCAN_INSERTION/vhdl/TIME_BLOCK.vhd /tp/xph3sei/xph3seilan/TP_TEST/TP2/TP_SCAN_INSERTION/vhdl/COMPUTE_BLOCK.vhd /tp/xph3sei/xph3seilan/TP_TEST/TP2/TP_SCAN_INSERTION/vhdl/COMPARATOR.vhd /tp/xph3sei/xph3seilan/TP_TEST/TP2/TP_SCAN_INSERTION/vhdl/CLOCK_GEN.vhd /tp/xph3sei/xph3seilan/TP_TEST/TP2/TP_SCAN_INSERTION/vhdl/ALARM_SM_2.vhd /tp/xph3sei/xph3seilan/TP_TEST/TP2/TP_SCAN_INSERTION/vhdl/ALARM_BLOCK.vhd}
+
+elaborate COMPUTE_BLOCK -architecture NET -library WORK -update
+link
+current_design COMPUTE_BLOCK
+
+create_clock -name "clk" -period 10 -waveform { 0 5  }  { U7/INT_CLK}
+set_max_area 0
+link
+
+set test_xg_use_models true
+use_test_model -true COMPUTE_BLOCK
+
+
+set_dft_signal -view existing_dft -port "CLK" -type ScanClock -timing [list 45 55]
+set_dft_signal -view existing_dft -type Reset -port RESETN -active_state 0
+set_scan_configuration -style multiplexed_flip_flop
+set_scan_configuration -chain_count 1
+set test_default_period 100
+set test_default_delay 0
+set test_default_bidir_delay 0
+set test_default_strobe 40
+set test_stil_netlist_format {verilog}
+
+create_test_protocol
+dft_drc -verbose
+
+current_design COMPUTE_BLOCK
+
+compile -exact_map -scan 
+
+create_test_protocol
+dft_drc -ver
+
+set_dft_signal -view spec -type TestMode -port TM_FIX
+set_dft_configuration -fix_clock enable
+set_dft_signal -view spec -type TestData -port CLK
+set_autofix_configuration -type clock -include_elements [get_object_name [get_cells -hierarchical *]] -control_signal TM_FIX -test_data CLK
+
+preview_dft -test_points all
+insert_dft
+
+dft_drc -verbose -coverage_estimate
+
+set_dft_signal -view spec -type ScanDataIn -port test_si
+set_dft_signal -view spec -type ScanEnable -port test_se
+set_dft_signal -view spec -type ScanDataOut -port SPEAKER_OUT
+set_dft_signal  -type TestMode -port TM_FIX
+
+insert_dft
+dft_drc -verbose -coverage_estimate
+
+change_names -rules verilog -hierarchy -verbose
+
+write -hierarchy -format ddc -output compute_block_scan_dft.ddc
+write_test_protocol -output compute_block_scan_dft.spf
+write_test_model -output compute_block_scan_dft.ctldb
+write -hierarchy -format vhdl -output /tp/xph3sei/xph3seilan/TP_TEST/TP2/TP_SCAN_INSERTION/comp_block_Scan.vhd.vhdl
+write -hierarchy -format verilog -output /tp/xph3sei/xph3seilan/TP_TEST/TP2/TP_SCAN_INSERTION/comp_block_Scan.v
+
+
+analyze -library WORK -format vhdl {/tp/xph3sei/xph3seilan/TP_TEST/TP2/TP_SCAN_INSERTION/vhdl/CONVERTOR.vhd.vhdl}
+analyze -library WORK -format vhdl {/tp/xph3sei/xph3seilan/TP_TEST/TP2/TP_SCAN_INSERTION/vhdl/CORE.vhd}
+elaborate CORE -architecture NET -library WORK -update
+
+current_design CORE
+create_clock -name "clk" -period 10 -waveform { 0 5  }  { CLOCK }
+
+link
+use_test_model -true CORE
+
+set_dft_signal -view existing_dft -port "CLOCK" -type ScanClock -timing [list 45 55]
+set_dft_signal -view existing_dft -type Reset -port RESETN -active_state 0
+
+compile -exact_map -incremental_mapping
+
+set_dft_signal -view existing_dft -type ScanDataIn -port TEST_SI
+set_dft_signal -view existing_dft -type ScanEnable -port TEST_SE
+set_dft_signal -view existing_dft -type ScanDataOut -port SPEAKER
+set_dft_signal -view existing_dft -type TestMode -port TEST_MODE 
+create_test_protocol
+
+preview_dft 
+insert_dft
+dft_drc -coverage_estimate
+change_names -rules verilog -hierarchy -verbose
+write_test_protocol -out alarm_clock.spf
+write -hierarchy -format vhdl -output /tp/xph3sei/xph3seilan/TP_TEST/TP2/TP_SCAN_INSERTION/alarm_clock.vhd.vhdl
+write -hierarchy -format verilog -output /tp/xph3sei/xph3seilan/TP_TEST/TP2/TP_SCAN_INSERTION/alarm_clock.v
+

@@ -1,0 +1,18 @@
+CADENCE IHNL01060
+$model
+XOR30 XOR30
+bist/comparateur/schematic comparateur
+INV0 INV0
+XOR20 XOR20
+NOR20 NOR20
+DFCP1 DFCP1
+bist/LFSR/schematic LFSR
+bist/MISR/schematic MISR
+bist/ALU/functional ALU
+bist/BIST/schematic BIST
+NOR42 NOR42
+$endmodel
+$net
+$endnet
+$param
+$endparam

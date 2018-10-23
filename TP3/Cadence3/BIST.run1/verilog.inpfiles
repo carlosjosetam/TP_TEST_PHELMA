@@ -1,0 +1,27 @@
+// Verilog HDL and netlist files of
+// "bist BIST schematic"
+
+// HDL models
+
+// HDL file for bist, ALU, functional.
+/tp2/xph3se/xph3se54/test/tp3/Cadence/bist/ALU/functional/verilog.v
+
+
+
+// End HDL models
+
+// Netlisted models
+
+// netlist file - bist, LFSR, schematic.
+ihnl/cds0/netlist
+// netlist file - bist, MISR, schematic.
+ihnl/cds1/netlist
+// netlist file - bist, comparateur, schematic.
+ihnl/cds2/netlist
+// netlist file - bist, ALU, functional.
+ihnl/cds3/netlist
+// netlist file - bist, BIST, schematic.
+ihnl/cds4/netlist
+
+
+// End HDL models

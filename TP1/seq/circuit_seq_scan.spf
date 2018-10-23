@@ -1,0 +1,52 @@
+STIL 1.0 ;
+
+Signals {
+   "a"  In;
+   "b"  In;
+   "ck" In;
+   "s"  Out;
+}
+
+Timing {
+   WaveformTable "_default_WFT_" {
+      Period '100ns';
+      Waveforms {
+         "a"  { 01Z { '0ns' D/U/Z; } }
+         "b"  { 01Z { '0ns' D/U/Z; } }
+         "ck" { 01Z { '0ns' D/U/Z; } }
+         "ck" { P   { '0ns' D; '50ns' U; '80ns' D; } }
+      }
+   }
+}
+
+ScanStructures {
+    ScanChain "sc" { ScanIn "test_si"; ScanOut "test_so"; }
+}
+
+
+Procedures {
+   "capture" {
+      "forcePI"  : V { "_pi"=###; "_po"=X; }
+      "measurePO": V { "_po"=#; }
+   }
+
+   "capture_ck" {
+      "forcePI":   V { "_pi"=###; "_po"=X; }
+      "measurePO": V { "_po"=#; }
+      "pulse":     V { "ck"=P; "_po"=X; }
+   }
+
+   "load_unload" {
+      V { "ck"=0; "test_se"=1;}
+      Shift {
+        V {_si=#; _so=#; "ck" = P; }
+      }
+   }
+
+}
+
+MacroDefs {
+   "test_setup" {
+      V { "ck"=0; "test_se"=0; }
+   }
+}

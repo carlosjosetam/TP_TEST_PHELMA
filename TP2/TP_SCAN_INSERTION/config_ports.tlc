@@ -1,0 +1,10 @@
+set_dft_signal -view spec -type ScanDataIn -port test_si
+
+set_dft_signal -view spec -type ScanEnable -port test_se
+
+set_dft_signal -view spec -type ScanDataOut -port SPEAKER_OUT 
+
+set_dft_signal  -type TestMode -port TM_FIX
+
+insert_dft
+

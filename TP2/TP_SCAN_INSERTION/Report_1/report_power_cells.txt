@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : power
+        -cell
+        -analysis_effort low
+        -sort_mode cell_internal_power
+Design : COMPUTE_BLOCK
+Version: H-2013.03-SP4
+Date   : Tue Oct  2 14:43:17 2018
+****************************************
+
+
+Library(s) Used:
+
+    c35_CORELIB_TYP (File: /softslin/AMS_410_CDS/synopsys/c35_3.3V/c35_CORELIB_TYP.db)
+
+
+Operating Conditions: nom_pvt   Library: c35_CORELIB_TYP
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+COMPUTE_BLOCK          10k               c35_CORELIB_TYP
+CLOCK_GEN              10k               c35_CORELIB_TYP
+TIME_BLOCK             10k               c35_CORELIB_TYP
+ALARM_BLOCK            10k               c35_CORELIB_TYP
+COMPARATOR             10k               c35_CORELIB_TYP
+ALARM_SM_2             10k               c35_CORELIB_TYP
+TIME_STATE_MACHINE     10k               c35_CORELIB_TYP
+TIME_COUNTER           10k               c35_CORELIB_TYP
+ALARM_STATE_MACHINE    10k               c35_CORELIB_TYP
+ALARM_COUNTER          10k               c35_CORELIB_TYP
+
+
+Global Operating Voltage = 3.3  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+
+  Attributes
+  ----------
+      h  -  Hierarchical cell
+
+                        Cell      Driven Net  Tot Dynamic      Cell
+                        Internal  Switching   Power            Leakage
+Cell                    Power     Power       (% Cell/Tot)     Power      Attrs
+--------------------------------------------------------------------------------
+U1                         0.9213       N/A        N/A (N/A)    124.8761  h
+U2                         0.5360       N/A        N/A (N/A)     80.4184  h
+U7                         0.0655       N/A        N/A (N/A)      6.3482  h
+U5                         0.0459       N/A        N/A (N/A)      3.9172  h
+U4                      4.348e-03       N/A        N/A (N/A)     10.7109  h
+U8                      1.124e-03    0.0109   1.20e-02 (9%)       0.4512   
+--------------------------------------------------------------------------------
+Totals (6 cells)           1.574mW     N/A         N/A (N/A)    226.722pW

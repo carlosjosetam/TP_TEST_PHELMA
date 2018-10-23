@@ -1,0 +1,45 @@
+// Library - bist, Cell - BIST, View - schematic
+// LAST TIME SAVED: Jan  7 13:00:21 2010
+// NETLIST TIME: Jan  7 13:03:56 2010
+`timescale 1ns / 1ps 
+
+module BIST ( SORTIE, CLK, RESETN_MISR, R_LFSR, SETN_MISR, S_LFSR );
+
+output  SORTIE;
+
+input  CLK, RESETN_MISR, SETN_MISR;
+
+input [18:0]  R_LFSR;
+input [18:0]  S_LFSR;
+
+// Buses in the design
+
+wire  [18:3]  AETB;
+
+wire  [2:0]  CMD;
+
+wire  [0:7]  net31;
+
+wire  [0:7]  net30;
+
+wire  [0:7]  net47;
+
+wire  [0:7]  net037;
+
+
+specify 
+    specparam CDS_LIBNAME  = "bist";
+    specparam CDS_CELLNAME = "BIST";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+LFSR I11 ( CMD[2:0], AETB[18:3], R_LFSR[18:0], S_LFSR[18:0], CLK);
+MISR I9 ( .Z(net037[0:7]), .SET_N(SETN_MISR), .RESET_N(RESETN_MISR),
+     .CLK(CLK), .Q(net31[0:7]));
+MISR I6 ( .Z(net47[0:7]), .SET_N(SETN_MISR), .RESET_N(RESETN_MISR),
+     .CLK(CLK), .Q(net30[0:7]));
+comparateur I4 ( .K(net31[0:7]), .J(net30[0:7]), .OUT(SORTIE));
+ALU I10 ( AETB[10:3], AETB[18:11], CMD[2:0], net037[0:7]);
+ALU I0 ( AETB[10:3], AETB[18:11], CMD[2:0], net47[0:7]);
+
+endmodule

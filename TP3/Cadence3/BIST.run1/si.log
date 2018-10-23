@@ -1,0 +1,70 @@
+ 
+ Running netlist
+ Begin Incremental Netlisting Jan  7 13:03:56 2010
+ 
+ *** NOTE: Stimulus name mapped table won't be printed to file "testfixture.verilog". If you
+     want to have them printed, please set simVerilogPrintStimulusNameMappingTable = t
+     in CIW before invoking the verilog netlister.
+ *** NOTE: CDBA internal net name will be printed to those floating instance ports.
+     If you don't want have them printed,
+     please set simVerilogProcessNullPorts = t in CIW or .simrc.
+ *** NOTE: All cellviews in the design will be in Netlist Configuration list.
+     If you only want those cellviews that need to be re-netlisted in the list,
+     please set simVerilogIncrementalNetlistConfigList = t in CIW or .simrc.
+ *** NOTE: All initial state of stimulus of inout  pins are set to "z". To get inout pins
+     with initial state of "0", please set hnlVerilogIOInitStimulusStr = "0" in CIW or simrc.
+ 
+ 
+ 
+ *** Re-Netlisting the entire design.
+ 
+ 
+ *** The netlisting will be done using connection by name
+ *** ( Explicit connections)  for all the stopping cells and non-stopping cells.
+ 
+ ***  Library - bist, Cell - LFSR, View - schematic
+ ***  Library - bist, Cell - MISR, View - schematic
+ ***  Library - bist, Cell - comparateur, View - schematic
+ ***  Library - bist, Cell - ALU, View - functional
+ ***  Library - bist, Cell - BIST, View - schematic
+ 
+ 
+ ---------- Begin Netlist Configuration Info ----------
+ 
+ CELL NAME                   VIEW NAME            NOTE             
+ ---------                   ---------            ----             
+ 
+ XOR20                       symbol               *Stopping View*  
+ DFCP1                       symbol               *Stopping View*  
+ XOR30                       symbol               *Stopping View*  
+ INV0                        symbol               *Stopping View*  
+ NOR20                       symbol               *Stopping View*  
+ NOR42                       symbol               *Stopping View*  
+ OAI311                      symbol               *Stopping View*  
+ NOR31                       symbol               *Stopping View*  
+ NAND31                      symbol               *Stopping View*  
+ OAI2111                     symbol               *Stopping View*  
+ XNR21                       symbol               *Stopping View*  
+ AOI221                      symbol               *Stopping View*  
+ NAND21                      symbol               *Stopping View*  
+ OAI211                      symbol               *Stopping View*  
+ XOR41                       symbol               *Stopping View*  
+ IMAJ30                      symbol               *Stopping View*  
+ AOI211                      symbol               *Stopping View*  
+ AOI2111                     symbol               *Stopping View*  
+ NOR21                       symbol               *Stopping View*  
+ CLKIN1                      symbol               *Stopping View*  
+ XOR21                       symbol               *Stopping View*  
+ MAJ31                       symbol               *Stopping View*  
+ BIST                        schematic                             
+ ALU                         functional                            
+ comparateur                 schematic                             
+ MISR                        schematic                             
+ LFSR                        schematic                             
+ 
+ ---------- End Netlist Configuration Info   ----------
+ 
+ 
+ *** Netlisting of cell - BIST, view - schematic successful.
+ 
+ End netlisting Jan  7 13:03:57 2010

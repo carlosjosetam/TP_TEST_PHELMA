@@ -1,0 +1,23 @@
+simVerilogNetlistFileList = '(
+    (("bist" "BIST") 
+	("cds4/netlist" "cds4/map" "schematic")
+    ) 
+    (("bist" "ALU") 
+	("cds3/netlist" "cds3/map" "functional")
+    ) 
+    (("bist" "comparateur") 
+	("cds2/netlist" "cds2/map" "schematic")
+    ) 
+    (("bist" "MISR") 
+	("cds1/netlist" "cds1/map" "schematic")
+    ) 
+    (("bist" "LFSR") 
+	("cds0/netlist" "cds0/map" "schematic")
+    )
+)
+simVerilogNetlistFileLibList = '("bist")
+simVerilogNetlistFileCellList = '(("bist" 
+	("LFSR" "MISR" "comparateur" "ALU" "BIST")
+    )
+)
+hnlIncrementalDirectory = '"ihnl"

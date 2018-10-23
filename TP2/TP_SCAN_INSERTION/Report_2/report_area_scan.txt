@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : area
+Design : COMPUTE_BLOCK
+Version: H-2013.03-SP4
+Date   : Tue Oct  2 16:06:47 2018
+****************************************
+
+Library(s) Used:
+
+    c35_CORELIB_TYP (File: /softslin/AMS_410_CDS/synopsys/c35_3.3V/c35_CORELIB_TYP.db)
+
+Number of ports:                           33
+Number of nets:                            61
+Number of cells:                            6
+Number of combinational cells:              1
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       6
+
+Combinational area:              15269.800163
+Buf/Inv area:                     1965.600075
+Noncombinational area:           19000.800385
+Macro/Black Box area:                0.000000
+Net Interconnect area:            6660.000000
+
+Total cell area:                 34270.600548
+Total area:                      40930.600548

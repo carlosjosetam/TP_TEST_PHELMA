@@ -1,0 +1,165 @@
+
+
+
+
+set history=100
+alias qu "quota -v"
+limit coredumpsize 0
+alias hh "history 30"
+alias hi history 20
+alias m more
+alias gt "du -s * | more"
+alias l ls -asF
+alias ll ls -asglF
+alias ll1 ls -asglrtF
+alias ll2 ls -asgltF
+alias lo logout 
+alias cd 'cd \!*;set prompt="`hostname`::`pwd` "'
+alias ds "ls -asF"
+alias vercors "/usr/local/bin/a2ps -Pvercors \!*"
+setenv MANPATH "/usr/man:/usr/openwin/man:/usr/dt/man:/usr/local/man"
+set path=( . ~/bin /softs/acrobat8_1_2/Adobe/Reader8/bin /softs/openoffice2_4_1/program /usr/openwin/bin /usr/local/bin /usr/ucb /bin /usr/dt/bin /usr/bin)
+setenv LD_LIBRARY_PATH usr/openwin/lib:/usr/lib:/usr/dt/lib:/usr/local/lib
+
+set filec
+cd .
+#
+# MENTOR GRAPHICS ModelSim version 6.3e in native environement
+#
+ 
+#setenv MTI_HOME /softs/modelsim_6.3e/modeltech
+setenv MTI_HOME /softs/modelsim6_4a/modeltech
+setenv MODELSIM ~/Security_lab/modelsim.ini
+set path=( $path $MTI_HOME/`$MTI_HOME/vco` )
+setenv MGC_HOME /softs/catapult2007b_1/Mgc_home/
+set path= ( $path $MGC_HOME/bin )
+ 
+#if(${?LM_LICENSE_FILE}) then
+#    setenv LM_LICENSE_FILE "${LM_LICENSE_FILE}:1717@v212"
+#else
+    setenv LM_LICENSE_FILE 1717@v212
+#endif
+#setenv LM_LICENSE_FILE "${LM_LICENSE_FILE}:1719@v211"
+
+#
+# MENTOR GRAPHICS Leonardo 2007a session in native environement
+#
+
+setenv EXEMPLAR /softs/leonardo2007a
+
+set path=($path $EXEMPLAR/bin)
+
+#
+# MENTOR GRAPHICS Precision Synthesis 2008a update 1 for Solaris 9 O.S.
+#
+
+setenv PRECISION_HOME /softs/precision2008a42/Mgc_home
+setenv PATH "${PATH}:${PRECISION_HOME}/bin"
+
+#
+# Mentor Graphics CatapultC synthesis 2007_b.1 University Edition
+#
+
+setenv MGC_HOME /softs/catapult2007b_1/Mgc_home/
+setenv LM_LICENSE_FILE "${LM_LICENSE_FILE}:1719@v211"
+set path= ( $path $MGC_HOME/bin )
+
+
+
+######################## Settings for Xilinx-Alliance########################
+#
+setenv XILINX /softs/xilinx_ise_82i
+setenv XILINX_EDK /softs/xilinx_edk_82i
+setenv PLATFORM sol
+
+if ($?LD_LIBRARY_PATH) then
+   setenv LD_LIBRARY_PATH ${XILINX}/bin/sol:${LD_LIBRARY_PATH}
+else
+  setenv LD_LIBRARY_PATH ${XILINX}/bin/sol:/usr/lib
+endif
+
+set path = (${XILINX}/bin/sol $path)
+
+
+setenv LD_LIBRARY_PATH ${XILINX}/bin/sol:$XILINX_EDK/bin/sol:/usr/lib
+
+set path = (${XILINX}/bin/sol $XILINX_EDK/bin/sol $XILINX_EDK/gnu/microblaze/sol/bin:$XILINX_EDK/gnu/powerpc-eabi/sol/bin:$XILINX_EDK/data/core_licences $path)
+
+setenv LMC_HOME ${XILINX}/smartmodel/${PLATFORM}/installed_sol
+#
+##################### End Settings for Xilinx-Alliance########################
+#
+
+
+#
+###################### Settings for Synopsys 2006.06 ##########################
+#
+setenv SYNOPSYS /softs/synthesis2005_09_sp3
+setenv SNPSLMD_LICENSE_FILE 1721@v212
+set path=($path /usr/bin/X11 $SYNOPSYS/sparcOS5/syn/bin)
+setenv MANPATH ${MANPATH}:$SYNOPSYS/doc/license/man:$SYNOPSYS/doc/motif/man:$SYNOPSYS/doc/syn/man:$SYNOPSYS/doc/sim/man
+#
+setenv SYNOPSYS_TMAX /softs/tetramax2004_06_1
+set path=($path $SYNOPSYS_TMAX/bin )
+
+#
+######################## END: Settings for Synopsys 2006.06###################
+
+#
+# CADENCE DFW II 2005 and SoC ENcounter 2006 (version 5.2.3) in AMS 3.70 environment
+#
+
+unsetenv CDS_INST_DIR
+
+setenv CDS_INST_DIR /softs/cdsic5_1_41
+setenv CDSDIR  /softs/cdsic5_1_41
+setenv ENCOUNTER /softs/cdssoc5_2_3
+setenv LDVDIR '/softs/cdsius5_7_2'
+setenv ASSURAHOME /softs/cdsassu3_1_4
+setenv ICCRAFT_HOME /softs/cdsicc11_2_41
+
+set path=($path \
+$LDVDIR/tools/bin \
+$CDSDIR/tools.sun4v/dfII/bin \
+$CDSDIR/tools.sun4v/bin \
+$ENCOUNTER/bin \
+$ENCOUNTER/tools/bin \
+$ICCRAFT_HOME/tools/iccraft/bin \
+$ASSURAHOME/tools/bin \
+$ASSURAHOME/tools/assura/bin )
+
+setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:${ASSURAHOME}/tools/lib:${ICCRAFT_HOME}/tools/iccraft/lib:${ICCRAFT_HOME}/share/oa/lib/sunos_58_32/opt:${LDVDIR}/tools/lib
+
+setenv LM_LICENSE_FILE 5287@v211:5280@v212
+
+#
+# AMS 3.70 environment for CADENCE DFW II 2005
+#
+
+setenv AMS_DIR  /softs/AMS_3.70_CDS
+
+set path=($path $AMS_DIR/programs/bin $AMS_DIR/artist/bin)
+
+setenv LM_LICENSE_FILE ${LM_LICENSE_FILE}:26745@v212
+
+setenv  DD_DONT_DO_OS_LOCKS  set
+
+######## Environnement pour Calibre ############
+setenv MGC_HOME /softs/calibre2006_1_19_20/ss5_cal_2006.1_19.20
+set path=($path $MGC_HOME/bin )
+
+setenv LM_LICENSE_FILE ${LM_LICENSE_FILE}:1717@v212:1719@v211
+
+#  (0.35 um 4LM) 0,35 cmos
+alias amsc35b4 'ams_cds -tech c35b4 -mode fb & '
+
+#  (0.35 um 3LM) 0,35 cmos
+alias amsc35b3 'ams_cds -tech c35b3 -mode fb & '
+
+#  (0.35 um BiCMOS 4LM) 0,35 SiGe
+alias amss35d4 'ams_cds -tech s35d4 -mode fb & '
+
+#  (0.35 um 4LM) 0,35 cmos
+alias c35b4m3 'ams_cds -tech s35d4 -mode fb &'
+
+---------------------------------------------------------------------------------

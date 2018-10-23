@@ -1,0 +1,13 @@
+
+#
+#################### Settings for Synopsys 2013.06-sp4#########################
+#
+export SYNOPSYS=/softslin/synthesisvH2013_06_sp4_64b
+export SYNOPSYS_TMAX=/softslin/tetramaxvH2013_03_sp5_64b
+export SYNOPSYS_IDQ=/softslin/idqvH2013_03_sp5_64b
+export SNPSLMD_LICENSE_FILE="1721@cimekey1"
+export PATH="${PATH}:/usr/bin/X11:$SYNOPSYS/suse64/syn/bin:${SYNOPSYS_TMAX}/bin:${SYNOPSYS_IDQ}/amd64/iddq/bin"
+export MANPATH=${MANPATH}:$SYNOPSYS/doc/snps_gui/man:$SYNOPSYS/doc/snps_tcl/man:$SYNOPSYS/doc/syn/man
+#
+###################### END: Settings for Synopsys 2013.06-sp4##################
+#

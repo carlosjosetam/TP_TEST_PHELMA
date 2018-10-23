@@ -1,0 +1,117 @@
+Host command: /softs/cdsldv5_0/tools/verilog/bin/verilog.exe
+Command arguments:
+    /tp2/xph3se/xph3se54/test/tp3/Cadence3/BIST.run1/testfixture.template
+    si.inp
+    -f verilog.inpfiles
+        /tp2/xph3se/xph3se54/test/tp3/Cadence/bist/ALU/functional/verilog.v
+        ihnl/cds0/netlist
+        ihnl/cds1/netlist
+        ihnl/cds2/netlist
+        ihnl/cds3/netlist
+        ihnl/cds4/netlist
+    -l simout.tmp
+    +tms_incl+
+    +pulse_r/100
+    +pulse_e/100
+    +delay_mode_path
+    +sxl_keep_minimum
+    -a
+    -f /softs/AMS_3.70_CDS/artist/../verilog/c35b3/vxl.inc
+        -v /soft4/AMS_3.70_CDS/verilog/c35b3/c35_CORELIB.v
+        -v /soft4/AMS_3.70_CDS/verilog/c35b3/c35_CORELIB_3B.v
+        -v /soft4/AMS_3.70_CDS/verilog/c35b3/c35_IOLIB_3M.v
+        -v /soft4/AMS_3.70_CDS/verilog/c35b3/c35_IOLIB_3B_3M.v
+        -v /soft4/AMS_3.70_CDS/verilog/c35b3/c35_IOLIBV5_3M.v
+        -v /soft4/AMS_3.70_CDS/verilog/c35b3/c35_IOLIBC_3B_3M.v
+        -v /soft4/AMS_3.70_CDS/verilog/c35b3/c35_UDP.v
+        +sdf_nocheck_celltype
+    +libext+.v+
+    +incdir+hdlFilesDir
+    +sdf_verbose
+    +gui_zz+/tp2/xph3se/xph3se54/test/tp3/Cadence3/BIST.run1/.simTmpCmd
+    +gui_sync
+    -s
+
+Tool:	VERILOG-XL	05.00.001-p log file created Jan  7, 2010  13:03:58
+Tool:	VERILOG-XL	05.00.001-p   Jan  7, 2010  13:03:58
+
+Copyright (c) 1995-2003 Cadence Design Systems, Inc.  All Rights Reserved.
+Unpublished -- rights reserved under the copyright laws of the United States.
+
+Copyright (c) 1995-2003 UNIX Systems Laboratories, Inc.  Reproduced with Permission.
+
+THIS SOFTWARE AND ON-LINE DOCUMENTATION CONTAIN CONFIDENTIAL INFORMATION
+AND TRADE SECRETS OF CADENCE DESIGN SYSTEMS, INC.  USE, DISCLOSURE, OR
+REPRODUCTION IS PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF
+CADENCE DESIGN SYSTEMS, INC.
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c)(1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+                Cadence Design Systems, Inc.
+                555 River Oaks Parkway
+                San Jose, California  95134
+
+For technical assistance please contact the Cadence Response Center at
+1-877-CDS-4911 or send email to support@cadence.com
+
+For more information on Cadence's Verilog-XL product line send email to
+talkv@cadence.com
+
+Compiling source file "/tp2/xph3se/xph3se54/test/tp3/Cadence3/BIST.run1/testfixture.template"
+Compiling included source file "testfixture.verilog"
+Continuing compilation of source file "/tp2/xph3se/xph3se54/test/tp3/Cadence3/BIST.run1/testfixture.template"
+Compiling source file "si.inp"
+Compiling source file "/tp2/xph3se/xph3se54/test/tp3/Cadence/bist/ALU/functional/verilog.v"
+Compiling source file "ihnl/cds0/netlist"
+Compiling source file "ihnl/cds1/netlist"
+Compiling source file "ihnl/cds2/netlist"
+Compiling source file "ihnl/cds3/netlist"
+Compiling source file "ihnl/cds4/netlist"
+Scanning library file "/soft4/AMS_3.70_CDS/verilog/c35b3/c35_CORELIB.v"
+Scanning library file "/soft4/AMS_3.70_CDS/verilog/c35b3/c35_CORELIB.v"
+Scanning library file "/soft4/AMS_3.70_CDS/verilog/c35b3/c35_CORELIB_3B.v"
+Scanning library file "/soft4/AMS_3.70_CDS/verilog/c35b3/c35_IOLIB_3M.v"
+Scanning library file "/soft4/AMS_3.70_CDS/verilog/c35b3/c35_IOLIB_3B_3M.v"
+Scanning library file "/soft4/AMS_3.70_CDS/verilog/c35b3/c35_IOLIBV5_3M.v"
+Scanning library file "/soft4/AMS_3.70_CDS/verilog/c35b3/c35_IOLIBC_3B_3M.v"
+Scanning library file "/soft4/AMS_3.70_CDS/verilog/c35b3/c35_UDP.v"
+
+Warning!  Library file "/soft4/AMS_3.70_CDS/verilog/c35b3/c                    
+          35_CORELIB_3B.v" was specified but not needed.    [Verilog-LFSNN]    
+          "/soft4/AMS_3.70_CDS/verilog/c35b3/c35_UDP.v",                       
+          1211: 
+
+Warning!  Library file "/soft4/AMS_3.70_CDS/verilog/c35b3/c                    
+          35_IOLIB_3M.v" was specified but not needed.      [Verilog-LFSNN]    
+          "/soft4/AMS_3.70_CDS/verilog/c35b3/c35_UDP.v",                       
+          1211: 
+
+Warning!  Library file "/soft4/AMS_3.70_CDS/verilog/c35b3/c                    
+          35_IOLIB_3B_3M.v" was specified but not needed.   [Verilog-LFSNN]    
+          "/soft4/AMS_3.70_CDS/verilog/c35b3/c35_UDP.v",                       
+          1211: 
+
+Warning!  Library file "/soft4/AMS_3.70_CDS/verilog/c35b3/c                    
+          35_IOLIBV5_3M.v" was specified but not needed.    [Verilog-LFSNN]    
+          "/soft4/AMS_3.70_CDS/verilog/c35b3/c35_UDP.v",                       
+          1211: 
+
+Warning!  Library file "/soft4/AMS_3.70_CDS/verilog/c35b3/c                    
+          35_IOLIBC_3B_3M.v" was specified but not needed.  [Verilog-LFSNN]    
+          "/soft4/AMS_3.70_CDS/verilog/c35b3/c35_UDP.v",                       
+          1211: 
+Highest level modules:
+test
+
+Type ? for help
+C1 > .
+
+5 warnings
+0 simulation events (use +profile or +listcounts option to count) + 79 accelerated events + 700 timing check events
+CPU time: 0.1 secs to compile + 0.1 secs to link + 0.0 secs in simulation
+End of Tool:	VERILOG-XL	05.00.001-p   Jan  7, 2010  13:04:00

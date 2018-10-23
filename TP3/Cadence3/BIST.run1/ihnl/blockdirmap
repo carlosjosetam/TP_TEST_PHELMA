@@ -1,0 +1,7 @@
+CADENCE IHNL01065
+
+bist LFSR schematic cds0
+bist MISR schematic cds1
+bist comparateur schematic cds2
+bist ALU functional cds3
+bist BIST schematic cds4

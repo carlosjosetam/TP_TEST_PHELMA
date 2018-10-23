@@ -1,0 +1,36 @@
+
+`timescale 1ns / 1ps
+
+module test;
+
+
+wire  SORTIE;
+
+reg  CLK, RESETN_MISR, SETN_MISR;
+
+reg [18:0]  R_LFSR;
+reg [18:0]  S_LFSR;
+
+
+
+BIST top(SORTIE, CLK, RESETN_MISR, R_LFSR, SETN_MISR, S_LFSR); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the testfixture.verilog file
+  `include "testfixture.verilog"
+`endif
+
+`ifdef veritime
+
+ // please enter any veritime stimulus in the testfixture.veritime file
+  `include "testfixture.veritime"
+`endif
+
+`ifdef verifault
+ // please enter any verifault stimulus in the testfixture.verifault file
+  `include "testfixture.verifault"
+`endif
+
+endmodule 

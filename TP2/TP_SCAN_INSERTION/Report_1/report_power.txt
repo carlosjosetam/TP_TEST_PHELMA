@@ -1,0 +1,130 @@
+Loading db file '/softslin/AMS_410_CDS/synopsys/c35_3.3V/c35_CORELIB_TYP.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : COMPUTE_BLOCK
+Version: H-2013.03-SP4
+Date   : Tue Oct  2 14:11:17 2018
+****************************************
+
+
+Library(s) Used:
+
+    c35_CORELIB_TYP (File: /softslin/AMS_410_CDS/synopsys/c35_3.3V/c35_CORELIB_TYP.db)
+
+
+Operating Conditions: nom_pvt   Library: c35_CORELIB_TYP
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+COMPUTE_BLOCK          10k               c35_CORELIB_TYP
+CLOCK_GEN              10k               c35_CORELIB_TYP
+TIME_BLOCK             10k               c35_CORELIB_TYP
+ALARM_BLOCK            10k               c35_CORELIB_TYP
+COMPARATOR             10k               c35_CORELIB_TYP
+ALARM_SM_2             10k               c35_CORELIB_TYP
+TIME_STATE_MACHINE     10k               c35_CORELIB_TYP
+TIME_COUNTER           10k               c35_CORELIB_TYP
+ALARM_STATE_MACHINE    10k               c35_CORELIB_TYP
+ALARM_COUNTER          10k               c35_CORELIB_TYP
+
+
+Global Operating Voltage = 3.3  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 684.2851 uW   (77%)
+  Net Switching Power  = 206.2282 uW   (23%)
+                         ---------
+Total Dynamic Power    = 890.5133 uW  (100%)
+
+Cell Leakage Power     = 576.9514 pW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.1314        1.1123e-02            6.3482            0.1425  (  16.00%)
+sequential         0.3507        1.2601e-04          110.3085            0.3508  (  39.40%)
+combinational      0.2022            0.1950          460.2945            0.3972  (  44.60%)
+--------------------------------------------------------------------------------------------------
+Total              0.6843 mW         0.2062 mW       576.9512 pW         0.8905 mW
+Loading db file '/softslin/AMS_410_CDS/synopsys/c35_3.3V/c35_CORELIB_TYP.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : COMPUTE_BLOCK
+Version: H-2013.03-SP4
+Date   : Tue Oct  2 14:43:00 2018
+****************************************
+
+
+Library(s) Used:
+
+    c35_CORELIB_TYP (File: /softslin/AMS_410_CDS/synopsys/c35_3.3V/c35_CORELIB_TYP.db)
+
+
+Operating Conditions: nom_pvt   Library: c35_CORELIB_TYP
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+COMPUTE_BLOCK          10k               c35_CORELIB_TYP
+CLOCK_GEN              10k               c35_CORELIB_TYP
+TIME_BLOCK             10k               c35_CORELIB_TYP
+ALARM_BLOCK            10k               c35_CORELIB_TYP
+COMPARATOR             10k               c35_CORELIB_TYP
+ALARM_SM_2             10k               c35_CORELIB_TYP
+TIME_STATE_MACHINE     10k               c35_CORELIB_TYP
+TIME_COUNTER           10k               c35_CORELIB_TYP
+ALARM_STATE_MACHINE    10k               c35_CORELIB_TYP
+ALARM_COUNTER          10k               c35_CORELIB_TYP
+
+
+Global Operating Voltage = 3.3  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   1.5743 mW   (68%)
+  Net Switching Power  = 734.6401 uW   (32%)
+                         ---------
+Total Dynamic Power    =   2.3089 mW  (100%)
+
+Cell Leakage Power     = 226.7221 pW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           1.3670        6.2197e-02          108.0146            1.4292  (  61.90%)
+sequential     6.5548e-02            0.5320            6.3482            0.5976  (  25.88%)
+combinational      0.1417            0.1404          112.3593            0.2821  (  12.22%)
+--------------------------------------------------------------------------------------------------
+Total              1.5743 mW         0.7346 mW       226.7221 pW         2.3089 mW

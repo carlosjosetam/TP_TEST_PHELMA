@@ -1,0 +1,144 @@
+STIL 1.0 {
+   Design P2000.9;
+}
+Header {
+   Title "  TetraMAX (TM)  2001.08-i010809_170343 STIL output";
+   Date "Tue Sep 10 16:08:18 2002";
+   History {
+      Ann {*     Uncollapsed Stuck Fault Summary Report *}
+      Ann {* ----------------------------------------------- *}
+      Ann {* fault class                     code   #faults *}
+      Ann {* ------------------------------  ----  --------- *}
+      Ann {* Detected                         DT        430 *}
+      Ann {* Possibly detected                PT          0 *}
+      Ann {* Undetectable                     UD          4 *}
+      Ann {* ATPG untestable                  AU          0 *}
+      Ann {* Not detected                     ND          0 *}
+      Ann {* ----------------------------------------------- *}
+      Ann {* total faults                               434 *}
+      Ann {* test coverage                           100.00% *}
+      Ann {* ----------------------------------------------- *}
+      Ann {*  *}
+      Ann {*            Pattern Summary Report *}
+      Ann {* ----------------------------------------------- *}
+      Ann {* #internal patterns                          23 *}
+      Ann {*     #basic_scan patterns                    23 *}
+      Ann {* ----------------------------------------------- *}
+      Ann {*  *}
+      Ann {* rule  severity  #fails  description *}
+      Ann {* ----  --------  ------  --------------------------------- *}
+      Ann {* B8    warning       26  unconnected module input pin *}
+      Ann {*  *}
+      Ann {* There are no clocks *}
+      Ann {* port_name         constraint_value *}
+      Ann {* ----------------  --------------- *}
+      Ann {* vdd                 1 *}
+      Ann {* vss                 0 *}
+      Ann {*  *}
+      Ann {* There are no equivalent pins *}
+      Ann {* There are no net connections *}
+   }
+}
+Signals {
+   "ie(5)" In; "ie(4)" In; "ie(3)" In; "r(3)" In; "r(2)" In; "r(1)" In; "r(0)" In;
+   "s(3)" In; "s(2)" In; "s(1)" In; "s(0)" In; "cin" In; "vdd" In; "vss" In; "alu_out(3)" Out;
+   "alu_out(2)" Out; "alu_out(1)" Out; "alu_out(0)" Out; "cout" Out; "signe" Out;
+   "zero" Out; "ovr" Out; "np" Out; "ng" Out;
+}
+SignalGroups {
+   "_default_In_Timing_" = '"ie(5)" + "ie(4)" + "ie(3)" + "r(3)" + "r(2)" + "r(1)"
+   + "r(0)" + "s(3)" + "s(2)" + "s(1)" + "s(0)" + "cin" + "vdd" + "vss"'; // #signals=14
+   "_pi" = '"ie(5)" + "ie(4)" + "ie(3)" + "r(3)" + "r(2)" + "r(1)" + "r(0)" + "s(3)"
+   + "s(2)" + "s(1)" + "s(0)" + "cin" + "vdd" + "vss"'; // #signals=14
+   "_default_Out_Timing_" = '"alu_out(3)" + "alu_out(2)" + "alu_out(1)" + "alu_out(0)"
+   + "cout" + "signe" + "zero" + "ovr" + "np" + "ng"'; // #signals=10
+   "_po" = '"alu_out(3)" + "alu_out(2)" + "alu_out(1)" + "alu_out(0)" + "cout" +
+   "signe" + "zero" + "ovr" + "np" + "ng"'; // #signals=10
+}
+Timing {
+   WaveformTable "_default_WFT_" {
+      Period '100ns';
+      Waveforms {
+         "_default_In_Timing_" { 0 { '0ns' D; } }
+         "_default_In_Timing_" { 1 { '0ns' U; } }
+         "_default_In_Timing_" { Z { '0ns' Z; } }
+         "_default_In_Timing_" { N { '0ns' N; } }
+         "_default_Out_Timing_" { X { '0ns' X; } }
+         "_default_Out_Timing_" { H { '0ns' X; '40ns' H; } }
+         "_default_Out_Timing_" { T { '0ns' X; '40ns' T; } }
+         "_default_Out_Timing_" { L { '0ns' X; '40ns' L; } }
+      }
+   }
+}
+PatternBurst "_burst_" { PatList {
+   "_pattern_" {
+   }
+}}
+PatternExec {
+   PatternBurst "_burst_";
+}
+Procedures {
+   "capture" {
+      W "_default_WFT_";
+      F { "vdd"=1; "vss"=0; }
+      "forcePI": V { "_pi"=\r14 # ; "_po"=\j \r10 X ; }
+      "measurePO": V { "_po"=\r10 # ; }
+   }
+}
+MacroDefs {
+   "test_setup" {
+      W "_default_WFT_";
+      V { "vdd"=1; "vss"=0; }
+   }
+}
+Pattern "_pattern_" {
+   W "_default_WFT_";
+   "precondition all Signals": C { "_pi"=\r14 0 ; "_po"=\j \r10 X ; }
+   Macro "test_setup";
+   "pattern 0": Call "capture" { 
+      "_pi"=10011000101010; "_po"=LHLLLLLLHH; }
+   "pattern 1": Call "capture" { 
+      "_pi"=00110000010110; "_po"=HLHLLHLHHH; }
+   "pattern 2": Call "capture" { 
+      "_pi"=00101000000010; "_po"=HLHHLHLLHH; }
+   "pattern 3": Call "capture" { 
+      "_pi"=00100100101010; "_po"=LLHLHLLLHL; }
+   "pattern 4": Call "capture" { 
+      "_pi"=00100010110110; "_po"=LHLHHLLLHL; }
+   "pattern 5": Call "capture" { 
+      "_pi"=01001111011110; "_po"=HHLLLHLHHH; }
+   "pattern 6": Call "capture" { 
+      "_pi"=01010111100110; "_po"=HHHHLHLLHH; }
+   "pattern 7": Call "capture" { 
+      "_pi"=01011010110010; "_po"=LHHLHLLHHL; }
+   "pattern 8": Call "capture" { 
+      "_pi"=01011100111010; "_po"=LHHLHLLHHL; }
+   "pattern 9": Call "capture" { 
+      "_pi"=00001110011110; "_po"=HLHHLHLHHH; }
+   "pattern 10": Call "capture" { 
+      "_pi"=00000101010010; "_po"=HHLLLHLLHH; }
+   "pattern 11": Call "capture" { 
+      "_pi"=10010101001010; "_po"=HLLLLHLHHH; }
+   "pattern 12": Call "capture" { 
+      "_pi"=10001101111110; "_po"=LHHLLLLLHH; }
+   "pattern 13": Call "capture" { 
+      "_pi"=10011010010110; "_po"=LLLLHLHLLH; }
+   "pattern 14": Call "capture" { 
+      "_pi"=01100111100010; "_po"=HHHHLHLLLH; }
+   "pattern 15": Call "capture" { 
+      "_pi"=00010011000010; "_po"=LLLHHLLHHL; }
+   "pattern 16": Call "capture" { 
+      "_pi"=00001111100110; "_po"=LHLLHLLLLL; }
+   "pattern 17": Call "capture" { 
+      "_pi"=00011100011110; "_po"=LLHLHLLLLL; }
+   "pattern 18": Call "capture" { 
+      "_pi"=00011010001110; "_po"=HHHHLHLLHH; }
+   "pattern 19": Call "capture" { 
+      "_pi"=00011110001110; "_po"=LLLHHLLLLL; }
+   "pattern 20": Call "capture" { 
+      "_pi"=10000100011110; "_po"=LLHLHLLLHL; }
+   "pattern 21": Call "capture" { 
+      "_pi"=10001100100010; "_po"=LHLLHLLHHL; }
+   "pattern 22": Call "capture" { 
+      "_pi"=11110111010010; "_po"=HHHLHHLHHL; }
+}

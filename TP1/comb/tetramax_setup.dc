@@ -1,0 +1,15 @@
+/* Pre-clock Strobe Protocol */
+set test_default_strobe 40
+set test_default_period 100
+/* create_test_clock  "CLK" -period 100 -waveform {45 55} 
+
+/* Bidirectional Port Timing */
+/* test_no_three_state_contention_after_capture =true */
+set test_default_delay 0
+set test_default_bidir_delay 0
+
+/* TetraMAX Netlist Format */
+
+
+/* Export DFT Compiler Clock Capture Groups */
+test_stil_multiclock_capture_procedures = true

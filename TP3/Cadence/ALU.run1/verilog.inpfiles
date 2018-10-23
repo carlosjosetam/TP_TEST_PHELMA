@@ -1,0 +1,10 @@
+// Verilog HDL and netlist files of
+// "bist ALU schematic"
+
+// Netlisted models
+
+// netlist file - bist, ALU, schematic.
+ihnl/cds0/netlist
+
+
+// End HDL models

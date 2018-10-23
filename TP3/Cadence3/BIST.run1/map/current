@@ -1,0 +1,49 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "BIST"
+  repList "behavioral functional schematic symbol"
+  stopList "symbol"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/tp2/xph3se/xph3se54/test/tp3/Cadence3/BIST.run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( instViewTable
+ )
+( defbus
+( "net037" 0 7  "net037" 0 7  )
+( "net47" 0 7  "net47" 0 7  )
+( "net30" 0 7  "net30" 0 7  )
+( "net31" 0 7  "net31" 0 7  )
+( "S_LFSR" 18 0  "S_LFSR" 18 0  )
+( "CMD" 2 0  "CMD" 2 0  )
+( "AETB" 18 3  "AETB" 18 3  )
+( "R_LFSR" 18 0  "R_LFSR" 18 0  )
+ )
+( net
+ )
+( inst
+ )
+( model
+( "bist/MISR/schematic" "MISR" )
+( "bist/ALU/functional" "ALU" )
+( "bist/BIST/schematic" "BIST" )
+( "bist/comparateur/schematic" "comparateur" )
+( "bist/LFSR/schematic" "LFSR" )
+ )
+( term
+ )
+( param
+ )
+( "ALU" "ihnl/cds3/map" )
+( "BIST" "ihnl/cds4/map" )
+( "MISR" "ihnl/cds1/map" )
+( "comparateur" "ihnl/cds2/map" )
+( "LFSR" "ihnl/cds0/map" )
+ )

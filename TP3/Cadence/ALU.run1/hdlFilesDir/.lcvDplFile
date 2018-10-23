@@ -1,0 +1,51 @@
+tmLCVDPLList = '(
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "OAI311" libName "CORELIB"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "NOR31" libName "CORELIB"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "AOI2111" libName "CORELIB"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "XOR41" libName "CORELIB"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "NAND21" libName "CORELIB"
+    )
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "OAI2111" libName "CORELIB"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "OAI211" libName "CORELIB"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "AOI221" libName "CORELIB"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "MAJ31" libName "CORELIB"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "XNR21" libName "CORELIB"
+    )
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "CLKIN1" libName "CORELIB"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "NAND31" libName "CORELIB"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "NOR21" libName "CORELIB"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "AOI211" libName "CORELIB"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "IMAJ30" libName "CORELIB"
+    )
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "XOR21" libName "CORELIB"
+    )
+)
+xxxInternalGlobAliasList = '(nil)

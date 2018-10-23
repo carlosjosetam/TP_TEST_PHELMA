@@ -1,0 +1,6 @@
+change_names -rules verilog -hierarchy -verbose
+write -hierarchy -format ddc -output compute_block_scan_dft.ddc
+write_test_protocol -output compute_block_scan_dft.spf
+write_test_model -output compute_block_scan_dft.ctldb
+write -hierarchy -format vhdl -output comp_block_Scan.vhdl
+write -hierarchy -format verilog -output comp_block_Scan.v

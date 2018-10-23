@@ -1,0 +1,43 @@
+STIL 1.0 ;
+
+Signals {
+   "e(3)" In; "e(2)" In; "e(1)" In; "e(0)" In; "vdd" In; "vss" In; "s" Out;
+}
+
+SignalGroups {
+   "_default_In_Timing_" = '"e(3)" + "e(2)" + "e(1)" + "e(0)" + "vdd" + "vss"';
+   "_pi" = '"e(3)" + "e(2)" + "e(1)" + "e(0)" + "vdd" + "vss"';
+   "_default_Out_Timing_" = '"s"';
+   "_po" = '"s"';
+}
+
+Timing {
+   WaveformTable "_default_WFT_" {
+      Period '100ns';
+      Waveforms {
+         "_default_In_Timing_" { 0 { '0ns' D; } }
+         "_default_In_Timing_" { 1 { '0ns' U; } }
+         "_default_In_Timing_" { Z { '0ns' Z; } }
+         "_default_Out_Timing_" { X { '0ns' X; } }
+         "_default_Out_Timing_" { H { '0ns' X; '40ns' H; } }
+         "_default_Out_Timing_" { L { '0ns' X; '40ns' L; } }
+      }
+   }
+}
+
+Procedures {
+   "capture" {
+      W "_default_WFT_";
+      F { "vdd"=1; "vss"=0; }
+      "forcePI": V { "_pi"=######; "_po"=\j X; }
+      "measurePO": V { "_po"=#; }
+   }
+}
+
+MacroDefs {
+   "test_setup" {
+      W "_default_WFT_";
+      V { "vdd"=1; "vss"=0; }
+   }
+}
+

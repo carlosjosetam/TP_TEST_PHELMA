@@ -1,0 +1,12 @@
+restart
+
+force Reset 1
+force Clk 0 0, 1 25 -repeat 50
+force MODE 1
+force SIN 1
+
+run 100 ns
+
+force Reset 0
+
+run 1000 ns

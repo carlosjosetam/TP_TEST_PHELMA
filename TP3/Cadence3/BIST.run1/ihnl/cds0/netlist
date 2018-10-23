@@ -1,0 +1,67 @@
+// Library - bist, Cell - LFSR, View - schematic
+// LAST TIME SAVED: Nov 11 16:47:01 2004
+// NETLIST TIME: Jan  7 13:03:56 2010
+`timescale 1ns / 1ps 
+
+module LFSR ( {OUT[2], OUT[1], OUT[0]}, {OUT[18], OUT[17], OUT[16],
+     OUT[15], OUT[14], OUT[13], OUT[12], OUT[11], OUT[10], OUT[9],
+     OUT[8], OUT[7], OUT[6], OUT[5], OUT[4], OUT[3]}, RESET_LFSR,
+     SET_LFSR, clk );
+
+input  clk;
+
+output [0:18]  OUT;
+
+input [18:0]  SET_LFSR;
+input [18:0]  RESET_LFSR;
+
+
+specify 
+    specparam CDS_LIBNAME  = "bist";
+    specparam CDS_CELLNAME = "LFSR";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+XOR20  I27 ( .Q(net47), .A(net63), .B(net41));
+XOR20  I26 ( .Q(net41), .A(net147), .B(net44));
+XOR20  I25 ( .Q(net156), .A(net159), .B(net47));
+DFCP1  I18 ( .D(net93), .RN(RESET_LFSR[18]), .C(clk), .Q(net44),
+     .SN(SET_LFSR[18]), .QN(OUT[18]));
+DFCP1  I17 ( .D(net99), .RN(RESET_LFSR[17]), .C(clk), .Q(net93),
+     .SN(SET_LFSR[17]), .QN(OUT[17]));
+DFCP1  I16 ( .D(net105), .RN(RESET_LFSR[16]), .C(clk), .Q(net99),
+     .SN(SET_LFSR[16]), .QN(OUT[16]));
+DFCP1  I15 ( .D(net81), .RN(RESET_LFSR[15]), .C(clk), .Q(net105),
+     .SN(SET_LFSR[15]), .QN(OUT[15]));
+DFCP1  I14 ( .D(net111), .RN(RESET_LFSR[14]), .C(clk), .Q(net81),
+     .SN(SET_LFSR[14]), .QN(OUT[14]));
+DFCP1  I13 ( .D(net117), .RN(RESET_LFSR[13]), .C(clk), .Q(net111),
+     .SN(SET_LFSR[13]), .QN(OUT[13]));
+DFCP1  I12 ( .D(net123), .RN(RESET_LFSR[12]), .C(clk), .Q(net117),
+     .SN(SET_LFSR[12]), .QN(OUT[12]));
+DFCP1  I11 ( .D(net129), .RN(RESET_LFSR[11]), .C(clk), .Q(net123),
+     .SN(SET_LFSR[11]), .QN(OUT[11]));
+DFCP1  I10 ( .D(net135), .RN(RESET_LFSR[10]), .C(clk), .Q(net129),
+     .SN(SET_LFSR[10]), .QN(OUT[10]));
+DFCP1  I9 ( .D(net141), .RN(RESET_LFSR[9]), .C(clk), .Q(net135),
+     .SN(SET_LFSR[9]), .QN(OUT[9]));
+DFCP1  I8 ( .D(net51), .RN(RESET_LFSR[8]), .C(clk), .Q(net141),
+     .SN(SET_LFSR[8]), .QN(OUT[8]));
+DFCP1  I7 ( .D(net57), .RN(RESET_LFSR[7]), .C(clk), .Q(net51),
+     .SN(SET_LFSR[7]), .QN(OUT[7]));
+DFCP1  I6 ( .D(net147), .RN(RESET_LFSR[6]), .C(clk), .Q(net57),
+     .SN(SET_LFSR[6]), .QN(OUT[6]));
+DFCP1  I5 ( .D(net63), .RN(RESET_LFSR[5]), .C(clk), .Q(net147),
+     .SN(SET_LFSR[5]), .QN(OUT[5]));
+DFCP1  I4 ( .D(net69), .RN(RESET_LFSR[4]), .C(clk), .Q(net63),
+     .SN(SET_LFSR[4]), .QN(OUT[4]));
+DFCP1  I3 ( .D(net75), .RN(RESET_LFSR[3]), .C(clk), .Q(net69),
+     .SN(SET_LFSR[3]), .QN(OUT[3]));
+DFCP1  I2 ( .D(net153), .RN(RESET_LFSR[2]), .C(clk), .Q(net75),
+     .SN(SET_LFSR[2]), .QN(OUT[2]));
+DFCP1  I1 ( .D(net159), .RN(RESET_LFSR[1]), .C(clk), .Q(net153),
+     .SN(SET_LFSR[1]), .QN(OUT[1]));
+DFCP1  I0 ( .D(net156), .RN(RESET_LFSR[0]), .C(clk), .Q(net159),
+     .SN(SET_LFSR[0]), .QN(OUT[0]));
+
+endmodule

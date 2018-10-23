@@ -1,0 +1,58 @@
+STIL 1.0 {
+   Design P2000.9;
+}
+
+Signals {
+   "a"    In  ;
+   "b"    In  ;
+   "com"  In  ;
+   "s"    Out ;
+   "vdd"  In  ;
+   "vss"  In  ;
+}
+
+SignalGroups {
+   "_pi" = '"a" + "b" + "com" + "vdd" + "vss"';
+   "_po" = '"s"';
+   "_default_In_Timing_" = '"a" + "b" + "com" + "vdd" + "vss"';
+   "_default_Out_Timing_" = '"s"';
+}
+
+Timing {
+   WaveformTable "_default_WFT_" {
+      Period '100ns';
+      Waveforms {
+         "_default_In_Timing_" { 0 { '0ns' D; } }
+         "_default_In_Timing_" { 1 { '0ns' U; } }
+         "_default_In_Timing_" { Z { '0ns' Z; } }
+         "_default_In_Timing_" { N { '0ns' N; } }
+         "_default_Out_Timing_" { X { '0ns' X; } }
+         "_default_Out_Timing_" { H { '0ns' X; '40ns' H; } }
+         "_default_Out_Timing_" { L { '0ns' X; '40ns' L; } }
+         "_default_Out_Timing_" { T { '0ns' X; '40ns' T; } }
+      }
+   }
+}
+
+PatternBurst "_burst_" { PatList {
+   "_pattern_" {
+   }
+}}
+PatternExec {
+   PatternBurst "_burst_";
+}
+Procedures {
+   "capture" {
+      W "_default_WFT_";
+      F { "vss"=0; "vdd"=1; }
+      "forcePI"   : V { "_pi"=#####; "_po"=\j X; }
+      "measurePO" : V { "_po"=#; }
+   }
+}
+
+Pattern "_pattern_" {
+   W "_default_WFT_";
+  "p1":
+   Call "capture" {
+      "_pi"=00010; "_po"=H; }
+}

@@ -1,0 +1,16 @@
+read_netlist sxlib.v
+read_netlist circuit_seq_scan.vhd
+run_build_model fsm
+
+run drc circuit_seq_scan.spf
+
+add faults -all
+set faults -fault_coverage
+run atpg basic_scan_only
+#write patterns circuit_seq_scan.stil -internal -format stil  -replace
+
+##set atpg -capture_cycles 2
+
+#run atpg fast_sequential_only
+#run atpg basic_scan_only
+#run atpg basic_scan_only

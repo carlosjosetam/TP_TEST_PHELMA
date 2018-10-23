@@ -1,0 +1,7 @@
+change_names -rules verilog -hierarchy -verbose
+
+write_test_protocol -out alarm_clock.spf
+
+write -hierarchy -format vhdl -output alarm_clock.vhd.vhdl
+
+write -hierarchy -format verilog -output alarm_clock.v

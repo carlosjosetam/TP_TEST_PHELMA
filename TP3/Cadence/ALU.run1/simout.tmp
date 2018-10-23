@@ -1,0 +1,99 @@
+Host command: /softs/cdsldv5_0/tools/verilog/bin/verilog.exe
+Command arguments:
+    /tp/tperg3/tperg3la/TP_TEST_06/TP_BIST_LOGIC/Cadence/ALU.run1/testfixture.template
+    si.inp
+    -f verilog.inpfiles
+        ihnl/cds0/netlist
+    -l simout.tmp
+    +tms_incl+
+    +pulse_r/100
+    +pulse_e/100
+    +delay_mode_path
+    +sxl_keep_minimum
+    -a
+    -f /softs/AMS_3.51_CDS/artist/../verilog/c35b3/vxl.inc
+        -v /soft6/AMS_3.51_CDS/verilog/c35b3/c35_CORELIB.v
+        -v /soft6/AMS_3.51_CDS/verilog/c35b3/c35_CORELIB_3B.v
+        -v /soft6/AMS_3.51_CDS/verilog/c35b3/c35_IOLIB_3M.v
+        -v /soft6/AMS_3.51_CDS/verilog/c35b3/c35_IOLIB_3B_3M.v
+        -v /soft6/AMS_3.51_CDS/verilog/c35b3/c35_IOLIBV5_3M.v
+        -v /soft6/AMS_3.51_CDS/verilog/udp.v
+        +sdf_nocheck_celltype
+    +libext+.v+
+    +incdir+hdlFilesDir
+    +sdf_verbose
+    +gui_zz+/tp/tperg3/tperg3la/TP_TEST_06/TP_BIST_LOGIC/Cadence/ALU.run1/.simTmpCmd
+    +gui_sync
+    -s
+
+Tool:	VERILOG-XL	05.00.001-p log file created Aug 22, 2007  17:29:03
+Tool:	VERILOG-XL	05.00.001-p   Aug 22, 2007  17:29:03
+
+Copyright (c) 1995-2003 Cadence Design Systems, Inc.  All Rights Reserved.
+Unpublished -- rights reserved under the copyright laws of the United States.
+
+Copyright (c) 1995-2003 UNIX Systems Laboratories, Inc.  Reproduced with Permission.
+
+THIS SOFTWARE AND ON-LINE DOCUMENTATION CONTAIN CONFIDENTIAL INFORMATION
+AND TRADE SECRETS OF CADENCE DESIGN SYSTEMS, INC.  USE, DISCLOSURE, OR
+REPRODUCTION IS PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF
+CADENCE DESIGN SYSTEMS, INC.
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c)(1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+                Cadence Design Systems, Inc.
+                555 River Oaks Parkway
+                San Jose, California  95134
+
+For technical assistance please contact the Cadence Response Center at
+1-877-CDS-4911 or send email to support@cadence.com
+
+For more information on Cadence's Verilog-XL product line send email to
+talkv@cadence.com
+
+Compiling source file "/tp/tperg3/tperg3la/TP_TEST_06/TP_BIST_LOGIC/Cadence/ALU.run1/testfixture.template"
+Compiling included source file "testfixture.verilog"
+Continuing compilation of source file "/tp/tperg3/tperg3la/TP_TEST_06/TP_BIST_LOGIC/Cadence/ALU.run1/testfixture.template"
+Compiling source file "si.inp"
+Compiling source file "ihnl/cds0/netlist"
+Scanning library file "/soft6/AMS_3.51_CDS/verilog/c35b3/c35_CORELIB.v"
+
+Warning!  Library file "/soft6/AMS_3.51_CDS/verilog/c35b3/c                    
+          35_CORELIB_3B.v" was specified but not needed.    [Verilog-LFSNN]    
+          "/soft6/AMS_3.51_CDS/verilog/c35b3/c35_CORELIB.v"                    
+          , 6332: 
+
+Warning!  Library file "/soft6/AMS_3.51_CDS/verilog/c35b3/c                    
+          35_IOLIB_3M.v" was specified but not needed.      [Verilog-LFSNN]    
+          "/soft6/AMS_3.51_CDS/verilog/c35b3/c35_CORELIB.v"                    
+          , 6332: 
+
+Warning!  Library file "/soft6/AMS_3.51_CDS/verilog/c35b3/c                    
+          35_IOLIB_3B_3M.v" was specified but not needed.   [Verilog-LFSNN]    
+          "/soft6/AMS_3.51_CDS/verilog/c35b3/c35_CORELIB.v"                    
+          , 6332: 
+
+Warning!  Library file "/soft6/AMS_3.51_CDS/verilog/c35b3/c                    
+          35_IOLIBV5_3M.v" was specified but not needed.    [Verilog-LFSNN]    
+          "/soft6/AMS_3.51_CDS/verilog/c35b3/c35_CORELIB.v"                    
+          , 6332: 
+
+Warning!  Library file "/soft6/AMS_3.51_CDS/verilog/udp.v"                     
+          was specified but not needed.                     [Verilog-LFSNN]    
+          "/soft6/AMS_3.51_CDS/verilog/c35b3/c35_CORELIB.v"                    
+          , 6332: 
+Highest level modules:
+test
+
+Type ? for help
+C1 > .
+
+5 warnings
+0 simulation events (use +profile or +listcounts option to count) + 334 accelerated events
+CPU time: 0.1 secs to compile + 0.1 secs to link + 0.0 secs in simulation
+End of Tool:	VERILOG-XL	05.00.001-p   Aug 22, 2007  17:29:08

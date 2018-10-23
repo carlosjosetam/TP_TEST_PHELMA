@@ -1,0 +1,67 @@
+Loading db file '/softslin/AMS_410_CDS/synopsys/c35_3.3V/c35_CORELIB_TYP.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : COMPUTE_BLOCK
+Version: H-2013.03-SP4
+Date   : Tue Oct  2 16:07:35 2018
+****************************************
+
+
+Library(s) Used:
+
+    c35_CORELIB_TYP (File: /softslin/AMS_410_CDS/synopsys/c35_3.3V/c35_CORELIB_TYP.db)
+
+
+Operating Conditions: nom_pvt   Library: c35_CORELIB_TYP
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+COMPUTE_BLOCK          10k               c35_CORELIB_TYP
+COMPARATOR             10k               c35_CORELIB_TYP
+CLOCK_GEN_test_1       10k               c35_CORELIB_TYP
+TIME_COUNTER_test_1    10k               c35_CORELIB_TYP
+ALARM_BLOCK_test_1     10k               c35_CORELIB_TYP
+ALARM_STATE_MACHINE_test_1
+                       10k               c35_CORELIB_TYP
+ALARM_COUNTER_test_1   10k               c35_CORELIB_TYP
+ALARM_SM_2_test_1      10k               c35_CORELIB_TYP
+TIME_STATE_MACHINE_test_1
+                       10k               c35_CORELIB_TYP
+TIME_BLOCK_test_1      10k               c35_CORELIB_TYP
+
+
+Global Operating Voltage = 3.3  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   2.1578 mW   (64%)
+  Net Switching Power  =   1.2037 mW   (36%)
+                         ---------
+Total Dynamic Power    =   3.3615 mW  (100%)
+
+Cell Leakage Power     = 274.2950 pW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           1.6612            0.3176          124.1073            1.9788  (  58.87%)
+sequential     1.2536e-02        8.2425e-04            7.8035        1.3361e-02  (   0.40%)
+combinational      0.4841            0.8853          142.3840            1.3693  (  40.74%)
+--------------------------------------------------------------------------------------------------
+Total              2.1578 mW         1.2037 mW       274.2948 pW         3.3615 mW

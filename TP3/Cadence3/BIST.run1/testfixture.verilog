@@ -1,0 +1,18 @@
+
+// Verilog stimulus file.
+// Please do not create a module in this file.
+
+
+// Default verilog stimulus. 
+
+initial
+begin 
+
+   CLK = 1'b0;
+   RESETN_MISR = 1'b0;
+   R_LFSR[18:0] = 19'b0000000000000000000;
+
+   SETN_MISR = 1'b0;
+   S_LFSR[18:0] = 19'b0000000000000000000;
+
+end 

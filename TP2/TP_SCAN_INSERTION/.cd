@@ -1,0 +1,76 @@
+### script pour la Synthèse d`un circuit sèquential avec Design_vision
+
+read_file -format verilog {{/tima3/benabden/TP_TEST_PHELMA/TP2/exo2/verilog/ALARM_BLOCK.v}}
+read_file -format verilog {{/tima3/benabden/TP_TEST_PHELMA/TP2/exo2/verilog/CLOCK_GEN.v}}
+read_file -format verilog {{/tima3/benabden/TP_TEST_PHELMA/TP2/exo2/verilog/TIME_BLOCK.v}}
+read_file -format verilog {{/tima3/benabden/TP_TEST_PHELMA/TP2/exo2/verilog/COMPARATOR.v}}
+read_file -format verilog {{/tima3/benabden/TP_TEST_PHELMA/TP2/exo2/verilog/ALARM_SM_2.v}}
+read_file -format verilog {{/tima3/benabden/TP_TEST_PHELMA/TP2/exo2/verilog/COMPUTE_BLOCK.v}}
+
+create_clock -name "clk" -period 10 -waveform { 0 5  }   { U7/INT_CLK  }
+set_max_area 0
+uplevel #0 compile -map_effort medium -area_effort medium
+uplevel #0 report_power -analysis_effort medium -nosplit
+uplevel #0 report_area -nosplit
+uplevel #0 report_constraint -all_violators -significant_digits 2 -nosplit
+uplevel #0 report_timing -path full -delay max -nworst 1 -max_paths 1 -significant_digits 2 -nosplit -sort_by group
+uplevel #0 report_resources -nosplit -hierarchy
+change_names -rules vhdl -hierarchy -verbose
+write -format vhdl -hierarchy -output comp_block.vhd
+
+
+###-----insertion of scan path
+
+set_scan_configuration -methodology full_scan  -style multiplexed_flip_flop
+set_scan_configuration -replace false -route true -disable true -chain_count 1
+set test_default_period 100
+set test_default_delay 0
+set test_default_bidir_delay 0
+set test_default_strobe 40
+set test_stil_netlist_format {verilog}
+create_test_clock "CLK" -period 100 -waveform {45 55}
+set_signal_type test_asynch RESETN
+create_test_protocol
+
+
+### Run RTL test DRC
+
+set_dft_configuration -autofix
+set_autofix_clock CLK U1
+set_autofix_clock CLK U2
+set_autofix_clock CLK U5
+set_autofix_clock CLK U7
+uplevel #0 compile -map_effort medium -area_effort medium -scan -incremental_mapping
+preview_dft -test_points all
+insert_dft
+write -hierarchy -format db -output compute_block_dft.db
+check_scan -verbose
+set_scan_signal test_scan_in -port test_si
+set_scan_signal test_scan_enable -port test_se
+set_scan_signal test_scan_out -port SPEAKER_OUT
+set_test_hold 1 test_mode
+check_test
+report_test -scan_path
+write -hierarchy -format db -output /tima3/benabden/TP_TEST_PHELMA/TP2/exo2/compute_block_scan_dft.db
+
+read_file -format verilog {{/tima3/benabden/TP_TEST_PHELMA/TP2/exo2/verilog/CONVERTOR.v}}
+read_file -format verilog {{/tima3/benabden/TP_TEST_PHELMA/TP2/exo2/verilog/CONVERTOR_CKT.v}}
+read_file -format db {{/tima2/rehman/TP/compute_block_scan_dft.db}}
+read_file -format verilog {{/tima3/benabden/TP_TEST_PHELMA/TP2/exo2/verilog/CORE_for_scan.v}}
+create_clock -name "clock" -period 10 -waveform { 0 5  }  { CLOCK  }
+set_max_area 0
+uplevel #0 compile -map_effort medium -area_effort medium -incremental_mapping
+
+set_scan_signal test_scan_in -port TEST_SI
+set_scan_signal test_scan_enable -port TEST_SE
+set_scan_signal test_scan_out -port SPEAKER
+set_test_hold 1 TEST_MODE
+create_test_clock "CLOCK" -period 100 -waveform {45 55}
+set_signal_type test_asynch resetn
+insert_scan
+check_test
+set test_stil_netlist_format {verilog}
+create_test_protocol
+write_test_protocol -format stil -out alarm_clock.spf
+write -hierarchy -format verilog -output /tima3/benabden/TP_TEST_PHELMA/TP2/exo2/alarm_clock.v
+write -hierarchy -format vhdl -output /tima3/benabden/TP_TEST_PHELMA/TP2/exo2/alarm_clock.vhd

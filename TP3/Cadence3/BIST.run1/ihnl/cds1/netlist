@@ -1,0 +1,46 @@
+// Library - bist, Cell - MISR, View - schematic
+// LAST TIME SAVED: Jan  6 18:38:11 2010
+// NETLIST TIME: Jan  7 13:03:56 2010
+`timescale 1ns / 1ps 
+
+module MISR ( Q, CLK, RESET_N, SET_N, Z );
+
+input  CLK, RESET_N, SET_N;
+
+output [0:7]  Q;
+
+input [0:7]  Z;
+
+
+specify 
+    specparam CDS_LIBNAME  = "bist";
+    specparam CDS_CELLNAME = "MISR";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+DFCP1  I27 ( .QN(net071), .SN(SET_N), .Q(Q[1]), .C(CLK), .RN(RESET_N),
+     .D(net86));
+DFCP1  I22 ( .QN(net14), .SN(SET_N), .Q(Q[6]), .C(CLK), .RN(RESET_N),
+     .D(net71));
+DFCP1  I21 ( .QN(net20), .SN(SET_N), .Q(Q[5]), .C(CLK), .RN(RESET_N),
+     .D(net74));
+DFCP1  I25 ( .QN(net26), .SN(SET_N), .Q(Q[7]), .C(CLK), .RN(RESET_N),
+     .D(net68));
+DFCP1  I23 ( .QN(net32), .SN(SET_N), .Q(Q[4]), .C(CLK), .RN(RESET_N),
+     .D(net77));
+DFCP1  I18 ( .QN(net38), .SN(SET_N), .Q(Q[2]), .C(CLK), .RN(RESET_N),
+     .D(net43));
+DFCP1  I19 ( .QN(net50), .SN(SET_N), .Q(Q[3]), .C(CLK), .RN(RESET_N),
+     .D(net80));
+DFCP1  I24 ( .QN(net56), .SN(SET_N), .Q(Q[0]), .C(CLK), .RN(RESET_N),
+     .D(net61));
+XOR30  I16 ( .B(Q[7]), .Q(net61), .C(Z[0]), .A(Q[0]));
+XOR20  I14 ( .B(Z[7]), .A(Q[6]), .Q(net68));
+XOR20  I13 ( .B(Z[6]), .A(Q[5]), .Q(net71));
+XOR20  I12 ( .B(Z[5]), .A(Q[4]), .Q(net74));
+XOR20  I11 ( .B(Z[4]), .A(Q[3]), .Q(net77));
+XOR20  I10 ( .B(Z[3]), .A(Q[2]), .Q(net80));
+XOR20  I9 ( .B(Z[2]), .A(Q[1]), .Q(net43));
+XOR20  I8 ( .B(Z[1]), .A(Q[0]), .Q(net86));
+
+endmodule

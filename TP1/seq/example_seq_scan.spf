@@ -1,0 +1,68 @@
+STIL 1.0 ;
+
+Signals {
+   "nclear" In; "clock" In; "a" In; "b" In; "c" In; "d" In; "test" In; "scin" In; "enablep" In; "load" In;
+   "enablet" In; "vdd" In; "vss" In; "qd" Out; "qc" Out; "qb" Out; "qa" Out; "carry" Out; "scout" Out;
+}
+
+SignalGroups {
+   "_pi" = '"nclear" + "clock" + "a" + "b" + "c" + "d" + "enablep" + "load" + "enablet"
+   + "vdd" + "vss" + "test" + "scin"';
+   "_default_In_Timing_" = '"nclear" + "clock" + "a" + "b" + "c" + "d" + "enablep"
+   + "load" + "enablet" + "vdd" + "vss" + "test" + "scin"';
+   "_default_Out_Timing_" = '"qd" + "qc" + "qb" + "qa" + "carry" + "scout"';
+   "_po" = '"qd" + "qc" + "qb" + "qa" + "carry" + "scout"';
+   "_default_Clk0_Timing_" = '"clock"';
+}
+
+ScanStructures {
+    ScanChain "chain_name" { ScanIn "scin"; ScanOut "scout"; }
+}
+
+Timing {
+   WaveformTable "_default_WFT_" {
+      Period '100ns';
+      Waveforms {quit
+
+         "_default_In_Timing_"  { 0 { '0ns' D; } }
+         "_default_In_Timing_"  { 1 { '0ns' U; } }
+         "_default_In_Timing_"  { Z { '0ns' Z; } }
+         "_default_Out_Timing_" { X { '0ns' X; } }
+         "_default_Out_Timing_" { H { '0ns' X; '40ns' H; } }
+         "_default_Out_Timing_" { L { '0ns' X; '40ns' L; } }
+         "clock"                { P { '0ns' D; '50ns' U; '80ns' D; } }
+      }
+   }
+}
+
+Procedures {
+   "capture" {
+      W "_default_WFT_";
+      F { "vdd"=1; "vss"=0; }
+      "forcePI": V { "_pi"=\r13 # ; "_po"=\j XXXXXX; }
+      "measurePO": V { "_po"=######; }
+   }
+
+   "capture_clock" {
+      W "_default_WFT_";
+      F { "vdd"=1; "vss"=0; }
+      "forcePI": V { "_pi"=\r13 # ; "_po"=\j XXXXXX; }
+      "measurePO": V { "_po"=######; }
+      "pulse": V { "clock"=P; "_po"=\j XXXXXX; }
+   }
+
+   "load_unload" {
+      W "_default_WFT_";
+      V { "clock"=0; "test"=1;}
+      Shift { V {_si=#; _so=#; "clock" = P; }
+      }
+   }
+
+}
+
+MacroDefs {
+   "test_setup" {
+      W "_default_WFT_";
+      V { "vdd"=1; "vss"=0; "test"=0; "ck"=0; }
+   }
+}

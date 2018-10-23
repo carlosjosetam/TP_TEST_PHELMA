@@ -1,0 +1,29 @@
+#
+CORELIB INV0 symbol
+I33
+I34
+I35
+#
+CORELIB NOR20 symbol
+I32
+#
+CORELIB NOR42 symbol
+I31
+I30
+#
+CORELIB XOR20 symbol
+I15
+I16
+I17
+I18
+I19
+I20
+I21
+I22
+#ISCELL
+basic opin symbol
+PIN14
+#ISCELL
+basic ipin symbol
+PIN1
+PIN0

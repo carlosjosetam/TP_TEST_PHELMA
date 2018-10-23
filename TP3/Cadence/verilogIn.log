@@ -1,0 +1,23 @@
+@(#)$CDS: ihdl version 5.0.0 05/30/2003 19:47 (cds11939) $  Thu Nov 11 15:28:00 2004
+
+VerilogIn: *W,26: Library (sample) not initialised in the database.
+module OAI2111 already in target/reference library CORELIB
+module NAND31 already in target/reference library CORELIB
+module NAND21 already in target/reference library CORELIB
+module XNR21 already in target/reference library CORELIB
+module NOR21 already in target/reference library CORELIB
+module AOI211 already in target/reference library CORELIB
+module OAI311 already in target/reference library CORELIB
+module CLKIN1 already in target/reference library CORELIB
+module NOR31 already in target/reference library CORELIB
+module AOI221 already in target/reference library CORELIB
+module XOR21 already in target/reference library CORELIB
+module OAI211 already in target/reference library CORELIB
+module IMAJ30 already in target/reference library CORELIB
+module XOR41 already in target/reference library CORELIB
+module AOI2111 already in target/reference library CORELIB
+module MAJ31 already in target/reference library CORELIB
+Checked in symbol ALU
+Checked in schematic ALU
+Checked in functional view ALU. User specification
+End of Logfile.

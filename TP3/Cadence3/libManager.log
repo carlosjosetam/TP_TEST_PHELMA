@@ -1,0 +1,15 @@
+\o Program:		@(#)$CDS: libManager.exe version 5.0.2 04/28/2005 22:33 (cat-sun3.Cadence.COM) $
+\o Sub version:		sub-version 03.01-s027
+\o Arguments:		-mpssession icfb22426 -mpshost cime2501 
+\o Working Directory:	cime2501:/tp2/xima3s/xima3smb/TP_TEST/TP3/Cadence3
+\o Warning: The directory: '/tp2/xima3s/xima3smb/TP_TEST/TP3/Cadence2/bist2' does not exist
+\o 	but was defined in libFile '/tp2/xima3s/xima3smb/TP_TEST/TP3/Cadence3/cds.lib' for Lib 'bist2'.
+\o Warning: The directory: '/cadence/cdsic5_0_33/tools.sun4v/dfII/samples/ComplexImp' does not exist
+\o 	but was defined in libFile '/soft4/AMS_3.70_CDS/artist/HK_ALL/env/cds.lib' for Lib 'ComplexImp'.
+\o Library Manager customization server connected.
+MPS service: map window
+\o Log file is "/tp2/xima3s/xima3smb/TP_TEST/TP3/Cadence3/libManager.log".
+Opening libManager window.
+Main selection: bist
+MPS service: shutdown
+\o libManager is exiting.

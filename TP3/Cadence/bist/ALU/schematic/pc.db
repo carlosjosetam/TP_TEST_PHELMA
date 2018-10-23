@@ -1,0 +1,138 @@
+#
+CORELIB OAI311 symbol
+ix79
+#
+CORELIB NOR31 symbol
+ix67
+#
+CORELIB AOI2111 symbol
+ix466
+#
+CORELIB XOR41 symbol
+ix393
+#
+CORELIB NAND21 symbol
+ix322
+ix399
+ix444
+ix427
+ix413
+ix394
+ix374
+ix348
+ix294
+#
+CORELIB OAI2111 symbol
+ix373
+ix329
+ix285
+ix241
+ix197
+ix153
+ix109
+#
+CORELIB OAI211 symbol
+ix458
+ix337
+ix293
+ix249
+ix205
+ix161
+ix117
+ix29
+#
+CORELIB AOI221 symbol
+ix453
+ix439
+ix422
+ix408
+ix386
+ix366
+ix334
+#
+CORELIB MAJ31 symbol
+ix137
+#
+CORELIB XNR21 symbol
+ix365
+ix367
+ix323
+ix433
+ix279
+ix277
+ix235
+ix402
+ix191
+ix189
+ix147
+ix360
+ix101
+ix363
+ix275
+ix306
+ix324
+ix97
+ix187
+#
+CORELIB CLKIN1 symbol
+ix320
+ix318
+ix462
+ix431
+ix85
+ix400
+ix302
+ix328
+ix342
+#
+CORELIB NAND31 symbol
+ix292
+ix344
+#
+CORELIB NOR21 symbol
+ix59
+ix91
+ix7
+ix23
+ix37
+ix55
+#
+CORELIB AOI211 symbol
+ix464
+ix451
+ix437
+ix420
+ix103
+ix384
+ix406
+ix308
+ix364
+#
+CORELIB IMAJ30 symbol
+ix383
+ix225
+ix447
+ix313
+ix416
+ix378
+#
+CORELIB XOR21 symbol
+ix300
+ix435
+ix19
+ix362
+ix287
+ix199
+ix111
+ix404
+ix155
+ix243
+ix331
+#ISCELL
+basic ipin symbol
+PIN2
+PIN1
+PIN0
+#ISCELL
+basic opin symbol
+PIN3

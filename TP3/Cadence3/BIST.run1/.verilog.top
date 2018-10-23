@@ -1,0 +1,31 @@
+
+`timescale 1ns / 1ps
+
+module test;
+
+
+wire  SORTIE;
+
+reg  CLK, RESETN_MISR, SETN_MISR;
+
+reg [18:0]  R_LFSR;
+reg [18:0]  S_LFSR;
+
+// Buses in the design
+
+wire  [18:3]  AETB;
+
+wire  [2:0]  CMD;
+
+wire  [0:7]  net31;
+
+wire  [0:7]  net30;
+
+wire  [0:7]  net47;
+
+wire  [0:7]  net037;
+
+
+
+BIST top(SORTIE, CLK, RESETN_MISR, R_LFSR, SETN_MISR, S_LFSR); 
+ 

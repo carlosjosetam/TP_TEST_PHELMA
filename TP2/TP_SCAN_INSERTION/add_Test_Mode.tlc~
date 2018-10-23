@@ -1,0 +1,13 @@
+set_dft_signal -view spec -type TestMode -port TM_FIX
+
+set_dft_configuration -fix_clock enable
+
+set_dft_signal -view spec -type TestData -port CLK
+
+set_autofix_configuration -type clock -include_elements [get_object_name [get_cells -hierarchical *]] -control_signal TM_FIX -test_data CLK
+
+preview_dft –test_points all
+
+insert_dft
+
+dft_drc -verbose

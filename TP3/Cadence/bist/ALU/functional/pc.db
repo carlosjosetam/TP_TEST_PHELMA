@@ -1,0 +1,130 @@
+#
+CORELIB OAI311 symbol
+ix79
+#
+CORELIB NOR31 symbol
+ix67
+#
+CORELIB NAND31 symbol
+ix292
+ix344
+#
+CORELIB OAI2111 symbol
+ix109
+ix153
+ix197
+ix241
+ix285
+ix329
+ix373
+#
+CORELIB XNR21 symbol
+ix101
+ix306
+ix324
+ix147
+ix97
+ix360
+ix191
+ix189
+ix187
+ix235
+ix402
+ix279
+ix277
+ix275
+ix323
+ix433
+ix367
+ix365
+ix363
+#
+CORELIB AOI221 symbol
+ix334
+ix366
+ix386
+ix408
+ix422
+ix439
+ix453
+#
+CORELIB NAND21 symbol
+ix294
+ix322
+ix348
+ix374
+ix394
+ix413
+ix427
+ix444
+ix399
+#
+CORELIB OAI211 symbol
+ix29
+ix117
+ix161
+ix205
+ix249
+ix293
+ix337
+ix458
+#
+CORELIB XOR41 symbol
+ix393
+#
+CORELIB IMAJ30 symbol
+ix378
+ix225
+ix416
+ix313
+ix447
+ix383
+#
+CORELIB AOI211 symbol
+ix308
+ix103
+ix364
+ix384
+ix406
+ix420
+ix437
+ix451
+ix464
+#
+CORELIB AOI2111 symbol
+ix466
+#
+CORELIB NOR21 symbol
+ix7
+ix55
+ix91
+ix23
+ix37
+ix59
+#
+CORELIB CLKIN1 symbol
+ix318
+ix320
+ix328
+ix400
+ix431
+ix462
+ix302
+ix85
+ix342
+#
+CORELIB XOR21 symbol
+ix19
+ix362
+ix111
+ix155
+ix404
+ix199
+ix243
+ix435
+ix287
+ix331
+ix300
+#
+CORELIB MAJ31 symbol
+ix137

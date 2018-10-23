@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : CORE
+Version: H-2013.03-SP4
+Date   : Tue Oct  2 16:22:47 2018
+****************************************
+
+Operating Conditions: nom_pvt   Library: c35_CORELIB_TYP
+Wire Load Model Mode: enclosed
+
+  Startpoint: U1/U2/U3/HRS_OUT_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1/U2/U3/HRS_OUT_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  COMPUTE_BLOCK      10k                   c35_CORELIB_TYP
+  ALARM_COUNTER_test_1
+                     10k                   c35_CORELIB_TYP
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  U1/U2/U3/HRS_OUT_reg_0_/C (DFSC1)        0.00       0.00 r
+  U1/U2/U3/HRS_OUT_reg_0_/Q (DFSC1)        0.88       0.88 f
+  U1/U2/U3/U31/Q (NOR40)                   0.68       1.56 r
+  U1/U2/U3/U8/Q (INV3)                     0.15       1.71 f
+  U1/U2/U3/U53/Q (NAND20)                  1.31       3.02 r
+  U1/U2/U3/U42/Q (INV3)                    0.15       3.17 f
+  U1/U2/U3/U6/Q (NAND22)                   0.32       3.49 r
+  U1/U2/U3/U11/Q (INV3)                    0.11       3.60 f
+  U1/U2/U3/U9/Q (NAND22)                   0.18       3.78 r
+  U1/U2/U3/U38/Q (XNR21)                   0.29       4.07 r
+  U1/U2/U3/U36/Q (AOI221)                  0.18       4.25 f
+  U1/U2/U3/U23/Q (OAI212)                  0.18       4.43 r
+  U1/U2/U3/HRS_OUT_reg_3_/D (DFSP1)        0.00       4.43 r
+  data arrival time                                   4.43
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  U1/U2/U3/HRS_OUT_reg_3_/C (DFSP1)        0.00      10.00 r
+  library setup time                      -0.29       9.71
+  data required time                                  9.71
+  -----------------------------------------------------------
+  data required time                                  9.71
+  data arrival time                                  -4.43
+  -----------------------------------------------------------
+  slack (MET)                                         5.28
+
+

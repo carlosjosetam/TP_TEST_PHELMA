@@ -1,0 +1,2469 @@
+# //  ModelSim SE 10.0b May  5 2011 Linux 3.2.0-4-amd64
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+#  
+cd /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd
+vlib work
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(18): (vcom-1136) Unknown identifier "STD_LOGIC".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(19): (vcom-1136) Unknown identifier "STD_LOGIC".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(20): (vcom-1136) Unknown identifier "STD_LOGIC".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(21): (vcom-1136) Unknown identifier "STD_LOGIC".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(23): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(40): No feasible entries for infix operator "&".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(40): Bad expression in left operand of infix expression "=".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(40): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(45): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(40): near "|": expecting THEN
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# -- Compiling architecture B of LFSR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(49): near ")": expecting ';'
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# -- Compiling architecture B of LFSR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(49): near ")": expecting ';'
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# -- Compiling architecture B of LFSR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(50): near "S": expecting BEGIN
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# -- Compiling architecture B of LFSR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(58): near "for": expecting <= or :=
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# -- Compiling architecture B of LFSR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(59): Expecting a type name, found constant "I" instead.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(59): near ",": expecting '\''
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(62): Statement cannot be labeled.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(62): Illegal concurrent statement.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(63): near "2": expecting ']'
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(67): near "0": expecting ']'
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(69): near "10": expecting ']'
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(62): (vcom-1339) Case statement choices cover only 2 out of 9 cases.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(71): VHDL Compiler exiting
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# -- Compiling architecture B of LFSR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(59): (vcom-1141) Identifier "Flip_Flop" does not identify a component declaration.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(62): Illegal concurrent statement.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(69): (vcom-1141) Identifier "Flip_Flop" does not identify a component declaration.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(62): (vcom-1339) Case statement choices cover only 2 out of 9 cases.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(71): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# -- Compiling architecture B of LFSR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(65): (vcom-1136) Unknown identifier "Clk".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(68): Illegal concurrent statement.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(75): (vcom-1136) Unknown identifier "Clk".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(68): (vcom-1339) Case statement choices cover only 2 out of 9 cases.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(77): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# -- Compiling architecture B of LFSR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(69): Illegal concurrent statement.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(69): (vcom-1339) Case statement choices cover only 2 out of 9 cases.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(78): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# -- Compiling architecture B of LFSR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(69): (vcom-1339) Case statement choices cover only 2 out of 9 cases.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(79): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+
+
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# -- Compiling architecture B of LFSR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(72): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd(80): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# -- Compiling architecture B of LFSR
+
+
+
+
+
+
+vsim work.lfsr
+# vsim work.lfsr 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.lfsr(b)#1
+do /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_LFSR.tlc
+# ** Error: invalid command name "wait"
+# Error in macro /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_LFSR.tlc line 6
+# invalid command name "wait"
+#     while executing
+# "wait for 100 ns"
+
+
+
+do /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_LFSR.tlc
+add wave -position anchor  \
+sim:/lfsr/Reset \
+sim:/lfsr/MODE \
+sim:/lfsr/SIN \
+sim:/lfsr/Clk \
+sim:/lfsr/SOUT \
+sim:/lfsr/S \
+sim:/lfsr/S_aux \
+sim:/lfsr/LFSR_in
+
+
+
+
+do /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_LFSR.tlc
+run
+
+
+do /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_LFSR.tlc
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# -- Compiling architecture B of LFSR
+
+
+
+do /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_LFSR.tlc
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.lfsr(b)#1
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+# -- Compiling architecture B of LFSR
+
+
+
+do /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_LFSR.tlc
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.lfsr(b)#1
+do /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_LFSR.tlc
+do /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_LFSR.tlc
+
+
+
+
+quit -sim
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/Flip_Flop.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture B of LFSR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/Flip_Flop.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/Flip_Flop.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture B of LFSR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of LFSR
+# -- Loading entity LFSR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(34): (vcom-1136) Unknown identifier "TEST".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(34): Bad expression in right operand of infix expression "or".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(34): Type error resolving infix expression "or" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(35): Illegal target for signal assignment.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(35): (vcom-1136) Unknown identifier "Out_MISR".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(39): (vcom-1136) Unknown identifier "Paralel_MISR".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(39): (vcom-1436) Use of non globally static actual (infix expression) of formal "D" requires VHDL 2008.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(43): (vcom-1136) Unknown identifier "Paralel_MISR".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(43): Bad expression in right operand of infix expression "xor".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(43): Bad expression in left operand of infix expression "xor".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(43): (vcom-1136) Unknown identifier "Paralel_MISR".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(43): Type error resolving infix expression "xor" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(48): near "+": syntax error
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(51): (vcom-1136) Unknown identifier "Paralel_MISR".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(51): Bad expression in right operand of infix expression "xor".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(51): Bad expression in left operand of infix expression "xor".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(51): (vcom-1136) Unknown identifier "Paralel_MISR".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(51): (vcom-1436) Use of non globally static actual (infix expression) of formal "D" requires VHDL 2008.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(53): VHDL Compiler exiting
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(39): (vcom-1436) Use of non globally static actual (infix expression) of formal "D" requires VHDL 2008.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(48): near "+": syntax error
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(51): (vcom-1436) Use of non globally static actual (infix expression) of formal "D" requires VHDL 2008.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(53): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(39): (vcom-1436) Use of non globally static actual (infix expression) of formal "D" requires VHDL 2008.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(51): (vcom-1436) Use of non globally static actual (infix expression) of formal "D" requires VHDL 2008.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(53): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(39): (vcom-1436) Use of non globally static actual (infix expression) of formal "D" requires VHDL 2008.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(51): (vcom-1436) Use of non globally static actual (infix expression) of formal "D" requires VHDL 2008.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(53): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(39): (vcom-1436) Use of non globally static actual (infix expression) of formal "D" requires VHDL 2008.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(42): (vcom-1436) Use of non globally static actual (infix expression) of formal "D" requires VHDL 2008.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(55): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(39): (vcom-1436) Use of non globally static actual (function call "xor") of formal "D" requires VHDL 2008.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(42): (vcom-1436) Use of non globally static actual (infix expression) of formal "D" requires VHDL 2008.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(55): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(41): (vcom-1436) Use of non globally static actual (function call "xor") of formal "D" requires VHDL 2008.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(57): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+
+
+
+
+
+
+vsim work.misr
+# vsim work.misr 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.misr(b)#1
+add wave -position anchor  \
+sim:/misr/Reset \
+sim:/misr/TEST \
+sim:/misr/MODE \
+sim:/misr/Paralel_MISR \
+sim:/misr/SIN \
+sim:/misr/Clk \
+sim:/misr/SOUT \
+sim:/misr/Out_MISR \
+sim:/misr/S_aux \
+sim:/misr/MISR_in \
+sim:/misr/Reset_s \
+sim:/misr/signal_aux_1 \
+sim:/misr/signal_aux_2 \
+sim:/misr/signal_aux_3
+
+
+
+
+do /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_MISR.tlc
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+
+
+do /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_MISR.tlc
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.misr(b)#1
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(65): near ";": syntax error
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(73): VHDL Compiler exiting
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+
+
+
+do /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_MISR.tlc
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.misr(b)#1
+do /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_MISR.tlc
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.misr(b)#1
+do /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_MISR.tlc
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.misr(b)#1
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(55): Ambiguous type in infix expression; ieee.std_logic_arith.UNSIGNED or ieee.std_logic_arith.SIGNED.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(78): VHDL Compiler exiting
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(61): (vcom-1339) Case statement choices cover only 3 out of 81 cases.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd(84): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+
+
+do /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/do_MISR.tlc
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.misr(b)#1
+
+
+
+
+
+
+
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+quit -sim
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(33): near ")": expecting ';'
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(38): (vcom-1136) Unknown identifier "Out_MISR_s".
+# ** Warning: [2] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(50): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(51): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+# ** Warning: [2] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(50): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(48): near "50": expecting ';'
+# ** Warning: [2] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(52): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(53): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(48): Integer literal 50 is not of type std.STANDARD.TIME.
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(53): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+# Optimization canceled
+vsim work.bench_top
+# vsim work.bench_top 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd(75): (vopt-3473) Component instance "S_ALU : ALU" is not bound.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_top(arch)#1
+# ** Warning: (vsim-3473) Component instance "S_ALU : ALU" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+quit -sim
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity ALU
+# -- Compiling architecture A of ALU
+vsim work.bench_top
+# vsim work.bench_top 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_top(arch)#1
+# ** Warning: (vsim-3473) Component instance "S_ALU : ALU" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+quit -sim
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity ALU
+# -- Compiling architecture A of ALU
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/Flip_Flop.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture B of LFSR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+vsim work.bench_top
+# vsim work.bench_top 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_top(arch)#1
+# ** Warning: (vsim-3473) Component instance "S_ALU : ALU" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+quit -sim
+vsim work.top
+# vsim work.top 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.top(b)#1
+quit -sim
+vsim -novopt work.bench_top
+# vsim -novopt work.bench_top 
+# Loading std.standard
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.bench_top(arch)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.bench_top(arch)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.top(b)
+# Loading ieee.std_logic_arith(body)
+# Loading work.top(b)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.lfsr(b)
+# Loading work.lfsr(b)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.flip_flop(c)
+# Loading work.flip_flop(c)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.misr(b)
+# Loading work.misr(b)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.alu(a)
+# Loading work.alu(a)
+run
+# ** Failure: END OF SIMULATION
+#    Time: 50 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 51
+add wave -position anchor  \
+sim:/bench_top/A_s \
+sim:/bench_top/B_s \
+sim:/bench_top/CMD_s \
+sim:/bench_top/TEST_s \
+sim:/bench_top/MODE_LFSR_s \
+sim:/bench_top/MODE_MISR_s \
+sim:/bench_top/Paralel_MISR_s \
+sim:/bench_top/SIN_s \
+sim:/bench_top/Clk_s \
+sim:/bench_top/Reset_s \
+sim:/bench_top/SOUT_MISR_s \
+sim:/bench_top/Out_MISR_s
+restart
+run
+# ** Failure: END OF SIMULATION
+#    Time: 50 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 51
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+restart
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.bench_top(arch)
+# Loading work.bench_top(arch)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.top(b)
+# Loading work.top(b)
+# Warning in wave window restart: (vish-4014) No objects found matching '/bench_top/Paralel_MISR_s'. 
+
+
+run
+# ** Failure: END OF SIMULATION
+#    Time: 50 ns  Iteration: 0  Process: /bench_top/line__41 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__41 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 54
+add wave -position anchor  \
+sim:/bench_top/S_TOP/S_ALU/S
+restart
+run
+# ** Failure: END OF SIMULATION
+#    Time: 50 ns  Iteration: 0  Process: /bench_top/line__41 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__41 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 54
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+restart
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.bench_top(arch)
+# Loading work.bench_top(arch)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.top(b)
+# Loading work.top(b)
+run
+# ** Failure: END OF SIMULATION
+#    Time: 80 ns  Iteration: 0  Process: /bench_top/line__41 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__41 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 56
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+restart
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.bench_top(arch)
+# Loading work.bench_top(arch)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.top(b)
+# Loading work.top(b)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.misr(b)
+# Loading work.misr(b)
+
+run
+# ** Failure: END OF SIMULATION
+#    Time: 80 ns  Iteration: 0  Process: /bench_top/line__41 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__41 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 56
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(40): near "constant": syntax error
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(53): (vcom-1136) Unknown identifier "delay".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(57): (vcom-1136) Unknown identifier "delay".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(57): near "ns": expecting ';'
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(59): (vcom-1136) Unknown identifier "delay".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(61): (vcom-1136) Unknown identifier "delay".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(63): (vcom-1136) Unknown identifier "delay".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(65): (vcom-1136) Unknown identifier "delay".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(67): (vcom-1136) Unknown identifier "delay".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(69): (vcom-1136) Unknown identifier "delay".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(71): (vcom-1136) Unknown identifier "delay".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(73): (vcom-1136) Unknown identifier "delay".
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(79): VHDL Compiler exiting
+
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(58): near "ns": expecting ';'
+# ** Error: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl(80): VHDL Compiler exiting
+# /softl3/modelsim10_0b/modeltech/linux/vcom failed.
+
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+restart
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.bench_top(arch)
+# Loading work.bench_top(arch)
+run
+
+
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 220 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 78
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+restart
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.bench_top(arch)
+# Loading work.bench_top(arch)
+
+
+
+run
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 520 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 105
+add wave -position anchor  \
+sim:/bench_top/S_TOP/S_LFSR/S
+
+
+restart
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 520 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 105
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+
+
+
+restart
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.bench_top(arch)
+# Loading work.bench_top(arch)
+
+
+
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 260 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 105
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+
+
+restart
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.bench_top(arch)
+# Loading work.bench_top(arch)
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 340 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 130
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+restart
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.bench_top(arch)
+# Loading work.bench_top(arch)
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 350 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 130
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity ALU
+# -- Compiling architecture A of ALU
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+
+
+
+restart
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.bench_top(arch)
+# Loading work.bench_top(arch)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.top(b)
+# Loading work.top(b)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.alu(a)
+# Loading work.alu(a)
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 350 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 130
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity ALU
+# -- Compiling architecture A of ALU
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+restart
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.bench_top(arch)
+# Loading work.bench_top(arch)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.top(b)
+# Loading work.top(b)
+# Refreshing /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/work.alu(a)
+# Loading work.alu(a)
+
+
+
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 350 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 130
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity ALU
+# -- Compiling architecture A of ALU
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package CONV_PACK_ALU
+# -- Loading package CONV_PACK_ALU
+# -- Compiling entity ALU
+# -- Compiling architecture SYN_A of ALU
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity ALU
+# -- Compiling architecture A of ALU
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package CONV_PACK_ALU
+# -- Loading package CONV_PACK_ALU
+# -- Compiling entity ALU
+# -- Compiling architecture SYN_A of ALU
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+quit -sim
+vsim work.alu
+# vsim work.alu 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(92): (vopt-3473) Component instance "U58 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(93): (vopt-3473) Component instance "U59 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(94): (vopt-3473) Component instance "U60 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(95): (vopt-3473) Component instance "U61 : MUX21" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(96): (vopt-3473) Component instance "U62 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(97): (vopt-3473) Component instance "U63 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(98): (vopt-3473) Component instance "U64 : XOR40" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(99): (vopt-3473) Component instance "U65 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(100): (vopt-3473) Component instance "U66 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(101): (vopt-3473) Component instance "U67 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(102): (vopt-3473) Component instance "U68 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(103): (vopt-3473) Component instance "U69 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(104): (vopt-3473) Component instance "U70 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(105): (vopt-3473) Component instance "U71 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(106): (vopt-3473) Component instance "U72 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(107): (vopt-3473) Component instance "U73 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(108): (vopt-3473) Component instance "U74 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(109): (vopt-3473) Component instance "U75 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(110): (vopt-3473) Component instance "U76 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(111): (vopt-3473) Component instance "U77 : IMAJ30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(112): (vopt-3473) Component instance "U78 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(113): (vopt-3473) Component instance "U79 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(114): (vopt-3473) Component instance "U80 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(115): (vopt-3473) Component instance "U81 : MUX21" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(116): (vopt-3473) Component instance "U82 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(117): (vopt-3473) Component instance "U83 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(118): (vopt-3473) Component instance "U84 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(119): (vopt-3473) Component instance "U85 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(121): (vopt-3473) Component instance "U86 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(122): (vopt-3473) Component instance "U87 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(123): (vopt-3473) Component instance "U88 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(125): (vopt-3473) Component instance "U89 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(126): (vopt-3473) Component instance "U90 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(127): (vopt-3473) Component instance "U91 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(128): (vopt-3473) Component instance "U92 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(129): (vopt-3473) Component instance "U93 : XOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(130): (vopt-3473) Component instance "U94 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(131): (vopt-3473) Component instance "U95 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(132): (vopt-3473) Component instance "U96 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(133): (vopt-3473) Component instance "U97 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(134): (vopt-3473) Component instance "U98 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(135): (vopt-3473) Component instance "U99 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(137): (vopt-3473) Component instance "U100 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(138): (vopt-3473) Component instance "U101 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(139): (vopt-3473) Component instance "U102 : NAND30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(140): (vopt-3473) Component instance "U103 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(141): (vopt-3473) Component instance "U104 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(142): (vopt-3473) Component instance "U105 : AOI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(143): (vopt-3473) Component instance "U106 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(144): (vopt-3473) Component instance "U107 : NAND30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(145): (vopt-3473) Component instance "U108 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(146): (vopt-3473) Component instance "U109 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(147): (vopt-3473) Component instance "U110 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(148): (vopt-3473) Component instance "U111 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(149): (vopt-3473) Component instance "U112 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(150): (vopt-3473) Component instance "U113 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(151): (vopt-3473) Component instance "U114 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(152): (vopt-3473) Component instance "U115 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(153): (vopt-3473) Component instance "U116 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(154): (vopt-3473) Component instance "U117 : NOR30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(155): (vopt-3473) Component instance "U118 : CLKIN0" is not bound.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.conv_pack_alu
+# Loading work.alu(syn_a)#1
+# ** Warning: (vsim-3473) Component instance "U58 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U59 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U60 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U61 : MUX21" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U62 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U63 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U64 : XOR40" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U65 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U66 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U67 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U68 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U69 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U70 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U71 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U72 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U73 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U74 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U75 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U76 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U77 : IMAJ30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U78 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U79 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U80 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U81 : MUX21" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U82 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U83 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U84 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U85 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U86 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U87 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U88 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U89 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U90 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U91 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U92 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U93 : XOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U94 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U95 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U96 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U97 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U98 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U99 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U100 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U101 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U102 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U103 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U104 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U105 : AOI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U106 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U107 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U108 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U109 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U110 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U111 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U112 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U113 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U114 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U115 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U116 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U117 : NOR30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U118 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /alu File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+vsim work.bench_top
+# vsim work.bench_top 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(92): (vopt-3473) Component instance "U58 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(93): (vopt-3473) Component instance "U59 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(94): (vopt-3473) Component instance "U60 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(95): (vopt-3473) Component instance "U61 : MUX21" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(96): (vopt-3473) Component instance "U62 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(97): (vopt-3473) Component instance "U63 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(98): (vopt-3473) Component instance "U64 : XOR40" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(99): (vopt-3473) Component instance "U65 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(100): (vopt-3473) Component instance "U66 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(101): (vopt-3473) Component instance "U67 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(102): (vopt-3473) Component instance "U68 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(103): (vopt-3473) Component instance "U69 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(104): (vopt-3473) Component instance "U70 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(105): (vopt-3473) Component instance "U71 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(106): (vopt-3473) Component instance "U72 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(107): (vopt-3473) Component instance "U73 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(108): (vopt-3473) Component instance "U74 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(109): (vopt-3473) Component instance "U75 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(110): (vopt-3473) Component instance "U76 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(111): (vopt-3473) Component instance "U77 : IMAJ30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(112): (vopt-3473) Component instance "U78 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(113): (vopt-3473) Component instance "U79 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(114): (vopt-3473) Component instance "U80 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(115): (vopt-3473) Component instance "U81 : MUX21" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(116): (vopt-3473) Component instance "U82 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(117): (vopt-3473) Component instance "U83 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(118): (vopt-3473) Component instance "U84 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(119): (vopt-3473) Component instance "U85 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(121): (vopt-3473) Component instance "U86 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(122): (vopt-3473) Component instance "U87 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(123): (vopt-3473) Component instance "U88 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(125): (vopt-3473) Component instance "U89 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(126): (vopt-3473) Component instance "U90 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(127): (vopt-3473) Component instance "U91 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(128): (vopt-3473) Component instance "U92 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(129): (vopt-3473) Component instance "U93 : XOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(130): (vopt-3473) Component instance "U94 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(131): (vopt-3473) Component instance "U95 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(132): (vopt-3473) Component instance "U96 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(133): (vopt-3473) Component instance "U97 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(134): (vopt-3473) Component instance "U98 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(135): (vopt-3473) Component instance "U99 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(137): (vopt-3473) Component instance "U100 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(138): (vopt-3473) Component instance "U101 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(139): (vopt-3473) Component instance "U102 : NAND30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(140): (vopt-3473) Component instance "U103 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(141): (vopt-3473) Component instance "U104 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(142): (vopt-3473) Component instance "U105 : AOI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(143): (vopt-3473) Component instance "U106 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(144): (vopt-3473) Component instance "U107 : NAND30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(145): (vopt-3473) Component instance "U108 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(146): (vopt-3473) Component instance "U109 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(147): (vopt-3473) Component instance "U110 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(148): (vopt-3473) Component instance "U111 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(149): (vopt-3473) Component instance "U112 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(150): (vopt-3473) Component instance "U113 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(151): (vopt-3473) Component instance "U114 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(152): (vopt-3473) Component instance "U115 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(153): (vopt-3473) Component instance "U116 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(154): (vopt-3473) Component instance "U117 : NOR30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(155): (vopt-3473) Component instance "U118 : CLKIN0" is not bound.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.bench_top(arch)#1
+# Loading ieee.std_logic_arith(body)
+# Loading work.conv_pack_alu
+# Loading work.top(b)#1
+# ** Warning: (vsim-3473) Component instance "U58 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U59 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U60 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U61 : MUX21" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U62 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U63 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U64 : XOR40" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U65 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U66 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U67 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U68 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U69 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U70 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U71 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U72 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U73 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U74 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U75 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U76 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U77 : IMAJ30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U78 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U79 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U80 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U81 : MUX21" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U82 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U83 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U84 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U85 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U86 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U87 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U88 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U89 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U90 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U91 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U92 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U93 : XOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U94 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U95 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U96 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U97 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U98 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U99 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U100 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U101 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U102 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U103 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U104 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U105 : AOI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U106 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U107 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U108 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U109 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U110 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U111 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U112 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U113 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U114 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U115 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U116 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U117 : NOR30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U118 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-8684) No drivers exist on out port /bench_top/S_TOP/S_ALU/S(3 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /bench_top/S_TOP/ALU_out(3 downto 0).
+add wave -position anchor  \
+sim:/bench_top/A_s \
+sim:/bench_top/B_s \
+sim:/bench_top/CMD_s \
+sim:/bench_top/TEST_s \
+sim:/bench_top/MODE_LFSR_s \
+sim:/bench_top/MODE_MISR_s \
+sim:/bench_top/SIN_s \
+sim:/bench_top/Clk_s \
+sim:/bench_top/Reset_s \
+sim:/bench_top/SOUT_MISR_s \
+sim:/bench_top/Out_MISR_s
+
+
+
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 350 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 130
+# Causality operation skipped due to absense of debug database file
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package CONV_PACK_ALU
+# -- Loading package CONV_PACK_ALU
+# -- Compiling entity ALU
+# -- Compiling architecture SYN_A of ALU
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture B of LFSR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/Flip_Flop.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(92): (vopt-3473) Component instance "U58 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(93): (vopt-3473) Component instance "U59 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(94): (vopt-3473) Component instance "U60 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(95): (vopt-3473) Component instance "U61 : MUX21" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(96): (vopt-3473) Component instance "U62 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(97): (vopt-3473) Component instance "U63 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(98): (vopt-3473) Component instance "U64 : XOR40" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(99): (vopt-3473) Component instance "U65 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(100): (vopt-3473) Component instance "U66 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(101): (vopt-3473) Component instance "U67 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(102): (vopt-3473) Component instance "U68 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(103): (vopt-3473) Component instance "U69 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(104): (vopt-3473) Component instance "U70 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(105): (vopt-3473) Component instance "U71 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(106): (vopt-3473) Component instance "U72 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(107): (vopt-3473) Component instance "U73 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(108): (vopt-3473) Component instance "U74 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(109): (vopt-3473) Component instance "U75 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(110): (vopt-3473) Component instance "U76 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(111): (vopt-3473) Component instance "U77 : IMAJ30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(112): (vopt-3473) Component instance "U78 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(113): (vopt-3473) Component instance "U79 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(114): (vopt-3473) Component instance "U80 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(115): (vopt-3473) Component instance "U81 : MUX21" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(116): (vopt-3473) Component instance "U82 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(117): (vopt-3473) Component instance "U83 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(118): (vopt-3473) Component instance "U84 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(119): (vopt-3473) Component instance "U85 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(121): (vopt-3473) Component instance "U86 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(122): (vopt-3473) Component instance "U87 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(123): (vopt-3473) Component instance "U88 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(125): (vopt-3473) Component instance "U89 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(126): (vopt-3473) Component instance "U90 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(127): (vopt-3473) Component instance "U91 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(128): (vopt-3473) Component instance "U92 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(129): (vopt-3473) Component instance "U93 : XOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(130): (vopt-3473) Component instance "U94 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(131): (vopt-3473) Component instance "U95 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(132): (vopt-3473) Component instance "U96 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(133): (vopt-3473) Component instance "U97 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(134): (vopt-3473) Component instance "U98 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(135): (vopt-3473) Component instance "U99 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(137): (vopt-3473) Component instance "U100 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(138): (vopt-3473) Component instance "U101 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(139): (vopt-3473) Component instance "U102 : NAND30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(140): (vopt-3473) Component instance "U103 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(141): (vopt-3473) Component instance "U104 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(142): (vopt-3473) Component instance "U105 : AOI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(143): (vopt-3473) Component instance "U106 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(144): (vopt-3473) Component instance "U107 : NAND30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(145): (vopt-3473) Component instance "U108 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(146): (vopt-3473) Component instance "U109 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(147): (vopt-3473) Component instance "U110 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(148): (vopt-3473) Component instance "U111 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(149): (vopt-3473) Component instance "U112 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(150): (vopt-3473) Component instance "U113 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(151): (vopt-3473) Component instance "U114 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(152): (vopt-3473) Component instance "U115 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(153): (vopt-3473) Component instance "U116 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(154): (vopt-3473) Component instance "U117 : NOR30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(155): (vopt-3473) Component instance "U118 : CLKIN0" is not bound.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.bench_top(arch)#1
+# Loading ieee.std_logic_arith(body)
+# Loading work.conv_pack_alu
+# Loading work.top(b)#1
+# ** Warning: (vsim-3473) Component instance "U58 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U59 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U60 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U61 : MUX21" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U62 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U63 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U64 : XOR40" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U65 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U66 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U67 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U68 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U69 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U70 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U71 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U72 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U73 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U74 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U75 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U76 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U77 : IMAJ30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U78 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U79 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U80 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U81 : MUX21" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U82 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U83 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U84 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U85 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U86 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U87 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U88 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U89 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U90 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U91 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U92 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U93 : XOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U94 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U95 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U96 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U97 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U98 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U99 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U100 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U101 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U102 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U103 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U104 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U105 : AOI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U106 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U107 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U108 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U109 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U110 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U111 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U112 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U113 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U114 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U115 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U116 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U117 : NOR30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U118 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-8684) No drivers exist on out port /bench_top/S_TOP/S_ALU/S(3 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /bench_top/S_TOP/ALU_out(3 downto 0).
+add wave -position anchor  \
+sim:/bench_top/S_TOP/S_ALU/S
+
+
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 350 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 130
+
+quit -sim
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package CONV_PACK_ALU
+# -- Loading package CONV_PACK_ALU
+# -- Compiling entity ALU
+# -- Compiling architecture SYN_A of ALU
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+vsim work.bench_top
+# vsim work.bench_top 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(92): (vopt-3473) Component instance "U58 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(93): (vopt-3473) Component instance "U59 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(94): (vopt-3473) Component instance "U60 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(95): (vopt-3473) Component instance "U61 : MUX21" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(96): (vopt-3473) Component instance "U62 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(97): (vopt-3473) Component instance "U63 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(98): (vopt-3473) Component instance "U64 : XOR40" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(99): (vopt-3473) Component instance "U65 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(100): (vopt-3473) Component instance "U66 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(101): (vopt-3473) Component instance "U67 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(102): (vopt-3473) Component instance "U68 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(103): (vopt-3473) Component instance "U69 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(104): (vopt-3473) Component instance "U70 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(105): (vopt-3473) Component instance "U71 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(106): (vopt-3473) Component instance "U72 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(107): (vopt-3473) Component instance "U73 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(108): (vopt-3473) Component instance "U74 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(109): (vopt-3473) Component instance "U75 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(110): (vopt-3473) Component instance "U76 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(111): (vopt-3473) Component instance "U77 : IMAJ30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(112): (vopt-3473) Component instance "U78 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(113): (vopt-3473) Component instance "U79 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(114): (vopt-3473) Component instance "U80 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(115): (vopt-3473) Component instance "U81 : MUX21" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(116): (vopt-3473) Component instance "U82 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(117): (vopt-3473) Component instance "U83 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(118): (vopt-3473) Component instance "U84 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(119): (vopt-3473) Component instance "U85 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(121): (vopt-3473) Component instance "U86 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(122): (vopt-3473) Component instance "U87 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(123): (vopt-3473) Component instance "U88 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(125): (vopt-3473) Component instance "U89 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(126): (vopt-3473) Component instance "U90 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(127): (vopt-3473) Component instance "U91 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(128): (vopt-3473) Component instance "U92 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(129): (vopt-3473) Component instance "U93 : XOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(130): (vopt-3473) Component instance "U94 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(131): (vopt-3473) Component instance "U95 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(132): (vopt-3473) Component instance "U96 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(133): (vopt-3473) Component instance "U97 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(134): (vopt-3473) Component instance "U98 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(135): (vopt-3473) Component instance "U99 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(137): (vopt-3473) Component instance "U100 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(138): (vopt-3473) Component instance "U101 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(139): (vopt-3473) Component instance "U102 : NAND30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(140): (vopt-3473) Component instance "U103 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(141): (vopt-3473) Component instance "U104 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(142): (vopt-3473) Component instance "U105 : AOI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(143): (vopt-3473) Component instance "U106 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(144): (vopt-3473) Component instance "U107 : NAND30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(145): (vopt-3473) Component instance "U108 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(146): (vopt-3473) Component instance "U109 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(147): (vopt-3473) Component instance "U110 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(148): (vopt-3473) Component instance "U111 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(149): (vopt-3473) Component instance "U112 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(150): (vopt-3473) Component instance "U113 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(151): (vopt-3473) Component instance "U114 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(152): (vopt-3473) Component instance "U115 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(153): (vopt-3473) Component instance "U116 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(154): (vopt-3473) Component instance "U117 : NOR30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(155): (vopt-3473) Component instance "U118 : CLKIN0" is not bound.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.bench_top(arch)#1
+# Loading ieee.std_logic_arith(body)
+# Loading work.conv_pack_alu
+# Loading work.top(b)#1
+# ** Warning: (vsim-3473) Component instance "U58 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U59 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U60 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U61 : MUX21" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U62 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U63 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U64 : XOR40" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U65 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U66 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U67 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U68 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U69 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U70 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U71 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U72 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U73 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U74 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U75 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U76 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U77 : IMAJ30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U78 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U79 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U80 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U81 : MUX21" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U82 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U83 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U84 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U85 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U86 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U87 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U88 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U89 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U90 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U91 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U92 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U93 : XOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U94 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U95 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U96 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U97 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U98 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U99 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U100 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U101 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U102 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U103 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U104 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U105 : AOI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U106 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U107 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U108 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U109 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U110 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U111 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U112 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U113 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U114 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U115 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U116 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U117 : NOR30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U118 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-8684) No drivers exist on out port /bench_top/S_TOP/S_ALU/S(3 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /bench_top/S_TOP/ALU_out(3 downto 0).
+add wave -position anchor  \
+sim:/bench_top/A_s \
+sim:/bench_top/B_s \
+sim:/bench_top/CMD_s \
+sim:/bench_top/TEST_s \
+sim:/bench_top/MODE_LFSR_s \
+sim:/bench_top/MODE_MISR_s \
+sim:/bench_top/SIN_s \
+sim:/bench_top/Clk_s \
+sim:/bench_top/Reset_s \
+sim:/bench_top/SOUT_MISR_s \
+sim:/bench_top/Out_MISR_s
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 350 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 130
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity ALU
+# -- Compiling architecture A of ALU
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+
+
+restart$
+# invalid command name "restart$"
+
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_top(arch)#1
+# Warning in wave window restart: (vish-4014) No objects found matching '/bench_top/SOUT_MISR_s'. 
+
+
+
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 350 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 130
+
+quit -sim
+# ** Error: (vdel-11) Could not find work.alu(syn_a).
+# /softl3/modelsim10_0b/modeltech/linux/vdel failed.
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package CONV_PACK_ALU
+# -- Loading package CONV_PACK_ALU
+# -- Compiling entity ALU
+# -- Compiling architecture SYN_A of ALU
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/Flip_Flop.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity Flip_Flop
+# -- Compiling architecture C of Flip_Flop
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/LFSR_11bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity LFSR
+# -- Compiling architecture B of LFSR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/MISR_4bits.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MISR
+# -- Compiling architecture B of MISR
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/TOP.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity TOP
+# -- Compiling architecture B of TOP
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bench_TOP
+# -- Compiling architecture arch of bench_TOP
+vsim work.bench_top
+# vsim work.bench_top 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(92): (vopt-3473) Component instance "U58 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(93): (vopt-3473) Component instance "U59 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(94): (vopt-3473) Component instance "U60 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(95): (vopt-3473) Component instance "U61 : MUX21" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(96): (vopt-3473) Component instance "U62 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(97): (vopt-3473) Component instance "U63 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(98): (vopt-3473) Component instance "U64 : XOR40" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(99): (vopt-3473) Component instance "U65 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(100): (vopt-3473) Component instance "U66 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(101): (vopt-3473) Component instance "U67 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(102): (vopt-3473) Component instance "U68 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(103): (vopt-3473) Component instance "U69 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(104): (vopt-3473) Component instance "U70 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(105): (vopt-3473) Component instance "U71 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(106): (vopt-3473) Component instance "U72 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(107): (vopt-3473) Component instance "U73 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(108): (vopt-3473) Component instance "U74 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(109): (vopt-3473) Component instance "U75 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(110): (vopt-3473) Component instance "U76 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(111): (vopt-3473) Component instance "U77 : IMAJ30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(112): (vopt-3473) Component instance "U78 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(113): (vopt-3473) Component instance "U79 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(114): (vopt-3473) Component instance "U80 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(115): (vopt-3473) Component instance "U81 : MUX21" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(116): (vopt-3473) Component instance "U82 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(117): (vopt-3473) Component instance "U83 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(118): (vopt-3473) Component instance "U84 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(119): (vopt-3473) Component instance "U85 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(121): (vopt-3473) Component instance "U86 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(122): (vopt-3473) Component instance "U87 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(123): (vopt-3473) Component instance "U88 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(125): (vopt-3473) Component instance "U89 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(126): (vopt-3473) Component instance "U90 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(127): (vopt-3473) Component instance "U91 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(128): (vopt-3473) Component instance "U92 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(129): (vopt-3473) Component instance "U93 : XOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(130): (vopt-3473) Component instance "U94 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(131): (vopt-3473) Component instance "U95 : XNR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(132): (vopt-3473) Component instance "U96 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(133): (vopt-3473) Component instance "U97 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(134): (vopt-3473) Component instance "U98 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(135): (vopt-3473) Component instance "U99 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(137): (vopt-3473) Component instance "U100 : AOI2110" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(138): (vopt-3473) Component instance "U101 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(139): (vopt-3473) Component instance "U102 : NAND30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(140): (vopt-3473) Component instance "U103 : IMUX20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(141): (vopt-3473) Component instance "U104 : NAND20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(142): (vopt-3473) Component instance "U105 : AOI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(143): (vopt-3473) Component instance "U106 : OAI210" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(144): (vopt-3473) Component instance "U107 : NAND30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(145): (vopt-3473) Component instance "U108 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(146): (vopt-3473) Component instance "U109 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(147): (vopt-3473) Component instance "U110 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(148): (vopt-3473) Component instance "U111 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(149): (vopt-3473) Component instance "U112 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(150): (vopt-3473) Component instance "U113 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(151): (vopt-3473) Component instance "U114 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(152): (vopt-3473) Component instance "U115 : CLKIN0" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(153): (vopt-3473) Component instance "U116 : NOR20" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(154): (vopt-3473) Component instance "U117 : NOR30" is not bound.
+# ** Warning: [1] /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl(155): (vopt-3473) Component instance "U118 : CLKIN0" is not bound.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.bench_top(arch)#1
+# Loading ieee.std_logic_arith(body)
+# Loading work.conv_pack_alu
+# Loading work.top(b)#1
+# ** Warning: (vsim-3473) Component instance "U58 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U59 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U60 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U61 : MUX21" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U62 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U63 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U64 : XOR40" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U65 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U66 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U67 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U68 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U69 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U70 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U71 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U72 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U73 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U74 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U75 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U76 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U77 : IMAJ30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U78 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U79 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U80 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U81 : MUX21" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U82 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U83 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U84 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U85 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U86 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U87 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U88 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U89 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U90 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U91 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U92 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U93 : XOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U94 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U95 : XNR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U96 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U97 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U98 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U99 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U100 : AOI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U101 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U102 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U103 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U104 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U105 : AOI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U106 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U107 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U108 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U109 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U110 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U111 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U112 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U113 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U114 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U115 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U116 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U117 : NOR30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-3473) Component instance "U118 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/S_TOP/S_ALU File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU_synth.vhd.vhdl
+# ** Warning: (vsim-8684) No drivers exist on out port /bench_top/S_TOP/S_ALU/S(3 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /bench_top/S_TOP/ALU_out(3 downto 0).
+vcom -reportprogress 300 -work work /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/ALU.vhd
+# Model Technology ModelSim SE vcom 10.0b Compiler 2011.05 May  5 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity ALU
+# -- Compiling architecture A of ALU
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_top(arch)#1
+
+run -&ll
+# Unknown option: &ll
+# ** Error: (vsim-4005) Invalid argument '-&ll'.
+# Usage: run [<timesteps> [<time_units>]] | -all | -continue | -next | -step | -over | -out | -init | -final
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 350 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 130
+
+add wave -position anchor  \
+sim:/bench_top/A_s \
+sim:/bench_top/B_s \
+sim:/bench_top/CMD_s \
+sim:/bench_top/TEST_s \
+sim:/bench_top/MODE_LFSR_s \
+sim:/bench_top/MODE_MISR_s \
+sim:/bench_top/SIN_s \
+sim:/bench_top/Clk_s \
+sim:/bench_top/Reset_s \
+sim:/bench_top/Out_MISR_s
+
+
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_top(arch)#1
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 350 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 130
+force -freeze sim:/bench_top/S_TOP/S_ALU/S(3) 0 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_top(arch)#1
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 350 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 130
+force -freeze sim:/bench_top/S_TOP/S_ALU/S(2) 0 0
+
+
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.bench_top(arch)#1
+run -all
+# ** Failure: END OF SIMULATION
+#    Time: 350 ns  Iteration: 0  Process: /bench_top/line__43 File: /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl
+# Break in Process line__43 at /tp/xph3sei/xph3sei201/TP_TEST/TP3/vhd/bench_TOP.vhdl line 130
+

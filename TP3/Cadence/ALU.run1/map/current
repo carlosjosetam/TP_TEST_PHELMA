@@ -1,0 +1,37 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "ALU"
+  repList "behavioral functional schematic symbol"
+  stopList "symbol"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/tp/tperg3/tperg3la/TP_TEST_06/TP_BIST_LOGIC/Cadence/ALU.run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( instViewTable
+ )
+( defbus
+( "S" 7 0  "S" 7 0  )
+( "A" 7 0  "A" 7 0  )
+( "B" 7 0  "B" 7 0  )
+( "CMD" 2 0  "CMD" 2 0  )
+ )
+( net
+ )
+( inst
+ )
+( model
+( "bist/ALU/schematic" "ALU" )
+ )
+( term
+ )
+( param
+ )
+( "ALU" "ihnl/cds0/map" )
+ )

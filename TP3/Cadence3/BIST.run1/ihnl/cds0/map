@@ -1,0 +1,88 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "behavioral functional schematic symbol"
+  stopList "symbol"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "RESET_LFSR" 18 0  "RESET_LFSR" 18 0  )
+( "OUT" 0 18  "OUT" 0 18  )
+( "SET_LFSR" 18 0  "SET_LFSR" 18 0  )
+ )
+( net
+( "OUT<6>" "OUT[6]" )
+( "OUT<0>" "OUT[0]" )
+( "RESET_LFSR<4>" "RESET_LFSR[4]" )
+( "SET_LFSR<18>" "SET_LFSR[18]" )
+( "OUT<16>" "OUT[16]" )
+( "SET_LFSR<16>" "SET_LFSR[16]" )
+( "OUT<18>" "OUT[18]" )
+( "RESET_LFSR<11>" "RESET_LFSR[11]" )
+( "SET_LFSR<15>" "SET_LFSR[15]" )
+( "OUT<17>" "OUT[17]" )
+( "OUT<11>" "OUT[11]" )
+( "SET_LFSR<11>" "SET_LFSR[11]" )
+( "RESET_LFSR<7>" "RESET_LFSR[7]" )
+( "RESET_LFSR<17>" "RESET_LFSR[17]" )
+( "OUT<18:3>" "{OUT[18], OUT[17], OUT[16], OUT[15], OUT[14], OUT[13], OUT[12], OUT[11], OUT[10], OUT[9], OUT[8], OUT[7], OUT[6], OUT[5], OUT[4], OUT[3]}" )
+( "RESET_LFSR<6>" "RESET_LFSR[6]" )
+( "OUT<14>" "OUT[14]" )
+( "OUT<8>" "OUT[8]" )
+( "RESET_LFSR<5>" "RESET_LFSR[5]" )
+( "RESET_LFSR<12>" "RESET_LFSR[12]" )
+( "RESET_LFSR<18>" "RESET_LFSR[18]" )
+( "SET_LFSR<6>" "SET_LFSR[6]" )
+( "RESET_LFSR<16>" "RESET_LFSR[16]" )
+( "SET_LFSR<0>" "SET_LFSR[0]" )
+( "OUT<5>" "OUT[5]" )
+( "SET_LFSR<1>" "SET_LFSR[1]" )
+( "RESET_LFSR<9>" "RESET_LFSR[9]" )
+( "RESET_LFSR<14>" "RESET_LFSR[14]" )
+( "SET_LFSR<4>" "SET_LFSR[4]" )
+( "SET_LFSR<17>" "SET_LFSR[17]" )
+( "SET_LFSR<2>" "SET_LFSR[2]" )
+( "OUT<7>" "OUT[7]" )
+( "SET_LFSR<13>" "SET_LFSR[13]" )
+( "OUT<15>" "OUT[15]" )
+( "OUT<4>" "OUT[4]" )
+( "OUT<2>" "OUT[2]" )
+( "RESET_LFSR<13>" "RESET_LFSR[13]" )
+( "SET_LFSR<5>" "SET_LFSR[5]" )
+( "OUT<9>" "OUT[9]" )
+( "RESET_LFSR<3>" "RESET_LFSR[3]" )
+( "RESET_LFSR<8>" "RESET_LFSR[8]" )
+( "RESET_LFSR<1>" "RESET_LFSR[1]" )
+( "RESET_LFSR<10>" "RESET_LFSR[10]" )
+( "SET_LFSR<7>" "SET_LFSR[7]" )
+( "OUT<10>" "OUT[10]" )
+( "RESET_LFSR<15>" "RESET_LFSR[15]" )
+( "SET_LFSR<3>" "SET_LFSR[3]" )
+( "OUT<13>" "OUT[13]" )
+( "RESET_LFSR<2>" "RESET_LFSR[2]" )
+( "SET_LFSR<10>" "SET_LFSR[10]" )
+( "SET_LFSR<14>" "SET_LFSR[14]" )
+( "RESET_LFSR<0>" "RESET_LFSR[0]" )
+( "OUT<1>" "OUT[1]" )
+( "OUT<3>" "OUT[3]" )
+( "SET_LFSR<9>" "SET_LFSR[9]" )
+( "OUT<12>" "OUT[12]" )
+( "SET_LFSR<8>" "SET_LFSR[8]" )
+( "SET_LFSR<12>" "SET_LFSR[12]" )
+ )
+( inst
+ )
+( model
+ )
+( term
+ )
+( param
+ )
+ )

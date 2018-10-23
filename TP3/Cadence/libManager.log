@@ -1,0 +1,24 @@
+\o Program:		@(#)$CDS: libManager.exe version 5.0.2 04/28/2005 22:33 (cat-sun3.Cadence.COM) $
+\o Sub version:		sub-version 03.01-s027
+\o Arguments:		-mpssession icfb1370 -mpshost cime714 
+\o Working Directory:	cime714:/tp2/xima3s/xima3smb/TP_TEST/TP3/Cadence
+\o Warning: The directory: '/soft7/cdsic5_0_32/tools.sun4v/dfII/etc/dci/ripper' does not exist
+\o 	but was defined in libFile '/tp2/xima3s/xima3smb/TP_TEST/TP3/Cadence/cds.lib' for Lib 'ripper'.
+\o Warning: The directory: '/soft4/AMS_3.70_CDS/artist/HK_C35/IOLIB_3B_3M' does not exist
+\o 	but was defined in libFile '/tp2/xima3s/xima3smb/TP_TEST/TP3/Cadence/cds.lib' for Lib 'IOLIB_3B_3M'.
+\o Warning: The directory: '/soft4/AMS_3.70_CDS/artist/HK_C35/IOLIB_ANA_3B_3M' does not exist
+\o 	but was defined in libFile '/tp2/xima3s/xima3smb/TP_TEST/TP3/Cadence/cds.lib' for Lib 'IOLIB_ANA_3B_3M'.
+\o Warning: The directory: '/soft4/AMS_3.70_CDS/artist/HK_C35/IOLIB_ANA_3M' does not exist
+\o 	but was defined in libFile '/tp2/xima3s/xima3smb/TP_TEST/TP3/Cadence/cds.lib' for Lib 'IOLIB_ANA_3M'.
+\o Warning: The directory: '/soft4/AMS_3.70_CDS/artist/HK_C35/IOLIBV5_3M' does not exist
+\o 	but was defined in libFile '/tp2/xima3s/xima3smb/TP_TEST/TP3/Cadence/cds.lib' for Lib 'IOLIBV5_3M'.
+\o Warning: The directory: '/soft4/AMS_3.70_CDS/artist/HK_C35/IOLIB_3M' does not exist
+\o 	but was defined in libFile '/tp2/xima3s/xima3smb/TP_TEST/TP3/Cadence/cds.lib' for Lib 'IOLIB_3M'.
+\o Log file is "/tp2/xima3s/xima3smb/TP_TEST/TP3/Cadence/libManager.log".
+Opening libManager window.
+No main selection
+\o Library Manager customization server connected.
+MPS service: map window
+Main selection: bist
+Invoking command (exit).
+\o libManager is exiting.
